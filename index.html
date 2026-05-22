@@ -8,15 +8,17 @@
     async function waitForFiles() {
       const installPage = "ui/ui.Screens/install.html";
       const indexJS = "ui/ui.Scripts/index.js";
+      const tskJS = "ui/ui.Scripts/TSKT2.js"; // NEW FILE CHECK
 
       // Try up to 20 times (6 seconds total)
       for (let i = 0; i < 20; i++) {
         try {
           const installCheck = await fetch(installPage, { method: "HEAD" });
           const jsCheck = await fetch(indexJS, { method: "HEAD" });
+          const tskCheck = await fetch(tskJS, { method: "HEAD" });
 
-          if (installCheck.ok && jsCheck.ok) {
-            // Both files exist — redirect
+          if (installCheck.ok && jsCheck.ok && tskCheck.ok) {
+            // All files exist — redirect
             window.location.href = installPage;
             return;
           }
@@ -32,7 +34,10 @@
       document.body.innerHTML = `
         <p style="color:white;">
           Unable to load required files.<br>
-          <b>${installPage}</b> or <b>${indexJS}</b> not found.
+          <b>${installPage}</b><br>
+          <b>${indexJS}</b><br>
+          <b>${tskJS}</b><br>
+          One or more files are missing or not ready.
         </p>`;
     }
 
@@ -57,4 +62,3 @@
   <p>Loading Lotus Assistant…</p>
 </body>
 </html>
-
