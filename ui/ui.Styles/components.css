@@ -390,6 +390,7 @@ body {
     background: #fff;
     margin: 6px 0;
     cursor: pointer;
+    color: black;
 }
 
 .fieldRow[data-type="section"] .fieldLabel {
@@ -398,12 +399,14 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
+    color: black;
 }
 
 .expandArrow {
     font-size: 12px;
     width: 12px;
     transition: transform 0.2s ease;
+    color: black;
 }
 
 .fieldRow[data-type="section"] .fieldChildren {
@@ -412,6 +415,7 @@ body {
     padding-left: 0;
     border-left: none;
     overflow: visible;
+    color: black;
 }
 
 .fieldRow[data-type="section"] .fieldChildren .fieldRow {
@@ -421,6 +425,7 @@ body {
     box-sizing: border-box;
     border: none;
     background: none;
+    color: black;
 }
 
 .fieldRow[data-type="section"] .fieldChildren .fieldInput {
