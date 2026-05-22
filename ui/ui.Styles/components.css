@@ -777,7 +777,6 @@ select.fieldInput {
     height: 460px; /* slightly taller for Lotus spacing */
     margin-top: 20px;
     perspective: 1200px;
-    
 }
 
 /* Base card styling */
@@ -785,7 +784,7 @@ select.fieldInput {
     position: absolute;
     width: 95%;
     height: 100%;
-     left: 40px; /* moves all cards 40px to the right */
+    left: 40px; /* moves all cards 40px to the right */
 
     /* LOTUS GLASS EFFECT */
     background: rgba(255,255,255,0.18);
@@ -800,8 +799,28 @@ select.fieldInput {
     overflow-y: auto;
     padding: 18px;
     box-sizing: border-box;
+
+    /* Global card text (white theme) */
     color: #fff;
-    
+}
+
+/* ⭐ OVERRIDE: FORCE BLACK TEXT INSIDE COLLAPSIBLE SECTIONS */
+#cardStack .card .fieldRow[data-type="section"],
+#cardStack .card .fieldRow[data-type="section"] * {
+    color: #000 !important;
+}
+
+/* ⭐ OVERRIDE: FIX INPUTS INSIDE SECTIONS */
+#cardStack .card .fieldRow[data-type="section"] .fieldInput {
+    background: #f9f9f9 !important;
+    border: 1px solid #ccc !important;
+    color: #000 !important;
+    caret-color: #000 !important;
+}
+
+/* ⭐ OVERRIDE: FIX DROPDOWN ARROWS */
+#cardStack .card .fieldRow[data-type="section"] select.fieldInput {
+    appearance: auto !important;
 }
 
 /* Active card (front) */
@@ -836,6 +855,7 @@ select.fieldInput {
 #cardStack .card::-webkit-scrollbar-track {
     background: rgba(255,255,255,0.15);
 }
+
 /* ============================================================
    ACTION BUTTONS — LOTUS GLASS
    ============================================================ */
