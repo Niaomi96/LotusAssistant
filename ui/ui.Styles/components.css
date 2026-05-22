@@ -800,27 +800,8 @@ select.fieldInput {
     padding: 18px;
     box-sizing: border-box;
 
-    /* Global card text (white theme) */
-    color: #fff;
-}
-
-/* ⭐ OVERRIDE: FORCE BLACK TEXT INSIDE COLLAPSIBLE SECTIONS */
-#cardStack .card .fieldRow[data-type="section"],
-#cardStack .card .fieldRow[data-type="section"] * {
+    /* ⭐ TEST MODE: FORCE ALL TEXT BLACK */
     color: #000 !important;
-}
-
-/* ⭐ OVERRIDE: FIX INPUTS INSIDE SECTIONS */
-#cardStack .card .fieldRow[data-type="section"] .fieldInput {
-    background: #f9f9f9 !important;
-    border: 1px solid #ccc !important;
-    color: #000 !important;
-    caret-color: #000 !important;
-}
-
-/* ⭐ OVERRIDE: FIX DROPDOWN ARROWS */
-#cardStack .card .fieldRow[data-type="section"] select.fieldInput {
-    appearance: auto !important;
 }
 
 /* Active card (front) */
@@ -855,6 +836,7 @@ select.fieldInput {
 #cardStack .card::-webkit-scrollbar-track {
     background: rgba(255,255,255,0.15);
 }
+
 
 /* ============================================================
    ACTION BUTTONS — LOTUS GLASS
