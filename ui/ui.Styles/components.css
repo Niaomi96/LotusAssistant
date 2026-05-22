@@ -380,6 +380,12 @@ body {
    COLLAPSIBLE SECTIONS (28% WIDTH + MATCH NORMAL FIELDS)
    ============================================================ */
 
+/* FORCE BLACK TEXT INSIDE THE SECTION (fixes cardStack white text) */
+.fieldRow[data-type="section"],
+.fieldRow[data-type="section"] * {
+    color: #000 !important;
+}
+
 .fieldRow[data-type="section"] {
     display: flex;
     flex-direction: column;
@@ -390,35 +396,33 @@ body {
     background: #fff;
     margin: 6px 0;
     cursor: pointer;
-    color: black;
 }
 
+/* Label + arrow */
 .fieldRow[data-type="section"] .fieldLabel {
     font-weight: 600;
     font-size: 14px;
     display: flex;
     align-items: center;
     gap: 4px;
-    color: black;
 }
 
 .expandArrow {
     font-size: 12px;
     width: 12px;
     transition: transform 0.2s ease;
-    color: black;
 }
 
+/* Children container */
 .fieldRow[data-type="section"] .fieldChildren {
     width: 100%;
     margin-top: 6px;
     padding-left: 0;
     border-left: none;
     overflow: visible;
-    color: black;
 }
 
-/* Child rows inside the collapsible section */
+/* Child rows */
 .fieldRow[data-type="section"] .fieldChildren .fieldRow {
     width: 100%;
     padding: 0;
@@ -426,7 +430,6 @@ body {
     box-sizing: border-box;
     border: none;
     background: none;
-    color: black;
 }
 
 /* INPUT FIX — visible background, border, caret, text */
@@ -435,17 +438,17 @@ body {
     height: 28px;
     padding: 2px 6px;
     box-sizing: border-box;
-    background: #f9f9f9;        /* light contrast so it doesn't blend */
-    border: 1px solid #ccc;     /* visible border */
-    color: black;               /* text visible */
-    caret-color: black;         /* typing cursor visible */
+    background: #f9f9f9 !important;
+    border: 1px solid #ccc !important;
+    color: #000 !important;
+    caret-color: #000 !important;
 }
 
-/* Make dropdown arrows visible again */
+/* Dropdown arrow fix */
 .fieldRow[data-type="section"] select.fieldInput {
-    appearance: auto;
-    color: black;
+    appearance: auto !important;
 }
+
 
 
 /* ============================================================
