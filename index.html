@@ -5,34 +5,38 @@
   <title>Lotus Assistant</title>
 
   <script>
-    async function waitForInstallPage() {
-      const target = "ui/ui.Screens/install.html";
+    async function waitForFiles() {
+      const installPage = "ui/ui.Screens/install.html";
+      const indexJS = "ui/ui.Scripts/index.js";
 
-      // Try loading the file until it exists
+      // Try up to 20 times (6 seconds total)
       for (let i = 0; i < 20; i++) {
         try {
-          const res = await fetch(target, { method: "HEAD" });
+          const installCheck = await fetch(installPage, { method: "HEAD" });
+          const jsCheck = await fetch(indexJS, { method: "HEAD" });
 
-          if (res.ok) {
-            // File exists — redirect
-            window.location.href = target;
+          if (installCheck.ok && jsCheck.ok) {
+            // Both files exist — redirect
+            window.location.href = installPage;
             return;
           }
         } catch (e) {
-          // Ignore errors and retry
+          // ignore and retry
         }
 
-        // Wait 300ms before trying again
+        // Wait 300ms before retrying
         await new Promise(r => setTimeout(r, 300));
       }
 
-      // If still not found after retries
+      // If still not found
       document.body.innerHTML = `
-        <p style="color:white;">Unable to load install page.<br>
-        Path: <b>${target}</b></p>`;
+        <p style="color:white;">
+          Unable to load required files.<br>
+          <b>${installPage}</b> or <b>${indexJS}</b> not found.
+        </p>`;
     }
 
-    document.addEventListener("DOMContentLoaded", waitForInstallPage);
+    document.addEventListener("DOMContentLoaded", waitForFiles);
   </script>
 
   <style>
@@ -53,3 +57,4 @@
   <p>Loading Lotus Assistant…</p>
 </body>
 </html>
+
