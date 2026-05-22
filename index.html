@@ -1,9 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=ui/ui.screens/install.html">
-  </head>
-  <body>
-    <p>Loading Lotus Assistant…</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lotus Assistant</title>
+
+  <script>
+    async function waitForInstallPage() {
+      const target = "ui/ui.Screens/install.html";
+
+      // Try loading the file until it exists
+      for (let i = 0; i < 20; i++) {
+        try {
+          const res = await fetch(target, { method: "HEAD" });
+
+          if (res.ok) {
+            // File exists — redirect
+            window.location.href = target;
+            return;
+          }
+        } catch (e) {
+          // Ignore errors and retry
+        }
+
+        // Wait 300ms before trying again
+        await new Promise(r => setTimeout(r, 300));
+      }
+
+      // If still not found after retries
+      document.body.innerHTML = `
+        <p style="color:white;">Unable to load install page.<br>
+        Path: <b>${target}</b></p>`;
+    }
+
+    document.addEventListener("DOMContentLoaded", waitForInstallPage);
+  </script>
+
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Loading Lotus Assistant…</p>
+</body>
 </html>
