@@ -1,0 +1,954 @@
+
+[
+  {
+  "tsId": "ts.rt",
+  "mainCategory": "Retention Record",
+  "subcategory": "RT",
+  "troubleshootingSteps": [
+    "Back office -> support -> billing/ subscription ( this is where you can cancel, update payment method.)",
+    "https://support.eposnow.com/s/billing - This is the direct link to the billing portal where customers can manage their subscriptions, view invoices, and make payments."
+
+  ]
+},
+{
+  "tsId": "ts.bookSession",
+  "mainCategory": "Book Session",
+  "subcategory": "Book Session",
+  "troubleshootingSteps": [
+    "Back Office (eposnowhq.com) -> nine squares in the upper right-hand corner -> Organization -> scroll to bottom -> Book Implementation -> Book Session -> Book Session -> select date and time.",
+    "Or: Book the session on behalf of the customer.",
+    "https://organisations.eposnowhq.com/dashboard - This is where you can book a session."
+  ]
+},
+{
+  "tsId": "ts.billing",
+  "mainCategory": "Billing",
+  "subcategory": "Billing",
+  "troubleshootingSteps": [
+    "Back office -> support -> billing/subscription (this is where you can cancel, update payment method, & pay bills or pay in front of the POS system, under till which will give a direct pop up for payment.)",
+    "Collect payment.",
+    "https://support.eposnow.com/s/billing - This is the direct link to the billing portal where customers can manage their subscriptions, view invoices, and make payments."
+  ]
+},
+
+{
+  "tsId": "ts.cbr",
+  "mainCategory": "Call Back Request",
+  "subcategory": "CBR",
+  "troubleshootingSteps": []
+},
+{
+  "tsId": "ts.hardwarePurchase",
+  "mainCategory": "Sale",
+  "subcategory": "Hardware Purchase",
+  "troubleshootingSteps": [
+    "Epos Now is powered by Adyen - P400, AIR, & the Saturn. Visit our website: eposnow.com to view our items!!",
+    "⭐ ENP Payments",
+    "The Air and Saturn devices are designed for fast, flexible, on‑the‑go transactions. Both run on cellular data and Wi‑Fi, making them perfect for mobile businesses. The Saturn also includes the Epos Now Till App and the Rescue App for quick troubleshooting and seamless trading.",
+    "Our P400 card reader supports both Wi‑Fi and Ethernet, and it does require a constant power source, making it ideal for countertop setups.",
+    "Epos Now offers fixed, transparent rates across Visa, Mastercard, and Debit cards. International cards like AMEX or Discover are processed at 2.5%, and depending on your agreement, you may qualify for a single fixed rate across all card types.",
+    "We also provide:",
+    "CNP (Moto) access, typically available after 6 months of trading at a 3.5% rate. You can fast‑track approval by sharing your previous merchant provider details.",
+    "Pay by Link, similar to CNP but available in as little as 14 days.",
+    "24‑hour payouts at no extra cost, with the option for instant payouts at a 1% fee. Which you can cancel at any time and comes with a 7 day free trial. After that the 1% fee is applied.",
+    "Daily fee deductions, so you never face end‑of‑month surprises.",
+    "Capital loan offers, repayable directly through your ENP transactions.",
+    "EBT is not available yet, but it is currently in development.",
+    "Our ENP platform is powered by Adyen, and Epos Now provides annual tax forms upon request. Adyen also mails tax documentation for card transactions.",
+    "Please note: Epos Now does not collect surcharge taxes in the US, so any applicable tax difference must be settled with the IRS.",
+    "We also offer Buyout12, giving you 12 months of ENP free, even if your previous 12‑month period has already ended.",
+    "⭐ Hardware Updates",
+    "Epos Now has launched a new countertop solution in the UK — Countertop 2 — and it will be available in the US soon. Our current models include:",
+    "Countertop (single screen)",
+    "Duo Countertop (dual screen: customer‑facing + staff‑facing)",
+    "Both models are Android‑based and include a built‑in printer.",
+    "We also supply scales, printers, and apps to complete your setup.",
+    "⚠️ Discount Disclaimer",
+    "To qualify for Epos Now’s best discounts, you must either:",
+    "Already be using Epos Now Payments",
+    "Or",
+    "Be willing to begin trading with Epos Now Payments",
+    "ENP and the Protection Now Care Plan are subscription‑based and are required for discounted pricing. Without them, full retail pricing applies",
+    "“Sign with me today and unlock a massive discount on a bundle of 4 tills and 4 ENPs — including 12 months free on ENP, plus $/£0 upfront on apps, cash drawers, and free shipping when eligible. Whatever hardware you need, I’ll help you build the perfect setup.”",
+    "⚠️ Disclaimer",
+    "“Tills cannot be $/£0 upfront. $/£0 upfront for cash drawers and free shipping apply only when 5 or more items are in the basket.”"
+  ]
+},
+{
+  "tsId": "ts.appPurchase",
+  "mainCategory": "Sale",
+  "subcategory": "App Purchase",
+  "troubleshootingSteps": [
+    "Epos Now integrates with 300+ partner apps, giving businesses the flexibility to build the exact system they need.",
+    "1. QuickBooks — Seamless accounting automation. Sales, taxes, payouts, and reports sync automatically.",
+    "2. Shopify — Perfect for businesses selling online and in‑store. Inventory updates in real time, orders sync instantly.",
+    "3. Mailchimp — Customer data flows straight into Mailchimp for targeted emails, promotions, and loyalty campaigns.",
+    "Tell me what you're looking for and I can give you a 2- 3 weeks discount on the application of your desire. With $/£ 0 up front cost. Come sign with me today!!"
+  ]
+},
+{
+  "tsId": "ts.capitalLoanOffer",
+  "mainCategory": "Sale",
+  "subcategory": "Capital Loan Offer",
+  "troubleshootingSteps": [
+    "“Epos Now offers Capital Loan options powered by Adyen, using your ENP transaction history to determine your eligibility. Repayments are taken automatically through your Epos Now Payments, keeping everything simple and seamless. Most customers become eligible after 6 months of trading.",
+    "For businesses not using ENP, we also partner with YouLend, giving you access to flexible funding options no matter your setup.",
+    "If you’re looking to streamline operations, expand, or invest back into your business, I can help guide you through the Capital Loan process and find the best option for your needs.”",
+    "⚠️ Required Disclaimer",
+    "“Epos Now is not licensed to discuss or disclose specific loan amounts.”"
+  ]
+},
+{
+  "tsId": "ts.additionalDeviceLocation",
+  "mainCategory": "Sale",
+  "subcategory": "Additional Device & Location",
+
+  "troubleshootingSteps": [
+    "Select a pricing keyword above to view detailed pricing information.",
+    "Notes: Monthly cost assumes 1 location & 1 device. Additional devices and locations add per-unit cost. Annual renewal applies once per year. Tax applied based on region."
+  ],
+
+  "keywordTroubleshooting": {
+    "GBP Pricing": [
+      "Standard Support: Base £25, Additional Device £15, Additional Location £10",
+      "Premium Support: Base £35, Additional Device £25, Additional Location £10",
+      "Standard SaaS X: Base £25, Additional Device £15, Additional Location £0",
+      "Premium SaaS ✓: Base £50, Additional Device £30, Additional Location £0",
+      "Software License £499, Renewal £175"
+    ],
+
+    "USD Pricing": [
+      "Standard Support: Base $39, Additional Device $24, Additional Location $15",
+      "Premium Support: Base $54, Additional Device $39, Additional Location $15",
+      "Standard SaaS X: Base $39, Additional Device $24, Additional Location $0",
+      "Premium SaaS ✓: Base $69, Additional Device $45, Additional Location $0",
+      "Software License $750, Renewal $270"
+    ],
+
+    "CAD Pricing": [
+      "Standard Support: Base $55, Additional Device $35, Additional Location $20",
+      "Premium Support: Base $75, Additional Device $55, Additional Location $20",
+      "Standard SaaS X: Base $49, Additional Device $35, Additional Location $0",
+      "Premium SaaS ✓: Base $95, Additional Device $65, Additional Location $0",
+      "Software License $999, Renewal $365"
+    ],
+
+    "EUR Pricing": [
+      "Standard Support: Base €29, Additional Device €19, Additional Location €10",
+      "Premium Support: Base €42, Additional Device €29, Additional Location €13",
+      "Standard SaaS X: Base €29, Additional Device €18, Additional Location €0",
+      "Premium SaaS ✓: Base €59, Additional Device €35, Additional Location €0",
+      "Software License €575, Renewal €205"
+    ],
+
+    "AUD Pricing": [
+      "Standard Support: Base $49, Additional Device $29, Additional Location $20",
+      "Premium Support: Base $69, Additional Device $49, Additional Location $20",
+      "Standard SaaS X: Base $49, Additional Device $29, Additional Location $0",
+      "Premium SaaS ✓: Base $99, Additional Device $59, Additional Location $0",
+      "Software License $949, Renewal $339"
+    ],
+
+    "NZD Pricing": [
+      "Standard Support: Base $49, Additional Device $29, Additional Location $20",
+      "Premium Support: Base $69, Additional Device $49, Additional Location $20",
+      "Standard SaaS X: Base $49, Additional Device $29, Additional Location $0",
+      "Premium SaaS ✓: Base $99, Additional Device $59, Additional Location $0",
+      "Software License $949, Renewal $339"
+    ],
+
+    "MXN Pricing": [
+      "Standard Support: Base MXN $799, Additional Device MXN $349, Additional Location MXN $299",
+      "Premium Support: Base MXN $999, Additional Device MXN $499, Additional Location MXN $299",
+      "Standard SaaS X: Base MXN $839, Additional Device MXN $519, Additional Location MXN $0",
+      "Premium SaaS ✓: Base MXN $1,469, Additional Device MXN $959, Additional Location MXN $0",
+      "Software License MXN $15,999, Renewal MXN $5,749"
+    ]
+  }
+},
+
+
+{
+  "tsId": "ts.feedbackReviewNps",
+  "mainCategory": "Feedback Review",
+  "subcategory": "FeedBack (NPS)",
+  "troubleshootingSteps": []
+},
+{
+  "tsId": "ts.swapItEmail",
+  "mainCategory": "Swap It Email",
+  "subcategory": "Swap It Email",
+  "troubleshootingSteps": []
+},
+{
+  "tsId": "ts.serverOutage",
+  "mainCategory": "Server Outage",
+  "subcategory": "Server Outage",
+  "troubleshootingSteps": [
+    "Server Outage TDA. Please use the email and subscribe to the server page. Please and thank you."
+  ]
+},
+{
+  "tsId": "ts.enpIntegration",
+  "mainCategory": "Payments",
+  "subcategory": "ENP (EposNow) Integration",
+  "troubleshootingSteps": [
+    "Question: Are you on Windows; Android; Apple device?",
+    "Question: Are you setting up to the till or Saturn is your portal till?",
+    "Step 1: Open up service account or remote into till or login to backoffice : eposnowhq.com -> setup -> payments -> terminal setup & assign store location to ENP (Saturn, Air, P400). If setup in back end errors, check location under setup -> location -> location and make sure everything is setup.",
+    "Step 2: Cloud sync the till (3 lines -> cloud sync).",
+    "Step 3: Settings -> payments -> eposnow payments -> enable it. If customer has more than one ENP, have them select the blue button that says 'change' and select the ENP they want associated with the till.",
+    "Step 4: Turn on the ENP and go through the setup process of the hardware itself.",
+    "Step 5: How to switch ENP to Cellular Data: Settings (Air & Saturn) -> network & Internet -> cellular data -> check if it says active -> press the back arrow, go to WiFi and turn it off. If cellular data doesn't start, a simple power cycle of the ENP should connect it to 4G/5G depending on region.",
+    "Additional information: If customer wants to disable receipts or tips: settings -> payments -> eposnow payments.",
+    "Note: If a customer is using an Apple iOS product and can't see Epos Now Payments options, they must reach out to Apple as their iOS firewall is blocking cloud service to Epos Now.",
+    "Backoffice: eposnowhq.com -> setup -> payments -> payments set-up -> log back in (if you don't have MFA setup, select the correct region flag, add your phone number, select codes to be sent to SMS, save, log out & back in). Scroll to bottom and enable additional card types. This is also where you can change to/from faster payouts or change your cut off time. Cut off time takes effect after 24 hours."
+  ]
+},
+{
+  "tsId": "ts.pdqIntegration",
+  "mainCategory": "Payments",
+  "subcategory": "PDQ (Third Party) Integration",
+
+  "troubleshootingSteps": [
+    "Step 1: Open up service account or (till) 3 lines → App store → Myapp or login (eposnowhq.com) to Back Office → App Store → My App → locate Third Party PDQ (Teya, Take Payments, Dejavoo, Lloyds Cardnet/Castle PDQ, etc.) → select Setup & enter the information provided by the Merchant Processor.",
+    "Step 2: Cloud sync the till (3 lines → Cloud Sync).",
+    "Step 3: Settings → Payments → Third Party PDQ Provider → enable it. If the customer has more than one PDQ, select the blue 'Change' button and choose the correct PDQ.",
+    "Step 4: Turn on the PDQ and complete the hardware setup process.",
+    "Additional Info: To disable receipts for Dejavoo → Settings → Payments → Dejavoo. For other providers, the customer must contact their Merchant Processor.",
+    "Note: We are no longer partners with Global Payments (EVO/Heartland) & Paymentsense (Dojo)."
+  ],
+
+  "keywordTroubleshooting": {
+    "Pax": [
+  "Ensure the Pax A920 is on the same network as the Epos Now till.",
+  "Verify the device shows the WebLink app. If missing, customer must contact their provider/reseller.",
+  "Connect A920 to WiFi: Power on → 3-line menu → WiFi Settings → toggle ON → select network → enter password.",
+  "Open WebLink and note the Transaction Address (IP) and Serial Number.",
+  "Back Office: Install 'PAX Direct Semi-Integration' (App ID 1238) → select location → name device → enter serial number → enter IP (without :8080) → Save.",
+  "Till Setup: 3 lines → Settings → Payments → enable Pax Integration → Pair Pax Terminal.",
+  "On A920: 3 dots → Pair → enter the 4-digit code shown on the till.",
+  "Perform a 1p test sale after pairing.",
+  "If 'Pair' option missing: verify correct location, update till app, perform forced cloud sync.",
+  "If 'Failed to Pair': ensure both devices are on same network, disable SIM card (Payments app → Cellular Settings → turn off roaming/3G/4G/5G/Mobile Network).",
+  "To set Static IP: WebLink → note IP → 3 dots → WiFi Settings → hold network → Modify → Advanced Options → DHCP to Static → enter IP.",
+  "For Worldpay support call 03457 616263 (daily password required).",
+  "If unresolved, complete the Word document and email partnerships@eposnow.com."
+  ],
+
+    "Lloyds (Cardnet/Castle)": [
+  "This integration is Android-only. Ensure the till is running Android 1.1.84 or above.",
+  "SMS Multi-Factor Authentication must be enabled on the Epos Now account before setup.",
+  "Ensure the till and the Lloyds Cardnet device are connected to the same WiFi network.",
+  "Use the Network Scanner on the Epos Now Till home screen to identify available IP addresses.",
+  "Power on the Castles Saturn 1000 and swipe up to access the App Drawer.",
+  "Open the CastlesPay app → press the back arrow → open the Menu.",
+  "Go to WiFi Settings → select your network → enter password → connect.",
+  "Tap the 3 dots in WiFi settings to view or modify network details.",
+  "Return to the Menu → select CMD Service → note the IP Address and Port Number.",
+  "Leave the device on the CastlesPay Welcome screen to receive transactions.",
+  "Back Office: Log in → AppStore → search 'Lloyds Cardnet' → Get Free App → install.",
+  "Go to My Apps → Lloyds Cardnet → Set-up (SMS MFA may be required).",
+  "Configure Tender Name using the pencil icon → Save.",
+  "Add Terminal: select location → enter terminal name → enter IP address → enter Port Number → Save.",
+  "If changes are needed, delete the terminal using the bin icon and re-add it.",
+  "Front Till: 3 lines → Settings → Payments → enable Lloyds Cardnet Payments.",
+  "Ensure CastlesPay app is open on the Welcome screen before testing.",
+  "Perform a test transaction to confirm integration.",
+  "If integration fails: update the Epos Now device via System → System Updates → Update Now.",
+  "Check CastlesPay version: open CastlesPay → back arrow → Menu → About → must be version 1.2.17.24 or above.",
+  "If CastlesPay version is outdated, contact the merchant service provider for an update.",
+  "Support numbers: Merchant Rental Cardnet (MIDs 5404): 0844 800 0409.",
+  "Support numbers: Handepay Cardnet (MIDs 77): 0333 005 0999.",
+  "Email support is unavailable; website not available.",
+  "Ensure the device remains on the Welcome screen to accept payments."
+  ],
+
+    "Dejavoo": [
+  "Supported devices: Z8 and Z11 (US & Canada). Setup process is identical for all models.",
+  "Plug the Dejavoo terminal into power and Ethernet before beginning setup.",
+  "Download the Dejavoo app from the App Store (App ID 999).",
+  "Open the app → select the location for the card reader.",
+  "Enter Terminal Name (e.g., 'Dejavoo Canada Z11').",
+  "Enter Register ID, Region, and Auth Key.",
+  "Auth Keys are region-specific: US terminals share one key; Canada terminals share another.",
+  "If switching between US and Canada terminals, update the Auth Key in app settings.",
+  "Save settings once all fields are entered.",
+  "Front Till Setup: Access Till → Settings → Peripherals → Enable Dejavoo Payments.",
+  "Enable 'Debit Transaction Processing' if debit transactions are required.",
+  "If multiple Dejavoo readers exist, select the correct reader from the list.",
+  "EBT transactions are supported on Dejavoo US (requires EBT app installed and configured).",
+  "Tip Adjust is supported for credit cards only (requires Tip module enabled).",
+  "US Debit Refunds are not supported; use Void instead. Terminal will request original transaction date/time.",
+  "Troubleshooting: If Tip Adjust shows 'Tip Adjust - Not Found', Dejavoo must enable Tip Adjust via remote update.",
+  "Ensure 'Inline Tip' is enabled in terminal settings for Tip Adjust to function.",
+  "If Capture shows 'Transaction Not Found', close the batch and retry.",
+  "If terminal gives 'Duplicate Number' error, change the transaction amount.",
+  "Canada terminals may warn about duplicates but allow the transaction to proceed.",
+  "Tip Adjust must be set to 'On' for Capture to work; otherwise terminal shows 'CGI Status - Invalid tip setting'.",
+  "Auth + Capture can only be performed once per batch in the TSYS test environment.",
+  "Solution: Settle/close the daily batch before retrying.",
+  "US Test Cards: Credit cards (most standard cards), Debit/EBT: Vantiv Test Card PAN 9999 9998 0000 9901, PIN 9901.",
+  "Canada Test Cards: Most standard cards work for Credit/Debit.",
+  "US Support (EVO): 800-383-0561 (Tech x1, Support x2). Email: isvcustsupport@globalpay.com (48-hour SLA).",
+  "Canada Support (EVO): +1 (800) 263-2970."
+],
+
+    "Global Payments (CAD)": [
+  "On the Global Payments card reader: swipe up from the bottom of the screen to access the menu.",
+  "Go to Settings → Network → WiFi.",
+  "Select the correct WiFi network and enter the password.",
+  "Once connected, the device will display the IP address and Port Number (common ports include 18101, 90001, 4444, etc.).",
+  "Make note of the IP address and Port Number for Back Office configuration.",
+  "On the Epos Now till: open the 3 lines menu → Settings → Payments.",
+  "Select Global Payments from the list of payment providers.",
+  "Choose the correct card reader from the dropdown list.",
+  "Ensure the Global Payments toggle is switched ON.",
+  "Perform a test transaction to confirm the integration is working."
+],
+
+    "Global Payments (Ingenico)": [
+  "Supported models: IWL250/252, IPP350, Lane 3000, Move 5000 (IWL & IPP models end-of-life March 2024).",
+  "Ensure the till (Windows or Android C15) is on the same network as the PDQ.",
+  "IWL250/252: Plug Ethernet into the ETH port on the cradle. No USB required for C15 integration.",
+  "IPP350: Plug Ethernet into the ETH port on the Magic Box. No USB required.",
+  "Confirm the PDQ shows the network icon with green boxes to indicate network connection.",
+  "Move 5000 / Lane 3000: Follow Ingenico Tetra Range Master guide to configure network.",
+  "Get the C15 IP address: Settings → System → About Tablet → Status OR Network Settings on desktop.",
+  "Perform a TMS Call before configuration: Menu → Menu → Supervisor → enter 01483 → Menu → Call TMS.",
+  "After TMS call, restart the device automatically.",
+  "Configure Till IP: Menu → Menu → Supervisor (01483) → Config → Menu → Till IP.",
+  "If asked for URL, leave blank and press Enter.",
+  "If Till IP option is missing, the device is NOT on the correct chain. Customer must contact Global Payments to switch to 'Ingenico Matsu IP Chain'.",
+  "Enter the C15 IP address into the PDQ.",
+  "Verify the port is set to 18101.",
+  "Restart the PDQ: hold Yellow/Clear + Full Stop buttons.",
+  "Back Office: Ensure Global Payments app (App ID 1017) is installed. Contact T2/Team Leader if missing.",
+  "Back Office Setup: App Store → My Apps → Global Payments → Setup.",
+  "Select correct location, enter port 18101, set Connection Mode to Ethernet (required).",
+  "Enable 'Use POS Printer' if needed.",
+  "Add Terminal: set tender name → Save → perform cloud sync on the till.",
+  "Front Till: Settings → Payments → enable Ingenico Payments (may appear as 'Enable Payments').",
+  "Perform a 1p test transaction to confirm integration.",
+  "Troubleshooting: Ensure PDQ has a valid network connection.",
+  "If no network: try a different Ethernet cable.",
+  "If still failing: restart router/switch and restart PDQ.",
+  "If no IP config option: customer must contact Global Payments to correct the chain.",
+  "Ensure Connection Mode in Back Office is set to Ethernet, not Bluetooth.",
+  "Move 5000 specific troubleshooting: check Term Param Settings.",
+  "Move 5000 Term Params: Menu x2 → Supervisor → Menu x2 → Term Params.",
+  "Enter Add Interface: 21.",
+  "Enter Parameter: 678.",
+  "Enter Text: 0 for WiFi or 1 for Ethernet.",
+  "If unresolved: email integrated.solutions@globalpay.com with full details for assistance.",
+  "Reminder: Supervisor password for all Ingenico devices is always 01483.",
+  "Reminder: Use the full stop key when restarting Lane/Move devices."
+],
+
+    "Teya": [
+  "Customer must log into their Teya account through the Epos Now Back Office (not the till).",
+  "After logging in through Back Office, the customer must click Save.",
+  "Select the correct store location inside the Teya portal and click Save again.",
+  "On the Epos Now till: open the 3 lines menu → Settings → Payments.",
+  "Enable Teya using the toggle switch.",
+  "If multiple Teya terminals exist, select 'Change' and choose the correct default terminal.",
+  "Return to the till and perform a test transaction to confirm the integration is working."
+],
+
+    "Take Payments": [
+  "On the Take Payments card reader: access the menu and go to Settings → Network → WiFi.",
+  "Select the correct WiFi network and enter the password.",
+  "Once connected, note the IP address and Port Number displayed on the device.",
+  "Common port numbers include 18101, 90001, and 4444.",
+  "On the Epos Now till: open the 3 lines menu → Settings → Payments.",
+  "Select Take Payments from the list of payment providers.",
+  "Ensure the Take Payments toggle is switched ON.",
+  "If multiple terminals exist, select the correct device from the list.",
+  "Perform a test transaction to confirm the integration is working."
+],
+
+    "NZ EFTPOS": [
+  "On the EFTPOS terminal: open the menu and go to Settings → Network → WiFi.",
+  "Select the correct WiFi network and enter the password.",
+  "Once connected, note the IP address and Port Number displayed on the device.",
+  "Common port numbers include 18101, 90001, and 4444.",
+  "Ensure the Epos Now till is connected to the same network as the EFTPOS terminal.",
+  "On the Epos Now till: open the 3 lines menu → Settings → Payments.",
+  "Enable NZ EFTPOS using the toggle switch.",
+  "If multiple terminals exist, select the correct device from the list.",
+  "Perform a test transaction to confirm the integration is working."
+],
+
+   "Worldpay": [
+  "On the Worldpay terminal: open the menu and go to Settings → Network → WiFi.",
+  "Select the correct WiFi network and enter the password.",
+  "Once connected, note the IP address and Port Number displayed on the device.",
+  "Common port numbers include 18101, 90001, and 4444.",
+  "Ensure the Epos Now till is connected to the same network as the Worldpay terminal.",
+  "On the Epos Now till: open the 3 lines menu → Settings → Payments.",
+  "Enable Worldpay using the toggle switch.",
+  "If multiple terminals exist, select the correct device from the list.",
+  "Perform a test transaction to confirm the integration is working."
+]
+
+  }
+},
+
+{
+  "tsId": "ts.payoutsInquiry",
+  "mainCategory": "Payments",
+  "subcategory": "Payouts (EposNow) Inquiry",
+  "troubleshootingSteps": [
+    "Step 1: Back office (eposnowhq.com) -> Reporting -> Payments Payout.",
+    "Step 2: Move screen left to right until you see Total Deduction. It has a dropdown you can select to see the exact information you are looking for. (Best done on Desktop or Laptop.)",
+    "Additional information: You can also see the exact amount made over cash and card in Reporting -> Banking -> Tender Type. Go to the Show Data dropdown and select what you need."
+  ]
+},
+{
+  "tsId": "ts.manualRefund",
+  "mainCategory": "Payments",
+  "subcategory": "Manual Refund",
+  "troubleshootingSteps": [
+    "Raise a Jire Ticket"
+  ]
+},
+{
+  "tsId": "ts.motoCnpSetupIncrease",
+  "mainCategory": "Payments",
+  "subcategory": "Moto (CNP) Setup / Increase",
+  "troubleshootingSteps": [
+    "Raise Jire Ticket"
+  ]
+},
+{
+  "tsId": "ts.pblSetupIncrease",
+  "mainCategory": "Payments",
+  "subcategory": "PBL Setup / Increase",
+  "troubleshootingSteps": [
+    "Install or raise Jire Ticket"
+  ]
+},
+{
+  "tsId": "ts.adyenInquiry",
+  "mainCategory": "Payments",
+  "subcategory": "Adyen Inquiry",
+  "troubleshootingSteps": [
+    "Raise Adyen Ticket"
+  ]
+},
+{
+  "tsId": "ts.endYrTax",
+  "mainCategory": "Payments",
+  "subcategory": "End YR Tax",
+  "troubleshootingSteps": [
+    "US: Go to Adyen, download 1099, email to customer.",
+    "UK: Back Office → Reporting → Accounting (select required tax info)."
+  ]
+},
+{
+  "tsId": "ts.kycInquiry",
+  "mainCategory": "Payments",
+  "subcategory": "KYC Inquiry",
+  "troubleshootingSteps": [
+    "KYC"
+  ]
+},
+{
+  "tsId": "ts.enpPinCode",
+  "mainCategory": "Payments",
+  "subcategory": "ENP (EposNow) PinCode",
+  "troubleshootingSteps": [
+    "Transaction - 5717",
+    "Settings - 0779",
+    "Master - 0856",
+    "P400 - Transactions page 8 * Green",
+    "P400 - Settings page 9 * Green"
+  ]
+},
+{
+  "tsId": "ts.pmTeam",
+  "mainCategory": "Payments",
+  "subcategory": "PM Team",
+  "troubleshootingSteps": []
+},
+{
+  "tsId": "ts.moneyTribe",
+  "mainCategory": "Payments",
+  "subcategory": "Money Tribe",
+  "troubleshootingSteps": [
+    "Money Tribe Ticket"
+  ]
+},
+{
+  "tsId": "ts.myBusinessBankAppInquiry",
+  "mainCategory": "Payments",
+  "subcategory": "My Business Bank App Inquiry",
+  "troubleshootingSteps": [
+    "App won't load - settings -> apps -> storage -> clear data or uninstall app.",
+    "Update Google Play Services - settings -> apps -> Google Play Services -> scroll to bottom -> App details in store.",
+    "My Business app -> Transfer Funds are at the bottom middle.",
+    "How to cancel my card? -> Go to Card Activation area -> cancel old card -> new card will be issued.",
+    "How to set up My Business App? Step 1: Enable MFA -> Circle icon with initials -> Setup MFA -> Select SMS & Save (ensure flag is correct region).",
+    "How to set up My Business App? Step 2: Log out of the back office and re‑log back in.",
+    "How to set up My Business App? Step 3: Refresh the My Business App -> login.",
+    "Cash Out -> Setup -> Payments -> Payments Setup -> Cash Out."
+  ]
+},
+{
+  "tsId": "ts.capitalLoanInquiry",
+  "mainCategory": "Payments",
+  "subcategory": "Capital Loan Inquiry",
+  "troubleshootingSteps": [
+    "Back office -> nine squares in upper right hand corner -> Capital to pay off loan or receive loan information."
+  ]
+},
+{
+  "tsId": "ts.tipError",
+  "mainCategory": "Payments",
+  "subcategory": "Tip Error",
+  "troubleshootingSteps": [
+    "Currency incorrect for region → Have T2 fix it.",
+    "Disable Tip Adjust → 3 lines → Settings → Payments → Tip Adjust Disable.",
+    "Disable Tips → 3 lines → Settings → Payments → Epos Now Payments → Tips Disable.",
+    "Enable Custom Tips:",
+    "Step 1: Back Office → Setup → Payments → Tip Settings → Setup.",
+    "Step 2: ENP Device Reset → Settings (P400: 9* Green) → Configuration → 0779 → Reset Device.",
+    "Step 3: If customer has 2 screens, disable Customer Display Tips. Customer Display → Disable Customer Display Tips. Only ONE tip prompt can be enabled at a time (Till OR ENP)."
+  ]
+},
+{
+  "tsId": "ts.standalone",
+  "mainCategory": "Payments",
+  "subcategory": "Standalone",
+  "troubleshootingSteps": [
+    "Standalone tender type button may appear as one of the main tenders OR under the keypad under 'More Options' (3 dots) after pressing Pay. Back Office: eposnowhq.com → Setup → Tender.",
+    "Explanation: Standalone occurs when one or both devices are on WiFi. The ENP card reader has stronger connectivity due to cellular data. If the till is on WiFi and the ENP sends the transaction back faster than the POS can receive it, the till misses the transaction frequency window. Best practice: keep ENP on cellular data. P400 devices do NOT have cellular.",
+    "How to switch ENP to Cellular Data: Settings (Air & Saturn) → Network & Internet → Cellular Data → ensure it shows 'Active'. Then go back → turn off WiFi. If cellular does not activate, power cycle the ENP to connect to 4G/5G.",
+    "How to rectify EOD Standalone transactions (missing transactions on the till): Add as a Misc Product. On the till: bottom right → '+' → '+' again on left → enter details → Pay → choose 'Epos Now Standalone' or 'Standalone'. This records it like a cash transaction; customer is NOT charged again.",
+    "Note: If customer does NOT record standalone transactions on the till, they must wait for payouts and then check Back Office → Reporting → Payments → Payments Payout. Alternatively, Epos Now staff can provide a standalone transaction list if the customer provides the FULL serial number of the ENP (located on the back of the terminal).",
+    "If using a third‑party PDQ machine, customer must contact their Merchant Provider. Epos Now does NOT hold records for non‑ENP customers."
+  ]
+},
+{
+  "tsId": "ts.bankConfirmation",
+  "mainCategory": "Payments",
+  "subcategory": "Bank Confirmation",
+  "troubleshootingSteps": [
+    "Email bank confirmation letter or give via live chats."
+  ]
+},
+{
+  "tsId": "ts.enpSubscription",
+  "mainCategory": "Payments",
+  "subcategory": "EposNow Payments Sub",
+  "troubleshootingSteps": [
+    "Tall or raise Jira Ticket.",
+    "Resync Sublime then resync to Back Office → Subscriptions on salesforce."
+  ]
+},
+{
+  "tsId": "ts.payoutsInquiry",
+  "mainCategory": "Payments",
+  "subcategory": "Payouts (EposNow) Inquiry",
+  "troubleshootingSteps": [
+    "Step 1: Back Office (eposnowhq.com) → Reporting → Payments Payout.",
+    "Step 2: Move screen left to right until you see Total Deduction. Use the dropdown to select the exact information you need. (Best done on Desktop or Laptop.)",
+    "Additional: You can also see exact cash and card totals in Back Office → Reporting → Banking → Tender Type. Use the 'Show Data' dropdown to select what you need."
+  ]
+},
+{
+  "tsId": "ts.enpUnresponsive",
+  "mainCategory": "Payments",
+  "subcategory": "ENP Unresponsive/COG",
+  "troubleshootingSteps": [
+    "Configuration Reset: Settings (P400: 9* Green) → Configuration → Code 0779 → Reset Device.",
+    "Software Version Update: Settings (P400: 9* Green) → Device Info → Software Version Updates → Update if available.",
+    "Hard Reset: Turn device over → place thumbs on back of lid → pull toward you → lid pops back → lift lid → remove battery → wait 2 minutes → reinsert battery. Saturn (F1S2): pinch left‑side clamp toward battery. Air (AMS1): gently tap device into hand to release battery.",
+    "Power Cycle: P400 → unplug from power source. Saturn → press power button on left side. Air → press power button on right side.",
+    "Network: Settings (P400: 9* Green) → Network & Internet → WiFi or Cellular Data. Cellular Data available ONLY on Air & Saturn. P400 supports Ethernet or WiFi only. If on WiFi, ensure cable is not damaged or replace it. P400 struggles with WiFi; best to use Ethernet.",
+    "Cellular Activation: To activate cellular data, device must first connect to WiFi or hotspot. Once Cellular Data shows 'Active', ENP is connected. Look for tower icon in upper‑right corner. If not visible, perform a power cycle."
+  ]
+},
+{
+  "tsId": "ts.tillAppLoadingError",
+  "mainCategory": "POS System",
+  "subcategory": "Till App Loading Error",
+  "troubleshootingSteps": [
+    "Question: What device do you have — Windows, Tablet, Mac, POS System (Till), or Saturn (ENP)?",
+    "Unassign the license to force a cloud sync: Back Office -> Setup -> Locations -> Devices -> Unassign License.",
+    "Windows Option 1: Clear temp files — Windows search icon or Win+R -> %temp% -> Enter -> delete all files permanently -> restart till.",
+    "Windows Option 2: Update till app — Back Office -> Till -> Download -> Settings -> Apps & Notifications -> Epos Now Till -> Uninstall -> File Explorer -> Downloads -> Install new app (customer stays logged in).",
+    "Windows Option 3: Clear data — File Explorer -> Desktop -> Local Drive (C: or Epos Now) -> Program Files / Program Files (x86) -> rename 'EposNow' to 'EposNow.old'. If ProgramData is hidden: View -> Show -> Hidden Items.",
+    "Additional Info: If app version is below 3.4.1.4 or 3.4.1.7, update required. Windows & Mac OS are no longer supported — recommend upgrading before hard drive fails from temp file overload.",
+    "Tablets: Reinstall Epos Now Till app and re‑setup hardware only (Back Office info stays intact).",
+    "POS System (Till): Pull screen down (upper right) -> pull down again -> Gear icon -> Apps & Notifications -> Epos Now Till -> Storage -> Clear Data -> return to till -> re‑setup device -> log into Back Office -> select store & device.",
+    "POS System Network: Pull screen down -> Gear icon -> Network & Internet -> WiFi -> select network -> enter password OR connect via Ethernet.",
+    "POS System Updates: Back arrow to main settings -> System -> System Updates -> Apps -> Epos Now -> Update if available. Anything below 1.1.107+ is outdated.",
+    "ENP (Saturn) Till App Not Loading: Epos Now agent can uninstall/reinstall latest version. Customer must provide ENP serial number (on back of device)."
+  ]
+},
+{
+  "tsId": "ts.autoClose",
+  "mainCategory": "POS System",
+  "subcategory": "Auto Close",
+  "troubleshootingSteps": [
+    "Back office (eposnowhq.com) -> Locations -> Devices -> Edit -> Unselect Auto Close -> Update -> Load Till."
+  ]
+},
+{
+  "tsId": "ts.contactPoints",
+  "mainCategory": "Contact Points",
+  "subcategory": "Contact Points",
+  "troubleshootingSteps": [
+    "Shopify → #ext_wrightwaydigital",
+    "Yeollo → #yeollo",
+    "Sage / QuickBooks / Xero / any accounting or money‑flow app → #ext_posaccounting",
+    "Loyalzoo (subscriptions & membership management) → #eposnow-loyalzoo",
+    "",
+    "Xero Support Page → https://central.xero.com/0/support",
+    "Sage / QuickBooks Support Page → https://quickbooks.intuit.com/learn-support/en-us/ (client must log in)",
+    "",
+    "Loyalzoo Support Numbers → UK: +44 (0)20 3389 9362 | US: +1 (347) 674 0953",
+    "Dejavoo Support Number → (877) 358-6797",
+    "Brecknell Support Number → (800) 637-0529",
+    "Vouchercart Support Numbers → UK: +44 (0)131 608 0111 | US: +1 628 240 0365",
+    "Avery Berkel Support Line → +44 (0)870 903 2000"
+  ]
+},
+
+{
+  "tsId": "ts.scannerError",
+  "mainCategory": "POS System",
+  "subcategory": "Scanner",
+  "troubleshootingSteps": [
+    "Refer to the attached Scanner Setup PDF for all pairing, reset, and configuration barcodes.",
+    "Ensure the scanner is powered on and the LED indicator is active.",
+    "If using wireless 2.4GHz, confirm the USB dongle is connected to the POS terminal.",
+    "Perform a Factory Reset using the barcode in the setup guide if the scanner is unresponsive.",
+    "Re-pair the scanner by scanning the 'Pairing Setup' barcode from the PDF.",
+    "For Bluetooth mode, hold the trigger for 8 seconds until the LED flashes blue/green.",
+    "Verify the scanner is in Standard Mode (not Continuous Mode) if the beam stays on.",
+    "Adjust volume, sleep mode, or vibration settings using the barcodes in the setup guide.",
+    "If certain barcodes do not scan, enable all QR codes or all barcodes using the provided codes.",
+    "Check LED and buzzer indicators to identify charging, pairing, or error states."
+  ]
+},
+
+{
+  "tsId": "ts.eod",
+  "mainCategory": "POS System",
+  "subcategory": "EOD",
+  "troubleshootingSteps": [
+    "3 lines -> Settings -> EOD Settings -> modify what you want printed or not printed (for customers wanting to shorten EOD to save paper).",
+    "3 lines -> Admin -> Back Office or login to Back Office (eposnowhq.com) -> Reporting -> Banking -> EOD (End of Day).",
+    "Back Office -> Manage -> Staff -> Staff Roles -> edit staff roles to fix EOD visibility issues. Turn off Blind EOD or adjust permissions.",
+    "How to close till (EOD): 3 lines -> Admin -> Close Till -> before hitting 'Print to Close', input tender values (cash, card, etc.) -> then Print to Close."
+  ]
+},
+{
+  "tsId": "ts.stuckTable",
+  "mainCategory": "POS System",
+  "subcategory": "Stuck Table",
+  "troubleshootingSteps": [
+    "Back Office -> Setup -> Location -> Location -> Edit -> Edit Table Plan -> Delete old table with the error -> Replace with a new one."
+  ]
+},
+{
+  "tsId": "ts.tillRefund",
+  "mainCategory": "POS System",
+  "subcategory": "Till Refund",
+  "troubleshootingSteps": [
+    "Order → Complete → Refund → Refund Reason → select refund reason → choose Card or Cash OR scan the customer receipt using the search icon → follow the same steps to complete the refund.",
+    "If refund cannot be found on the till: Back Office → Reporting → Classic Report → Completed Transactions → select date → enable Transaction Barcode (toggle ON).",
+    "Copy the transaction barcode → go to the till → search the barcode in the search bar. (Ensure O’s and 0’s are not mixed up or the refund will not load.)",
+    "Once the transaction loads, follow the same refund steps: Refund → Refund Reason → select payment method."
+  ]
+},
+{
+  "tsId": "ts.printerError",
+  "mainCategory": "POS System",
+  "subcategory": "Printer Error / Setup / Order Utilities",
+  "troubleshootingSteps": [
+    "Select a keyword below to load the correct troubleshooting block."
+  ],
+  "keywordTroubleshooting": {
+    "Order Utilities": [
+      "Order Utilities has been discontinued for Windows devices.",
+      "Common error: Order Utilities stops working or becomes flooded with print requests.",
+      "Fix: Pull screen down (top right) → pull down again → Gear icon → Apps & Notifications → Order Utilities → Storage → Clear Data.",
+      "Scroll up → press the red circle button → reopen Order Utilities → press Start → press Play ▶️."
+    ],
+    "Hardware Connections": [
+      "Check that the printer is connected properly via Ethernet or USB.",
+      "Ethernet: Ensure cable is in the correct port. Cash drawer port is smaller and flat; Ethernet is larger.",
+      "USB: USB‑B (=) plugs into the till; USB‑A ([ ]) plugs into the printer.",
+      "If order printer disconnects: check Ethernet light on the printer. If not flashing, cable may be damaged or unplugged.",
+      "Reboot network tower if needed."
+    ],
+    "Ethernet Setup & Test Print": [
+      "To test print: Turn off printer → hold Feed button → turn printer on → hold 2 seconds → release.",
+      "If IP address prints as 192.168.123.100, printer is on static IP and offline.",
+      "Reboot network tower and try again.",
+      "If you get a fee dump paper, retry the feed test.",
+      "If printer was accidentally set up as USB instead of Ethernet, correct the connection.",
+      "Changing IP Address Warning: Only proceed if your network provider can restore the original gateway.",
+      "To change IP: Browser → enter printer IP (e.g., 192.168.4.80) → TCP/IP Settings → assign new free IP from Network Diagnostics → IP Scanner → reboot printer."
+    ],
+    "Supported Printers (Bixolon & Star Setup/ Usage)": [
+      "Supported printers: Epos Now POS80GX, Bixolon 220DX, Star (Bluetooth/Ethernet/USB), Epson, Bixolon Label Printer.",
+      "Epos Now provides drivers only for supported printers.",
+      "Unsupported printers may work on Windows but are not guaranteed.",
+      "To setup Bixolon Label( On Pos System): It is plug in and play. How to use it?",
+      "Generate Label Setup: Back Office → Manage → Products → Advanced → Generate Labels.",
+      "Bixolon Label Calibration: Hold Feed until lights flash yellow/red/green → press Feed again → test print.",
+      "Thermal printers require thermal paper purchased through Epos Now.",
+      "Apple devices may have cloud sync and printer setup issues due to iOS data protection protocols."
+    ],
+    "Unsupported Printers": [
+      "Printers outside Epos Now partnerships are not supported.",
+      "Windows may allow more flexibility, but functionality is not guaranteed.",
+      "Customers must contact the third‑party vendor for unsupported printers.",
+      "Apple devices may not be compatible due to iOS restrictions."
+    ],
+    "Receipt Printer Setup (Android/POS/Saturn)": [
+      "3 lines → Settings → Peripherals → Setup Receipt Printer → follow on‑screen steps.",
+      "Built‑in Printer Fix: 3 lines → Settings → Peripherals → Setup Receipt Printer → select 1.1.1.1 → three dots → Delete.",
+      "Restart till → re‑add printer.",
+      "Reason: Firmware may get stuck during first setup.",
+      "Paper Issue: Paper must be counter‑clockwise, over the roller, sticking out slightly.",
+      "Built- in printer blade error -> open the printer door ( leaver on the right hand side pop it towards you.)-> lay till onto it's back ->",
+      "there will be half hexagon hole, on the top of under the screen of the till-> stick your finger in there, and pop it open -> there will be a white gear,",
+      "spin it  counter clock wise 3 times, and try close printer door.",
+      "WWarning ⚠️ - Don't do it to much or it can get sucked up into the machine  or spin it down to much or the blade will fall out. If either of these happen,'",
+      "the printer blade can't be taken out or falls out;",
+      "it can't be put back in. You will have to swap it for the till or if you're out of warranty, you will have to buy a new till or printer."
+    ],
+    "Order Printer Setup (Android/POS/Saturn)": [
+      "3 lines → Settings → Peripherals → Setup Order Printer → follow on‑screen steps.",
+      "Category Printer Preferences: Back Office → Manage → Categories → Order/Layaway column → set printer preferences.",
+      "Windows users must configure this in Back Office.",
+      "If order printer disconnects: check Ethernet light, cable damage, or unplugged power.",
+      "Reboot network tower or contact ISP for IP issues."
+    ],
+    "Windows Printer Setup (USB/Ethernet)": [
+      "Download printer driver provided by agent.",
+      "Extract files → Windows Settings → Printers & Devices → Add Printer.",
+      "USB Setup: Add Printer → Local → choose driver folder → select Zling → keep private → enable Printer Pooling → select Virtual Ports + LPT1 → test print.",
+      "Ethernet Setup: Add Printer → TCP/IP → enter printer IP → select Zling driver → test print.",
+      "Epos Now App: 3 lines → Settings → Peripherals → App Settings → select Receipt Printer or Order Printer.",
+      "If unable to remove printer: Windows Search → Print Management → Printers → right‑click → Cancel Jobs → right‑click → Delete Printer."
+    ]
+  }
+},
+{
+  "tsId": "ts.cashDrawerError",
+  "mainCategory": "POS System",
+  "subcategory": "CashDrawer Error",
+  "troubleshootingSteps": [
+    "Ensure the cash drawer is NOT plugged into the Ethernet port. If it is, it will not pop.",
+    "Cash drawer plugged in but still not popping (POS System): 3 lines -> Settings -> Peripherals -> Setup Receipt Printer -> locate the saved printer (1.1.1.1 for built‑in or USB printer with no IP) -> three dots -> Delete -> re-add printer by following POS System setup steps. If the drawer won’t pop, the printer is cutting off services to the cash drawer. Removing and re-adding the printer resolves this.",
+    "Cash drawer not popping on Windows device: Windows Settings -> Printers & Devices -> select receipt printer -> Manage -> Printer Properties -> Printer Settings -> Cash Drawer -> change from 'After Print Receipts' to 'Before Print Receipts'. You may also set it to '2 After Receipts'.",
+    "If troubleshooting does not resolve the issue: it becomes a swap (swap is tied to the serial number of the failing device) OR a purchase of a new printer and cash drawer, as it cannot be confirmed whether the printer or the drawer is unresponsive. Another option is upgrading to a built‑in printer POS system."
+  ]
+},
+{
+  "tsId": "ts.setupTill",
+  "mainCategory": "POS System",
+  "subcategory": "Setup Till (POS System)",
+  "troubleshootingSteps": [
+    "Follow the step-by-step guide instructions built into the till to set up the POS system."
+  ]
+},
+{
+  "tsId": "ts.basketError",
+  "mainCategory": "POS System",
+  "subcategory": "Basket Error",
+  "troubleshootingSteps": [
+    "Ask customer: What device do you have? (Windows, Tablet, Mac, POS System/Till, Saturn ENP).",
+    "Unassign license to force cloud sync: Back Office → Setup → Locations → Devices → Unassign License."
+  ],
+  "keywordTroubleshooting": {
+    "Windows": [
+      "Option 1: Clear temp files → Windows Search → Run → %temp% → delete all files → restart till.",
+      "Option 2: Update Till App → Back Office → Till → Download → uninstall old app → File Explorer → Downloads → install new app.",
+      "Option 3: Clear data → File Explorer → Local Disk (C: or Epos Now) → Program Files or Program Files (x86) → rename 'EposNow' to 'EposNow.old'.",
+      "Enable hidden items if folder not visible: File Explorer → View → Show → Hidden Items.",
+      "Ensure app version is 3.4.1.4 or 3.4.1.7. Anything older must be updated.",
+      "Note: Windows & MacOS devices are no longer supported by Epos Now. Recommend upgrading before hard drive fails."
+    ],
+    "Tablet": [
+      "Reinstall Epos Now Till app.",
+      "Reconfigure hardware settings only — Back Office settings remain intact."
+    ],
+    "POS System (Till)": [
+      "Pull screen down (top right) → pull again → Gear icon → Apps & Notifications → Epos Now Till → Storage → Clear Data.",
+      "Reopen Till → log into Back Office → select store → select device.",
+      "Network Setup: Pull screen down → Gear icon → Network & Internet → WiFi → select network → enter password OR connect via Ethernet.",
+      "Check for updates: Settings → System → System Updates → Apps → Epos Now → Update if available.",
+      "Anything below version 1.1.107+ must be updated."
+    ],
+    "Saturn (ENP)": [
+      "Same steps as POS System for clearing data and network setup.",
+      "Ensure ENP is connected to stable WiFi or Ethernet."
+    ]
+  }
+},
+{
+  "tsId": "ts.tenderTypeError",
+  "mainCategory": "POS System",
+  "subcategory": "Tender Type Error",
+  "troubleshootingSteps": [
+    "Back Office -> Setup -> Banking -> Tender Types -> delete the tender type causing the error on EOD or the Payment Page.",
+    "To create a new tender type: Back Office -> Setup -> Banking -> Tender Types -> Add Tender Type."
+  ]
+},
+{
+  "tsId": "ts.staffLoginError",
+  "mainCategory": "POS System",
+  "subcategory": "Staff Login / Staff Roles Error",
+  "troubleshootingSteps": [
+    "Create a service account and fix the staff login so customers can start trading again if staff do not have access to the Back Office.",
+    "Back Office -> Manage -> Staff -> Staff. To edit staff information, select Edit next to the staff name. To add new staff, select Add Staff in the upper right-hand corner.",
+    "Back Office -> Manage -> Staff -> Staff Roles. Edit staff roles to fix EOD issues where customers cannot see reporting. Turn off Blind EOD or adjust permissions as needed."
+  ]
+},
+{
+  "tsId": "ts.taxBreakdown",
+  "mainCategory": "POS System",
+  "subcategory": "Tax Break Down",
+  "troubleshootingSteps": [
+    "Back office ( eposnowhq.com)  or 3 lines -> admin -> back office -> setup ->  company details ->  select exclusive tax/  inclusive tax ",
+    "break down or exc tax/ inc tax break down. Also make sure you already created your taxes before making your products. ",
+    "To make taxes,  back office -> setup-> banking ->  taxes. Next, go to the Till-> 3 lines -> Settings -> general -> at the bottom, go to tax mode, and select exclusive tax mode.",
+    "If you don't see that option, cloud sync the till-> press the back arrow in the upper left hand corner -> 3 lines -> the hit cloud ☁️ (cloud sync)."
+  ]
+},
+{
+  "tsId": "ts.unassignLicense",
+  "mainCategory": "POS System",
+  "subcategory": "Unassign License",
+  "troubleshootingSteps": [
+    "Unassign the license to force a cloud sync.",
+    "Back Office → Setup → Locations → Devices → Unassign License."
+  ]
+},
+{
+  "tsId": "ts.outOfStock",
+  "mainCategory": "POS System",
+  "subcategory": "Out of Stock Error",
+  "troubleshootingSteps": [
+    "If staff hold down the product button on the till, they may accidentally mark the product as Out of Stock.",
+    "To fix: hold down on the product again → select In Stock.",
+    "Once updated, the product becomes available immediately."
+  ]
+},
+{
+  "tsId": "ts.scalesSetup",
+  "mainCategory": "POS System",
+  "subcategory": "Scales Setup",
+  "troubleshootingSteps": [
+    "Before contacting Epos Now, ensure the scale is physically connected correctly to the till OR contact the scale provider to complete hardware setup. Epos Now only handles software setup once hardware is confirmed.",
+    "Supported scale partners: Avery Berkeley and CAS. These providers have their own support lines.",
+    "Scale Setup: Back Office -> App Store -> install Measurements App -> return to Back Office -> Till -> 3 lines -> Settings -> Peripherals -> Advanced App Settings -> Setup Scale -> select scale type and communication/COM type.",
+    "Set Weight Matrices: 3 lines -> Settings -> Peripherals -> choose weight units (Kg, K, OZ, LB).",
+    "Enable Scales: 3 lines -> Admin -> Back Office -> Locations -> Devices -> Enable Scales.",
+    "Variable Barcodes: Back Office -> Setup -> Company Details -> enter variable barcode information provided by the scale vendor -> Save.",
+    "Disclaimer: Variable barcodes only work if the barcode already contains embedded weight/price data. Do NOT attempt to create your own — always obtain proper variable barcodes from the product vendor."
+  ]
+},
+{
+  "tsId": "ts.kdsSetup",
+  "mainCategory": "POS System",
+  "subcategory": "KDS Setup / Error",
+  "troubleshootingSteps": [
+    "Customer must purchase the KDS subscription. If already purchased, they must wait 24 hours for KDS device licenses to appear.",
+    "Setup KDS: Log into Back Office on the KDS screen → Till → select location → select device (KDS).",
+    "KDS customization: In the top-right settings menu, configure order channels (Order A, Order B, Rear, Front, Bar, Kitchen). Categories must be set to Order/Layaway and KDS must be assigned correct channels.",
+    "Common KDS Error (items not showing): Back Office → Setup → Devices → Unassign License for the KDS device.",
+    "On the KDS screen: Pull down from top-right → pull again → Gear icon → Apps & Notifications → Epos Now Till → Storage → Clear Data.",
+    "Reopen Till → log back into Back Office → select store → select KDS device → test orders.",
+    "T2 Escalation: A Force Cloud Sync (code 271828) may be required. This code cannot be given to customers. If issue persists, remote in or have customer call support."
+  ]
+},
+{
+  "tsId": "ts.stock",
+  "mainCategory": "Back Office",
+  "subcategory": "Stock",
+  "troubleshootingSteps": [
+    "How to add stock to a product: Back Office -> Manage -> Products -> Advanced (depending on product list, Advanced may appear on the left or under the 3 dots on the right) -> scroll to Stock Adjust and add stock. When creating a new product, add stock during setup. Quick Add is clearer by turning on the Stock Level toggle. You may also use the Bulk Import app (30‑day free trial, cancellable anytime).",
+    "How to update stock: Back Office -> Stock Management -> Stock Adjust. Double tap (Android/POS) or double click (Windows) to open the adjustment line. Stock updates are location‑based, so ensure products are assigned to the correct store. Customize columns using 'Columns'. Use 'Filter' to work on specific categories or full category inventories.",
+    "Stock Order: Only shared between store locations under the same Back Office account. Back Office -> Stock -> Stock Order. Create stock orders, receive stock, and mark items as received.",
+    "Track Stock: Back Office -> Reporting -> Stock. Options include: Stock Level (view current levels) and Stock Changes (view adjustments).",
+    "Stock Drop Notifications: When setting up stock, enable Stock Alert to receive email notifications. Alternatively, create a Dashboard under Reporting -> Dashboard, select desired widgets, then go to Reporting -> Schedule Emails to schedule automated reports. Attach the dashboard you created.",
+    "Bulk Import App: 30‑day free trial; pricing varies by region. Can be uninstalled to cancel subscription.",
+    "How to use Bulk Import: Back Office -> App Store -> My Apps -> Setup. Download the stock sheet template and update stock using Excel or Google Sheets. Only CSV files generated from the Bulk Import app are accepted (no outside or homemade templates). Upload modified CSV -> Download -> Import."
+  ]
+},
+{
+  "tsId": "ts.products",
+  "mainCategory": "Back Office",
+  "subcategory": "Products / Categories",
+  "troubleshootingSteps": [
+    "How to use Bulk Import: Back Office -> App Store -> My Apps -> Setup. Download the stock sheet and update your stock using Excel or Google Sheets. You may use any of the provided templates. To upload: ensure the file is CSV and generated from the Bulk Import app (no outside or homemade templates). Upload modified CSV -> Download -> Import.",
+    "How to change pricing on Multiple Choice Product Groups (MCPG): Back Office -> MCPG -> Details -> Update Prices.",
+    "How to make course backoffice -> setup-> course-> add course -> name it & add a number for its order on the order ticket-> save. then go to manage -> catgory-> edit / create category -> select course from the dropdown -> save.",
+    "How to hide a category (along with products that are inside of it) on the tiil : backofficce-> manage-> catgory-> edit category-> select the check show on till (it will grey out) -> save (hit update if on olc category page).",
+    "How to update products: Back Office -> Manage -> Products or Category. Depending on the product list or catgory view, you may see an Edit button on the left OR you may double tap/double click the product line to modify pricing in the pop‑up horizontal line. For non‑classic product lists / category, use the 3 dots on the right to Edit, Duplicate, or Delete products / categories. Use Columns and Filters to customize how the table displays.",
+    "For additional guidance on anything under the Manage tab, visit our YouTube channel: https://youtube.com/@eposnow?si=VBuelLZqmXKQfUf6"
+  ]
+},
+{
+  "tsId": "ts.reporting",
+  "mainCategory": "Back Office",
+  "subcategory": "Reporting",
+  "troubleshootingSteps": [
+    "Sales Report: To view sales information, go to Back Office -> Reporting -> Sales Report.",
+    "Classic Report & Transaction Report: These hold all data from your till. Back Office -> Reporting -> Classic Report -> Completed Transactions to pull up transaction barcodes or delete transactions. Back Office -> Reporting -> Transactions Report -> Transactions to view transactions that may not have been received or to check PSP reference numbers for ENP transactions.",
+    "Advanced Filtering Tip: In the Transactions Report, go to Filters -> Advanced Options to follow specific tender types such as Card or Pay By Link.",
+    "For additional guidance on anything under the Reporting tab, visit our YouTube channel: https://youtube.com/@eposnow?si=VBuelLZqmXKQfUf6"
+  ]
+},
+{
+  "tsId": "ts.loginIssue",
+  "mainCategory": "Back Office",
+  "subcategory": "Login Issue",
+  "troubleshootingSteps": [
+    "Use 'Forgot Password' to reset your Back Office login. Epos Now does not store or carry password login details.",
+    "If you are a new customer, check your Activate Account email to set up your account and log into Back Office.",
+    "Back Office website: eposnowhq.com"
+  ]
+},
+{
+  "tsId": "ts.mfaDisable",
+  "mainCategory": "Back Office",
+  "subcategory": "MFA Disable",
+  "troubleshootingSteps": [
+    "Send AI EDPA code so Tier 2 can disable MFA."
+  ]
+},
+{
+  "tsId": "ts.appIntegration",
+  "mainCategory": "Back Office",
+  "subcategory": "App Integration",
+  "troubleshootingSteps": [
+    "Provide the customer with the support line for the third‑party app they are using.",
+    "If additional assistance is needed, place the information into the queue for follow‑up."
+  ]
+},
+{
+  "tsId": "ts.payoutsInquiry",
+  "mainCategory": "Payments",
+  "subcategory": "Payouts (EposNow) Inquiry",
+  "troubleshootingSteps": [
+    "Step 1: Back office (eposnowhq.com) -> Reporting -> Payments Payout.",
+    "Step 2: Move screen left to right until you see Total Deduction. It has a dropdown you can select to see the exact information you are looking for. (Best done on Desktop or Laptop.)",
+    "Additional information: You can also see the exact amount made over cash and card in Reporting -> Banking -> Tender Type. Go to the Show Data dropdown and select what you need."
+  ]
+},
+{
+  "tsId": "ts.compliant",
+  "mainCategory": "Compliant",
+  "subcategory": "Compliant",
+  "troubleshootingSteps": []
+}
+]

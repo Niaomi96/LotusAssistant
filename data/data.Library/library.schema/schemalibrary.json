@@ -1,0 +1,4057 @@
+[
+ 
+{
+  "id": "payments.motoCnpSetupIncrease",
+  "title": "Moto (CNP) Setup / Increase",
+  "category": "Payments",
+  "subcategory": "Moto (CNP) Setup / Increase",
+  "tsId": "ts.motoCnpSetupIncrease",
+  "emailId": "payments.motoCnpSetupIncrease",
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+  "motoInstallation": {
+  "label": "Moto (CNP) Installation",
+  "type": "dropdown",
+  "options": ["N/A", "Yes", "No", "Error"]
+},
+
+"Currency": {
+  "label": "Currency",
+  "type": "dropdown",
+  "options": ["N/A", "$", "£"],
+  "visibleWhen": {
+    "Moto (CNP) Installation": "Yes"
+  },
+  "row": "pblRow1"
+},
+
+"Increase": {
+  "label": "Increase",
+  "type": "dropdown",
+  "options": ["N/A", "1.5k", "2.5k", "3.5k+"],
+  "visibleWhen": {
+    "Moto (CNP) Installation": "Yes"
+  },
+  "row": "pblRow1"
+},
+
+
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.pblSetup",
+  "title": "PBL Setup / Increase",
+  "category": "Payments",
+  "subcategory": "PBL Setup / Increase",
+  "tsId": "ts.pblSetup",
+  "emailId": "payments.pblSetup",
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "pblInstallation": {
+          "label": "PBL Installation",
+          "type": "dropdown",
+          "options": ["N/A", "Yes", "No", "Error"]
+        },
+
+        "Currency": {
+          "label": "Currency",
+          "type": "dropdown",
+          "options": ["N/A", "$", "£"],
+          "visibleWhen": {
+            "PBL Installation": "Yes"
+          },
+          "row": "pblRow1"
+        },
+
+        "Increase": {
+          "label": "Increase",
+          "type": "dropdown",
+          "options": ["N/A", "1.5k", "2.5k", "3.5k+"],
+          "visibleWhen": {
+            "PBL Installation": "Yes"
+          },
+          "row": "pblRow1"
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.adyenInquiry",
+  "title": "Adyen Inquiry",
+  "category": "Payments",
+  "subcategory": "Adyen Inquiry",
+  "tsId": "ts.adyenInquiry",
+
+  
+  "dynamicId": "payments.adyenInquiry",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "adyenTicketType": {
+          "label": "Adyen Ticket Type",
+          "type": "dropdown",
+          "options": [
+            "Volume Adjustment",
+            "Missing Funds",
+            "ENP Not on Platform",
+            "Tax Form",
+            "Cancel Capital Offer",
+            "Other",
+            "Resolved Adyen Inquiry"  
+          ]
+        },
+
+
+"accountHolderNameSection": {
+  "label": " NO.1: Account Holder Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Volume Adjustment"]
+  },
+  "fields": {
+    "accountHolderName": { "label": "Account Holder Name", "type": "text" }
+  }
+},
+
+"accountHolderIdSection": {
+  "label": " NO.1: Account Holder ID",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Volume Adjustment"]
+  },
+  "fields": {
+    "accountHolderId": { "label": "Account Holder ID", "type": "text" }
+  }
+},
+
+"accountReferenceNumberSection": {
+  "label": " NO.1: Account Reference Number",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Volume Adjustment"]
+  },
+  "fields": {
+    "accountReferenceNumber": { "label": "Account Reference Number", "type": "text" }
+  }
+},
+     "accountNameSection": {
+  "label": " NO.1: Account Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Volume Adjustment"]
+  },
+  "fields": {
+    "accountName": { "label": "Account Name", "type": "text" }
+  }
+},
+
+"accountHolderNameSection2": {
+  "label": " NO.2: Account Holder Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Missing Funds"]
+  },
+  "fields": {
+    "accountHolderName": { "label": "Account Holder Name", "type": "text" }
+  }
+},
+
+"accountHolderIdSection2": {
+  "label": " NO.2: Account Holder ID",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Missing Funds"]
+  },
+  "fields": {
+    "accountHolderId": { "label": "Account Holder ID", "type": "text" }
+  }
+},
+
+"accountReferenceNumberSection2": {
+  "label": " NO.2: Account Reference Number",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Missing Funds"]
+  },
+  "fields": {
+    "accountReferenceNumber": { "label": "Account Reference Number", "type": "text" }
+  }
+},
+     "accountNameSection2": {
+  "label": " NO.2: Account Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Missing Funds"]
+  },
+  "fields": {
+    "accountName": { "label": "Account Name", "type": "text" }
+  }
+},
+
+"accountHolderNameSection3": {
+  "label": " NO.3: Account Holder Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["ENP Not on Platform"]
+  },
+  "fields": {
+    "accountHolderName": { "label": "Account Holder Name", "type": "text" }
+  }
+},
+
+"accountHolderIdSection3": {
+  "label": " NO.3: Account Holder ID",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["ENP Not on Platform"]
+  },
+  "fields": {
+    "accountHolderId": { "label": "Account Holder ID", "type": "text" }
+  }
+},
+
+"accountReferenceNumberSection3": {
+  "label": " NO.3: Account Reference Number",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["ENP Not on Platform"]
+  },
+  "fields": {
+    "accountReferenceNumber": { "label": "Account Reference Number", "type": "text" }
+  }
+},
+     "accountNameSection3": {
+  "label": " NO.3: Account Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["ENP Not on Platform"]
+  },
+  "fields": {
+    "accountName": { "label": "Account Name", "type": "text" }
+  }
+},
+
+"accountHolderNameSection4": {
+  "label": " NO.4: Account Holder Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Tax Form"]
+  },
+  "fields": {
+    "accountHolderName": { "label": "Account Holder Name", "type": "text" }
+  }
+},
+
+"accountHolderIdSection4": {
+  "label": " NO.4: Account Holder ID",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Tax Form"]
+  },
+  "fields": {
+    "accountHolderId": { "label": "Account Holder ID", "type": "text" }
+  }
+},
+
+"accountReferenceNumberSection4": {
+  "label": " NO.4: Account Reference Number",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Tax Form"]
+  },
+  "fields": {
+    "accountReferenceNumber": { "label": "Account Reference Number", "type": "text" }
+  }
+},
+     "accountNameSection4": {
+  "label": " NO.4: Account Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Tax Form"]
+  },
+  "fields": {
+    "accountName": { "label": "Account Name", "type": "text" }
+  }
+},
+
+"accountHolderNameSection5": {
+  "label": " NO.5: Account Holder Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Cancel Capital Offer"]
+  },
+  "fields": {
+    "accountHolderName": { "label": "Account Holder Name", "type": "text" }
+  }
+},
+
+"accountHolderIdSection5": {
+  "label": " NO.5: Account Holder ID",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Cancel Capital Offer"]
+  },
+  "fields": {
+    "accountHolderId": { "label": "Account Holder ID", "type": "text" }
+  }
+},
+
+"accountReferenceNumberSection5": {
+  "label": " NO.5: Account Reference Number",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Cancel Capital Offer"]
+  },
+  "fields": {
+    "accountReferenceNumber": { "label": "Account Reference Number", "type": "text" }
+  }
+},
+     "accountNameSection5": {
+  "label": " NO.5: Account Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Cancel Capital Offer"]
+  },
+  "fields": {
+    "accountName": { "label": "Account Name", "type": "text" }
+  }
+},
+
+"accountHolderNameSection6": {
+  "label": " NO.6: Account Holder Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Other"]
+  },
+  "fields": {
+    "accountHolderName": { "label": "Account Holder Name", "type": "text" }
+  }
+},
+
+"accountHolderIdSection6": {
+  "label": " NO.6: Account Holder ID",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Other"]
+  },
+  "fields": {
+    "accountHolderId": { "label": "Account Holder ID", "type": "text" }
+  }
+},
+
+"accountReferenceNumberSection6": {
+  "label": " NO.6: Account Reference Number",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Other"]
+  },
+  "fields": {
+    "accountReferenceNumber": { "label": "Account Reference Number", "type": "text" }
+  }
+},
+     "accountNameSection6": {
+  "label": " NO.6: Account Name",
+  "type": "section",
+  "collapsible": true,
+  "collapsed": true,
+  "visibleWhen": {
+    "Adyen Ticket Type": ["Other"]
+  },
+  "fields": {
+    "accountName": { "label": "Account Name", "type": "text" }
+  }
+},
+
+
+
+
+
+        "volumeAdjustment": {
+          "label": "Volume Adjustment",
+          "type": "dropdown",
+          "options": ["Increase", "Decrease"],
+          "visibleWhen": {
+            "Adyen Ticket Type": "Volume Adjustment"
+          }
+        },
+
+        "missingFunds": {
+          "label": "Missing Funds",
+          "type": "multi-entry",
+          "maxEntries": 30,
+          "visibleWhen": {
+            "Adyen Ticket Type": "Missing Funds"
+          },
+          "fields": {
+            "currency": {
+              "label": "Currency",
+              "type": "dropdown",
+              "options": ["$", "£"]
+            },
+            "amount": {
+              "label": "Amount",
+              "type": "number"
+            },
+            "pspReference": {
+              "label": "PSP Reference Number",
+              "type": "text"
+            }
+          }
+        },
+
+        "devicesNotOnPlatform": {
+          "label": "Devices Not on Platform",
+          "type": "multi-entry",
+          "maxEntries": 30,
+          "visibleWhen": {
+            "Adyen Ticket Type": "ENP Not on Platform"
+          },
+          "fields": {
+            "deviceType": {
+              "label": "Device Type",
+              "type": "dropdown",
+              "options": ["Saturn", "P400", "Air"]
+            },
+            "serialNumber": {
+              "label": "Serial Number",
+              "type": "number"
+            }
+          }
+        },
+
+        "other": {
+          "label": "Other",
+          "type": "text",
+          "visibleWhen": {
+            "Adyen Ticket Type": "Other"
+          }
+        },
+ 
+
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "logic": {
+       "adyenTicketType": []
+      }
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+  {
+  "id": "payments.endYrTax",
+  "title": "End of Year Tax",
+  "category": "Payments",
+  "subcategory": "End YR Tax",
+  "tsId": "ts.endYrTax",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["End of the Yr Tax"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+
+ {
+  "id": "payments.kycInquiry",
+  "title": "KYC Inquiry",
+  "category": "Payments",
+  "subcategory": "KYC Inquiry",
+  "tsId": "ts.kycInquiry",
+  "dynamicId": "payments.kycInquiry",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Setup KYC", "Broken KYC", "Redacted"]
+        },
+                       "setupKycSection": {
+          "label": "NO.1: Setup KYC",
+          "type": "section",
+          "collapsible": true,
+          "collapsed": true,
+          "visibleWhen": {
+            "What": "Setup KYC"
+          },
+          "fields": {
+            "setupAgentName": {
+              "label": "Agent Name",
+              "type": "text"
+            },
+            "setupAgentEmail": {
+              "label": "Agent Email",
+              "type": "text"
+            }
+          }
+        },
+
+        "brokenKycSection": {
+          "label": "NO.2: Broken KYC",
+          "type": "section",
+          "collapsible": true,
+          "collapsed": true,
+          "visibleWhen": {
+            "What": "Broken KYC"
+          },
+          "fields": {
+            "brokenAgentName": {
+              "label": "Agent Name",
+              "type": "text"
+            },
+            "brokenAgentEmail": {
+              "label": "Agent Email",
+              "type": "text"
+            }
+          }
+        },
+
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "KYC Transfer", "Call Back Request"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "logic": {
+        "what": []
+      }
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+ {
+  "id": "payments.enpPinCode",
+  "title": "ENP (EposNow) PinCode",
+  "category": "Payments",
+  "subcategory": "ENP (EposNow) PinCode",
+  "tsId": "ts.enpPinCode",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Pin code"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.pmTeam",
+  "title": "PM Team",
+  "category": "Payments",
+  "subcategory": "PM Team",
+  "tsId": "ts.pmTeam",
+"emailId":"payments.pmTeam",
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Redacted"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.moneyTribe",
+  "title": "Money Tribe",
+  "category": "Payments",
+  "subcategory": "Money Tribe",
+  "tsId": "ts.moneyTribe",
+  "dynamicId": "payments.moneyTribe",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Funds won't transfer", "Cutoff Time Change"]
+        },
+
+        "dateSection": {
+          "label": "NO.1: Date of Transfer",
+          "type": "section",
+          "collapsible": true,
+          "collapsed": true,
+          "visibleWhen": {
+            "What": ["Funds won't transfer"]
+          },
+          "fields": {
+            "dateCalendar": {
+              "label": "No.1: Date (Calendar)",
+              "type": "calendar"
+            }
+          }
+        },
+        "dateSection1": {
+          "label": "NO.2: Cutoff Time Change",
+          "type": "section",
+          "collapsible": true,
+          "collapsed": true,
+          "visibleWhen": {
+            "What": ["Cutoff Time Change"]
+          },
+          "fields": {
+            "dateCalendar": {
+              "label": "No.2: Date (Calendar)",
+              "type": "calendar"
+            }
+          }
+        },
+
+
+
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "logic": {
+        "what": []
+      }
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+
+{
+  "id": "payments.myBusinessBankAppInquiry",
+  "title": "My Business Bank App Inquiry",
+  "category": "Payments",
+  "subcategory": "My Business Bank App Inquiry",
+  "tsId": "ts.myBusinessBankAppInquiry",
+"emailId": "payments.myBusinessBankAppInquiry",
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["My Business App"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.capitalLoanInquiry",
+  "title": "Capital Loan Inquiry",
+  "category": "Payments",
+  "subcategory": "Capital Loan Inquiry",
+  "tsId": "ts.capitalLoanInquiry",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Capital Loan"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.tipError",
+  "title": "Tip Error",
+  "category": "Payments",
+  "subcategory": "Tip Error",
+  "tsId": "ts.tipError",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Tips"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+
+
+  {
+  "id": "payments.standalone",
+  "title": "Standalone",
+  "category": "Payments",
+  "subcategory": "Standalone",
+  "tsId": "ts.standalone",
+  "emailId": "payments.standalone",
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Standalone"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.payoutsInquiry",
+  "title": "Payouts (EposNow) Inquiry",
+  "category": "Payments",
+  "subcategory": "Payouts (EposNow) Inquiry",
+  "tsId": "ts.payoutsInquiry",
+"emailId": "payments.payoutsInquiry",
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Payouts Inquiry"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.bankConfirmation",
+  "title": "Bank Confirmation",
+  "category": "Payments",
+  "subcategory": "Bank Confirmation",
+  "tsId": "ts.bankConfirmation",
+  "emailId": "payments.bankConfirmation",
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Bank Confirmation Letter","Return Bank Confirmation Letter"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Cancel", "KYC Transfer","Contact Bank"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.enpSubscription",
+  "title": "EposNow Payments Sub",
+  "category": "Payments",
+  "subcategory": "EposNow Payments Sub",
+  "tsId": "ts.enpSubscription",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "subscriptionIssue": {
+          "label": "Subscription Error (ENP)",
+          "type": "dropdown",
+          "options": ["N/A", "RAISE RT", "RESYNC SUBSCRIPTION","RAISE JIRE TICKET"]
+         
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A","Raise Rention", "Resync Sub", "JIRE Ticket"]
+        },
+
+        "raiseRt": {
+          "label": "RT Ticket Number",
+          "type": "text",
+          "visibleWhen": {
+            "Subscription Error (ENP)": "RAISE RT"
+          }
+        },
+        "raiseJire": {
+          "label": "JIRE Ticket Number",
+          "type": "text",
+          "visibleWhen": {
+            "Subscription Error (ENP)": "RAISE JIRE TICKET"
+          }
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.enpUnresponsive",
+  "title": "ENP Unresponsive/COG",
+  "category": "Payments",
+  "subcategory": "ENP Unresponsive/COG",
+  "tsId": "ts.enpUnresponsive",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Touchscreen Unresponsive", "NFC Not Working(TAP)", "Swipe Not Working", "Incert not working", "10019 Tamper Error","Battery Unresponsive", "Network Error","Charger Cable","COG"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "COG"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "payments.enpIntegration",
+  "title": "ENP (EposNow) Integration",
+  "category": "Payments",
+  "subcategory": "ENP (EposNow) Integration",
+  "tsId": "ts.enpIntegration",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Air (AMS1) Integration", "Saturn (S2F1) Integration", "P400 (V400) Integration"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+ {
+  "id": "payments.pdqIntegration",
+  "title": "PDQ (Third Party) Integration",
+  "category": "Payments",
+  "subcategory": "PDQ (Third Party) Integration",
+  "tsId": "ts.pdqIntegration",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "keywordSelected": {
+          "label": "Keyword Selected",
+          "type": "dropdown",
+          "options": [
+            "Pax",
+            "Lloyds (Cardnet/Castle)",
+            "Dejavoo",
+            "Global Payments (CAD)",
+            "Global Payments (Ingenico)",
+            "Teya",
+            "Take Payments",
+            "NZ EFTPOS",
+            "Worldpay"
+          ]
+        },
+        "what": {
+          "label": "WHAT",
+          "type": "text"
+          
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+"logic": {
+      "keywordSelected": {
+                  "Pax": {
+                    "what": "Pax — has been added to case notes.",
+                    "mapTo": "Pax"
+                  },
+                  "Lloyds (Cardnet/Castle)": {
+                    "what": "Lloyds (Cardnet/Castle) — has been added to case notes.",
+                    "mapTo": "Lloyds (Cardnet/Castle)"
+                  },
+                  "Dejavoo": {
+                    "what": "Dejavoo — has been added to case notes.",
+                    "mapTo": "Dejavoo"
+                  },
+                  "Global Payments (CAD)": {
+                    "what": "Global Payments (CAD) — has been added to case notes.",
+                    "mapTo": "Global Payments (CAD)"
+                  },
+                  "Global Payments (Ingenico)": {
+                    "what": "Global Payments (Ingenico) — has been added to case notes.",
+                    "mapTo": "Global Payments (Ingenico)"
+                  },
+                  "Teya": {
+                    "what": "Teya — has been added to case notes.",
+                    "mapTo": "Teya"
+                  },
+                  "Take Payments": {
+                    "what": "Take Payments — has been added to case notes.",
+                    "mapTo": "Take Payments"
+                  },
+                  "NZ EFTPOS": {
+                    "what": "NZ EFTPOS — has been added to case notes.",
+                    "mapTo": "NZ EFTPOS"
+                  },
+                  "Worldpay": {
+                    "what": "Worldpay — has been added to case notes.",
+                    "mapTo": "Worldpay"
+                  }
+                }
+}
+
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+
+{
+  "id": "pos.tillAppLoadingError",
+  "title": "Till App Loading Error",
+  "category": "POS System",
+  "subcategory": "Till App Loading Error",
+  "tsId": "ts.tillAppLoadingError",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+        
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+        "deviceType": {
+          "label": "Device Type",
+          "type": "dropdown",
+          "options": ["Windows", "Tablet", "Mac", "POS System (Till)", "Saturn (ENP)"]
+        },
+
+        "issueType": {
+          "label": "Issue Type",
+          "type": "dropdown",
+          "options": [
+            "App Not Loading",
+            "App Crashing",
+            "App Frozen",
+            "Update Required",
+            "Network Issue",
+            "Other"
+          ]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "pos.eod",
+  "title": "EOD",
+  "category": "POS System",
+  "subcategory": "EOD",
+  "tsId": "ts.eod",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["EOD Issue"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "pos.setupTill",
+  "title": "Setup Till (POS System)",
+  "category": "POS System",
+  "subcategory": "Setup Till (POS System)",
+  "tsId": "ts.setupTill",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Hardware Setup", "Network Error", "Other"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "pos.stuckTable",
+  "title": "Stuck Table",
+  "category": "POS System",
+  "subcategory": "Stuck Table",
+  "tsId": "ts.stuckTable",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Stuck Table"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "pos.tillRefund",
+  "title": "Till Refund",
+  "category": "POS System",
+  "subcategory": "Till Refund",
+  "tsId": "ts.tillRefund",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Refund"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+  "id": "pos.printerError",
+  "title": "Printer Error / Setup / Order Utilities",
+  "category": "POS System",
+  "subcategory": "Printer Error / Setup / Order Utilities",
+  "tsId": "ts.printerError",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+  "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+        "keywordSelected": {
+          "label": "Keyword Selected",
+          "type": "dropdown",
+          "options": [
+            "Order Utilities",
+            "Hardware Connections",
+            "Ethernet Setup & Test Print",
+            "Supported Printers (Bixolon & Star Setup/ Usage)",
+            "Unsupported Printers",
+            "Receipt Printer Setup (Android/POS/Saturn)",
+            "Order Printer Setup (Android/POS/Saturn)",
+            "Windows Printer Setup (USB/Ethernet)"
+          ]
+        },
+
+        "what": {
+          "label": "WHAT",
+          "type": "text"
+        },
+
+        "printerType": {
+          "label": "Printer Type",
+          "type": "dropdown",
+          "options": [
+            "POS80GX",
+            "Bixolon 220DX",
+            "Star Printer",
+            "Epson",
+            "Bixolon Label Printer",
+            "Built‑In Printer",
+            "Other"
+          ]
+        },
+
+        "connectionType": {
+          "label": "Connection Type",
+          "type": "dropdown",
+          "options": ["Ethernet", "USB", "Bluetooth", "WiFi", "Unknown"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "logic": {
+        "keywordSelected": {
+          "Order Utilities": {
+            "what": "Order Utilities — has been added to case notes.",
+            "mapTo": "Order Utilities"
+          },
+          "Hardware Connections": {
+            "what": "Hardware Connections — has been added to case notes.",
+            "mapTo": "Hardware Connections"
+          },
+          "Ethernet Setup & Test Print": {
+            "what": "Ethernet Setup & Test Print — has been added to case notes.",
+            "mapTo": "Ethernet Setup & Test Print"
+          },
+          "Supported Printers (Bixolon & Star Setup/ Usage)": {
+            "what": "Supported Printers (Bixolon & Star Setup/ Usage) — has been added to case notes.",
+            "mapTo": "Supported Printers (Bixolon & Star Setup/ Usage)"
+          },
+          "Unsupported Printers": {
+            "what": "Unsupported Printers — has been added to case notes.",
+            "mapTo": "Unsupported Printers"
+          },
+          "Receipt Printer Setup (Android/POS/Saturn)": {
+            "what": "Receipt Printer Setup (Android/POS/Saturn) — has been added to case notes.",
+            "mapTo": "Receipt Printer Setup (Android/POS/Saturn)"
+          },
+          "Order Printer Setup (Android/POS/Saturn)": {
+            "what": "Order Printer Setup (Android/POS/Saturn) — has been added to case notes.",
+            "mapTo": "Order Printer Setup (Android/POS/Saturn)"
+          },
+          "Windows Printer Setup (USB/Ethernet)": {
+            "what": "Windows Printer Setup (USB/Ethernet) — has been added to case notes.",
+            "mapTo": "Windows Printer Setup (USB/Ethernet)"
+          }
+        }
+      }
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+
+ {
+  
+    "id": "pos.cashDrawerError",
+    "title": "CashDrawer Error",
+    "category": "POS System",
+    "subcategory": "CashDrawer Error",
+    "tsId": "ts.cashDrawerError",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Cash Drawer Unresponsive"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  }
+  },
+ {
+    "id": "pos.scannerError",
+    "title": "Scanner",
+    "category": "POS System",
+    "subcategory": "Scanner",
+    "tsId": "ts.scannerError",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Scanner not scanning", "Scanner Unresponsive", "Scanner Volume Adjustment", "Scanner Beep Error"," Bluetooth Scanner Connectivity"," Scanner Setup","Reset Scanner"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+  
+    "troubleshootingNotes": ""
+  
+  },
+  {
+    "id": "pos.taxBreakdown",
+    "title": "Tax Break Down",
+    "category": "POS System",
+    "subcategory": "Tax Break Down",
+    "tsId": "ts.taxBreakdown",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Tax Breakdown Issue"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+  
+    "troubleshootingNotes": ""
+  
+  },
+
+{
+  "id": "pos.basketError",
+  "title": "Basket Error",
+  "category": "POS System",
+  "subcategory": "Basket Error",
+  "tsId": "ts.basketError",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+  "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+        "keywordSelected": {
+          "label": "Keyword Selected",
+          "type": "dropdown",
+          "options": ["Windows", "Tablet", "POS System (Till)", "Saturn (ENP)"]
+        },
+
+        "what": {
+          "label": "WHAT",
+          "type": "text"
+        },
+
+        "actionTaken": {
+          "label": "Action Taken",
+          "type": "dropdown",
+          "options": [
+            "Cleared Temp Files",
+            "Reinstalled Till App",
+            "Cleared App Data",
+            "Updated Software",
+            "Unassigned License",
+            "Network Reset",
+            "Other"
+          ]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested.", "Y, Interested."]
+        }
+      },
+
+      "logic": {
+        "keywordSelected": {
+          "Windows": {
+            "what": "Windows — has been added to case notes.",
+            "mapTo": "Windows"
+          },
+          "Tablet": {
+            "what": "Tablet — has been added to case notes.",
+            "mapTo": "Tablet"
+          },
+          "POS System (Till)": {
+            "what": "POS System (Till) — has been added to case notes.",
+            "mapTo": "POS System (Till)"
+          },
+          "Saturn (ENP)": {
+            "what": "Saturn (ENP) — has been added to case notes.",
+            "mapTo": "Saturn (ENP)"
+          }
+        }
+      }
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+{
+    "id": "pos.tenderTypeError",
+    "title": "Tender Type Error",
+    "category": "POS System",
+    "subcategory": "Tender Type Error",
+    "tsId": "ts.tenderTypeError",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Tender Type Error"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+ {
+    "id": "pos.staffLoginError",
+    "title": "Staff Login / Staff Roles Error",
+    "category": "POS System",
+    "subcategory": "Staff Login / Staff Roles Error",
+    "tsId": "ts.staffLoginError",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Staff Login Issue", "Staff Role Issue"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+   {
+    "id": "pos.unassignLicense",
+    "title": "Unassign License",
+    "category": "POS System",
+    "subcategory": "Unassign License",
+    "tsId": "ts.unassignLicense",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Unassigned License"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+   {
+    "id": "pos.outOfStock",
+    "title": "Out of Stock Error",
+    "category": "POS System",
+    "subcategory": "Out of Stock Error",
+    "tsId": "ts.outOfStock",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Product Marked Out of Stock"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+  {
+    "id": "pos.scalesSetup",
+    "title": "Scales Setup",
+    "category": "POS System",
+    "subcategory": "Scales Setup",
+    "tsId": "ts.scalesSetup",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Scale Setup", "Scale Error"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested.", "Y, Interested."]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+   {
+    "id": "pos.kdsSetup",
+    "title": "KDS Setup / Error",
+    "category": "POS System",
+    "subcategory": "KDS Setup / Error",
+    "tsId": "ts.kdsSetup",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["KDS Setup Issue", "KDS Error"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  
+},
+  {
+  
+    "id": "backOffice.stock",
+    "title": "Stock",
+    "category": "Back Office",
+    "subcategory": "Stock",
+    "tsId": "ts.stock",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+          "stockAction": {
+            "label": "Stock Action",
+            "type": "dropdown",
+            "options": [
+              "Add Stock",
+              "Update Stock",
+              "Stock Order",
+              "Track Stock",
+              "Stock Alert Setup",
+              "Bulk Import"
+            ]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+   {
+    "id": "backOffice.products",
+    "title": "Products / Categories",
+    "category": "Back Office",
+    "subcategory": "Products / Categories",
+    "tsId": "ts.products",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["How to make a multiple choice product group", "How to add a product", "How to edit a product", "How to archive a product", "How to recover an archived product", "How to recover deleted products", "How to set up a master product", "How to add weight to a product", "How to make a category", "How to hide a product/category", "How to add courses to category","General product/ category inquiry"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+ {
+    "id": "backOffice.reporting",
+    "title": "Reporting",
+    "category": "Back Office",
+    "subcategory": "Reporting",
+    "tsId": "ts.reporting",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+          "reportingInquiry": {
+            "label": "Reporting Inquiry",
+            "type": "dropdown",
+            "options": [
+              "Sales Report",
+              "Classic Report",
+              "Stock Report",
+              "Auditing Report",
+              "Account Report",
+              "Dashboard Report",
+              "Customer Report",
+              "Email Scheduling Report",
+              "General Reporting Inquiry"
+
+            ]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+  {
+    "id": "backOffice.loginIssue",
+    "title": "Login Issue",
+    "category": "Back Office",
+    "subcategory": "Login Issue",
+    "tsId": "ts.loginIssue",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+            "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "Login Issue",
+            "type": "dropdown",
+            "options": [
+              "Forgot Password",
+              "New Customer Activation",
+              "General Login Issue"
+            ]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+  {
+    "id": "backOffice.mfaDisable",
+    "title": "MFA Disable",
+    "category": "Back Office",
+    "subcategory": "MFA Disable",
+    "tsId": "ts.mfaDisable",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+          "mfaDisable": {
+            "label": "MFA Disable",
+            "type": "dropdown",
+            "options": [
+              "Sent AI EDPA Code",
+              "Tier 2 Escalation",
+              "General MFA Inquiry"
+            ]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+ {
+  "id": "retentionRecord.rt",
+  "title": "Retention Record RT",
+  "category": "Retention Record",
+  "subcategory": "RT",
+  "tsId": "ts.retentionRecordRt",
+
+  "caseNotes": {
+      "Case Details": {
+        "fields": []
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+   {
+    "id": "compliant.compliant",
+    "title": "Compliant",
+    "category": "Compliant",
+    "subcategory": "Compliant",
+    "tsId": "ts.compliant",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Billing", "Services", "Mis-Sold"]
+          },
+          "billingComplaint": {
+          "label": "Billing Complaint Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "Billing"
+          }
+        },
+          "servicesComplaint": {
+          "label": "Services Complaint Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "Services"
+          }
+        },
+          "misSoldComplaint": {
+          "label": "Mis-Sold Complaint Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "Mis-Sold"
+          }
+        },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation","CMP","Manager Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+  
+   {
+    "id": "junkCall.jc",
+    "title": "Junk Call",
+    "category": "Junk Call",
+    "subcategory": "Junk Call",
+    "tsId": "ts.jc",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+            "who": {
+            "label": "Who",
+            "type": "dropdown",
+            "options": ["Unknown Caller", "Static Call"]
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["N/A"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Failed DPA", "US Location Pricing Campaign", "RT US Bing Brand", "EvoPayments inbound tracking","Black Banner (Suspended Account)","Canceled Account","Stactic Call","Butt Dial"]
+          },
+          "failedDPA": {
+          "label": "Failed DPA Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "Failed DPA"
+          }
+        },
+          "usLocationPricingCampaign": {
+          "label": "US Location Pricing Campaign Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "US Location Pricing Campaign"
+          }
+        },
+          "rtUSBingBrand": {
+          "label": "RT US Bing Brand Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "RT US Bing Brand"
+          }
+        },
+          "evoPaymentsInboundTracking": {
+          "label": "EvoPayments Inbound Tracking Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "EvoPayments inbound tracking"
+          }
+        },
+          "blackBannerSuspendedAccount": {
+          "label": "Black Banner (Suspended Account) Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "Black Banner (Suspended Account)"
+          }
+        },
+          "cancelAccount": {
+          "label": "Canceled Account Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "Canceled Account"
+          }
+        },
+         "stacticCall": {
+          "label": "Static Call Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "Static Call"
+          }
+        },
+          "buttDial": {
+          "label": "Butt Dial Details",
+          "type": "text",
+          "visibleWhen": {
+            "What": "Butt Dial"
+          }
+        },
+
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["JC"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["JC"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["JC"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N/A"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+  {
+    "id": "bookSession.bookSession",
+    "title": "Book Session",
+    "category": "Book Session",
+    "subcategory": "Book Session",
+    "tsId": "ts.bookSession",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Booked a Session", "Cancel a Session", "Reschedule a Session"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+  {
+  "id": "billing.billing",
+  "title": "Billing",
+  "category": "Billing",
+  "subcategory": "Billing",
+  "tsId": "ts.billing",
+  "dynamicId": "billing.billing",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Pay Billing", "Refusal to Pay", "Temporary Access"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "logic": {
+        "what": []
+      }
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+
+   {
+    "id": "callBackRequest.cbr",
+    "title": "Call Back Request",
+    "category": "Call Back Request",
+    "subcategory": "CBR",
+    "tsId": "ts.cbr",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": {
+            "label": "Who",
+            "type": "text"
+          },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Call Back Request"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  
+},
+
+  {
+   
+    "id": "sale.hardwarePurchase",
+    "title": "Hardware Purchase",
+    "category": "Sale",
+    "subcategory": "Hardware Purchase",
+    "tsId": "ts.hardwarePurchase",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Hardware Purchase"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "CMP", "Manager Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+ {
+    "id": "sale.appPurchase",
+    "title": "App Purchase",
+    "category": "Sale",
+    "subcategory": "App Purchase",
+    "tsId": "ts.appPurchase",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["App Purchase"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options":  ["N/A", "CMP", "Manager Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+  {
+    "id": "sale.capitalLoanOffer",
+    "title": "Capital Loan Offer",
+    "category": "Sale",
+    "subcategory": "Capital Loan Offer",
+    "tsId": "ts.capitalLoanOffer",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Sign Up for Capital"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Accept", "Decline","Active Offer"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+{
+  "id": "sale.additionalDeviceLocation",
+  "title": "Additional Device & Location",
+  "category": "Sale",
+  "subcategory": "Additional Device & Location",
+  "tsId": "ts.additionalDeviceLocation",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+        "who": { "label": "Who", "type": "text" },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "keywordSelected": {
+          "label": "Keyword Selected",
+          "type": "dropdown",
+          "options": [
+            "GBP Pricing",
+            "USD Pricing",
+            "CAD Pricing",
+            "EUR Pricing",
+            "AUD Pricing",
+            "NZD Pricing",
+            "MXN Pricing"
+          ]
+        },
+
+        "what": {
+          "label": "WHAT",
+          "type": "text"
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "CMP", "Manager Escalation", "Acknowledge Update"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "logic": {
+        "keywordSelected": {
+          "GBP Pricing": {
+            "what": "GBP Pricing — added to case notes.",
+            "mapTo": "GBP Pricing"
+          },
+          "USD Pricing": {
+            "what": "USD Pricing — added to case notes.",
+            "mapTo": "USD Pricing"
+          },
+          "CAD Pricing": {
+            "what": "CAD Pricing — added to case notes.",
+            "mapTo": "CAD Pricing"
+          },
+          "EUR Pricing": {
+            "what": "EUR Pricing — added to case notes.",
+            "mapTo": "EUR Pricing"
+          },
+          "AUD Pricing": {
+            "what": "AUD Pricing — added to case notes.",
+            "mapTo": "AUD Pricing"
+          },
+          "NZD Pricing": {
+            "what": "NZD Pricing — added to case notes.",
+            "mapTo": "NZD Pricing"
+          },
+          "MXN Pricing": {
+            "what": "MXN Pricing — added to case notes.",
+            "mapTo": "MXN Pricing"
+          }
+        }
+      }
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+
+
+
+{
+  "id": "feedbackReview.nps",
+  "title": "Feedback Review (NPS)",
+  "category": "Feedback Review",
+  "subcategory": "FeedBack (NPS)",
+  "tsId": "ts.nps",
+  "dynamicId": "feedbackReview.nps",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+        
+          "leavereview": {
+            "label": "Review",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+       "caseNumber": {
+          "label": "Case Number",
+          "type": "text",
+          "visibleWhen": {
+            "Review": "Y"
+          }
+        }
+        
+      },
+
+      "logic": {
+        "leavereview": []
+      }
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+ {
+    "id": "backOffice.appIntegration",
+    "title": "App Integration",
+    "category": "Back Office",
+    "subcategory": "App Integration",
+    "tsId": "ts.appIntegration",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "app": {
+            "label": "App",
+            "type": "dropdown",
+            "options": ["Xero", "Woocommerce", "API", "Otter", "Factor4", "Shopify", "Other"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+  {
+    "id": "serverOutage.serverOutage",
+    "title": "Server Outage",
+    "category": "Server Outage",
+    "subcategory": "Server Outage",
+    "tsId": "ts.serverOutage",
+"emailId": "serverOutage.serverOutage",
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": { "label": "Server Outage TDA", "type": "dropdown", "options": ["EPOS NOW FRONT TILL", "EPOS NOW HQ BACK OFFICE", "SUPPORT CENTRE","EPOS NOW PAYMENTS","APP STORE","ADYEN SERVER DOWN"] }
+
+        
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+  {
+    "id": "swapItEmail.swapItEmail",
+    "title": "Swap It Email",
+    "category": "Swap It Email",
+    "subcategory": "Swap It Email",
+    "tsId": "ts.swapItEmail",
+"emailId": "swapItEmail.swapItEmail",
+    "caseNotes": {
+      "Case Details": {
+        "fields": []
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+    {
+    "id": "contactPoints.contactPoints",
+    "title": "Slack / Support Line",
+    "category": "Contact Points",
+    "subcategory": "Contact Points",
+    "tsId": "ts.contactPoints",
+    "caseNotes": {
+      "Case Details": {
+        "fields": []
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+{
+  "id": "payments.manualRefund",
+  "title": "Manual Refund",
+  "category": "Payments",
+  "subcategory": "Manual Refund",
+  "tsId": "ts.manualRefund",
+  "dynamicId": "payments.manualRefund",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+          "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+        "manualRefund": {
+          "label": "Manual Refund",
+          "type": "dropdown",
+          "options": ["Manual Refund", "N/A"]
+        },
+
+        "ManualRefund": {
+          "label": "Manual Refund Currency",
+          "type": "multi-entry",
+          "maxEntries": 30,
+          "visibleWhen": {
+            "Manual Refund": "Manual Refund"
+          },
+          "fields": {
+            "currency": {
+              "label": "Currency",
+              "type": "dropdown",
+              "options": ["$", "£"]
+            },
+            "amount": {
+              "label": "Amount",
+              "type": "number"
+            },
+            "pspReference": {
+              "label": "PSP Reference Number",
+              "type": "text"
+            }
+          }
+        },
+
+        "Date (Calendar)": {
+          "label": "Date (Calendar)",
+          "type": "calendar",
+          "visibleWhen": {
+            "Manual Refund": "Manual Refund"
+          }
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "logic": {
+        "manualRefund": []
+      }
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+
+ {
+    "id": "pos.autoClose",
+    "title": "Auto Close",
+    "category": "POS System",
+    "subcategory": "Auto Close",
+    "tsId": "ts.autoClose",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["Auto Close"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested.", "Y, Interested."]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  }
+
+
+]

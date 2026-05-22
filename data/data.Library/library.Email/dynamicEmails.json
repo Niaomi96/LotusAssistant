@@ -1,0 +1,77 @@
+[
+{
+  "dynamicId": "payments.manualRefund",
+  "enabled": true,
+  "triggerField": "Manual Refund",
+
+  "fields": [
+    "Manual Refund",             
+    "Manual Refund Currency",     
+    "Date (Calendar)"             
+  ]
+},
+
+
+  {
+    "dynamicId": "payments.adyenInquiry",
+    "enabled": true,
+    "triggerField": "Adyen Ticket Type",
+    "fields": [
+  
+      "Adyen Ticket Type",
+      "Volume Adjustment",
+      "Missing Funds",
+      "Devices Not on Platform",
+      "Other",
+      "Account Name",
+      "Account Holder Name",
+      "Account Holder ID",
+      "Account Reference Number"
+    ]
+  },
+
+  {
+    "dynamicId": "payments.kycInquiry",
+    "enabled": true,
+    "triggerField": "What",
+    "fields": [
+      "What",
+      "Agent Name",
+      "Agent Email"
+    ]
+  },
+
+  {
+    "dynamicId": "payments.moneyTribe",
+    "enabled": true,
+    "triggerField": "What",
+    "fields": [
+      "What",
+      "No.1: Date (Calendar)",
+      "No.2: Date (Calendar)"
+    ]
+  },
+
+  {
+    "dynamicId": "billing.billing",
+    "enabled": true,
+    "triggerField": "What",
+    "fields": [
+      "Who",
+      "What"
+    ]
+  },
+
+  {
+  "dynamicId": "feedbackReview.nps",
+  "enabled": true,
+
+  "triggerField": "Review",
+
+  "fields": [
+    "Review",
+    "Case Number"
+  ]
+}
+
+]

@@ -1,0 +1,67 @@
+[
+  { "id": "payments.enpIntegration", "tsId": "ts.enpIntegration", "mainCategory": "Payments", "subcategory": "ENP (EposNow) Integration", "troubleshootingSteps": [] },
+  { "id": "payments.pdqIntegration", "tsId": "ts.pdqIntegration", "mainCategory": "Payments", "subcategory": "PDQ (Third Party) Integration", "troubleshootingSteps": [] },
+  { "id": "payments.manualRefund", "tsId": "ts.manualRefund", "mainCategory": "Payments", "subcategory": "Manual Refund", "troubleshootingSteps": [] },
+  { "id": "payments.motoCnpSetupIncrease", "tsId": "ts.motoCnpSetupIncrease", "mainCategory": "Payments", "subcategory": "Moto (CNP) Setup / Increase", "troubleshootingSteps": [] },
+  { "id": "payments.pblSetupIncrease", "tsId": "ts.pblSetupIncrease", "mainCategory": "Payments", "subcategory": "PBL Setup / Increase", "troubleshootingSteps": [] },
+  { "id": "payments.adyenInquiry", "tsId": "ts.adyenInquiry", "mainCategory": "Payments", "subcategory": "Adyen Inquiry", "troubleshootingSteps": [] },
+  { "id": "payments.endYrTax", "tsId": "ts.endYrTax", "mainCategory": "Payments", "subcategory": "End YR Tax", "troubleshootingSteps": [] },
+  { "id": "payments.kycInquiry", "tsId": "ts.kycInquiry", "mainCategory": "Payments", "subcategory": "KYC Inquiry", "troubleshootingSteps": [] },
+  { "id": "payments.enpPinCode", "tsId": "ts.enpPinCode", "mainCategory": "Payments", "subcategory": "ENP (EposNow) PinCode", "troubleshootingSteps": [] },
+  { "id": "payments.pmTeam", "tsId": "ts.pmTeam", "mainCategory": "Payments", "subcategory": "PM Team", "troubleshootingSteps": [] },
+  { "id": "payments.moneyTribe", "tsId": "ts.moneyTribe", "mainCategory": "Payments", "subcategory": "Money Tribe", "troubleshootingSteps": [] },
+  { "id": "payments.myBusinessBankAppInquiry", "tsId": "ts.myBusinessBankAppInquiry", "mainCategory": "Payments", "subcategory": "My Business Bank App Inquiry", "troubleshootingSteps": [] },
+  { "id": "payments.capitalLoanInquiry", "tsId": "ts.capitalLoanInquiry", "mainCategory": "Payments", "subcategory": "Capital Loan Inquiry", "troubleshootingSteps": [] },
+  { "id": "payments.tipError", "tsId": "ts.tipError", "mainCategory": "Payments", "subcategory": "Tip Error", "troubleshootingSteps": [] },
+  { "id": "payments.standalone", "tsId": "ts.standalone", "mainCategory": "Payments", "subcategory": "Standalone", "troubleshootingSteps": [] },
+  { "id": "payments.bankConfirmation", "tsId": "ts.bankConfirmation", "mainCategory": "Payments", "subcategory": "Bank Confirmation", "troubleshootingSteps": [] },
+  { "id": "payments.enpSubscription", "tsId": "ts.enpSubscription", "mainCategory": "Payments", "subcategory": "EposNow Payments Sub", "troubleshootingSteps": [] },
+  { "id": "payments.enpUnresponsive", "tsId": "ts.enpUnresponsive", "mainCategory": "Payments", "subcategory": "ENP Unresponsive/COG", "troubleshootingSteps": [] },
+  { "id": "payments.payoutsInquiry", "tsId": "ts.payoutsInquiry", "mainCategory": "Payments", "subcategory": "Payouts (EposNow) Inquiry", "troubleshootingSteps": [] },
+
+  { "id": "pos.tillAppLoadingError", "tsId": "ts.tillAppLoadingError", "mainCategory": "POS System", "subcategory": "Till App Loading Error", "troubleshootingSteps": [] },
+  { "id": "pos.autoClose", "tsId": "ts.autoClose", "mainCategory": "POS System", "subcategory": "Auto Close", "troubleshootingSteps": [] },
+  { "id": "pos.eod", "tsId": "ts.eod", "mainCategory": "POS System", "subcategory": "EOD", "troubleshootingSteps": [] },
+  { "id": "pos.setupTill", "tsId": "ts.setupTill", "mainCategory": "POS System", "subcategory": "Setup Till (Pos System)", "troubleshootingSteps": [] },
+  { "id": "pos.stuckTable", "tsId": "ts.stuckTable", "mainCategory": "POS System", "subcategory": "Stuck Table", "troubleshootingSteps": [] },
+  { "id": "pos.tillRefund", "tsId": "ts.tillRefund", "mainCategory": "POS System", "subcategory": "Till Refund", "troubleshootingSteps": [] },
+  { "id": "pos.printerError", "tsId": "ts.printerError", "mainCategory": "POS System", "subcategory": "Printer Error / Setup / Order Utilities", "troubleshootingSteps": [] },
+  { "id": "pos.cashDrawerError", "tsId": "ts.cashDrawerError", "mainCategory": "POS System", "subcategory": "CashDrawer Error", "troubleshootingSteps": [] },
+  { "id": "pos.taxBreakdown", "tsId": "ts.taxBreakdown", "mainCategory": "POS System", "subcategory": "Tax Break Down", "troubleshootingSteps": [] },
+  { "id": "pos.basketError", "tsId": "ts.basketError", "mainCategory": "POS System", "subcategory": "Basket Error", "troubleshootingSteps": [] },
+  { "id": "pos.tenderTypeError", "tsId": "ts.tenderTypeError", "mainCategory": "POS System", "subcategory": "Tender Type Error", "troubleshootingSteps": [] },
+  { "id": "pos.staffLoginError", "tsId": "ts.staffLoginError", "mainCategory": "POS System", "subcategory": "Staff Login / Staff Roles Error", "troubleshootingSteps": [] },
+  { "id": "pos.unassignLicense", "tsId": "ts.unassignLicense", "mainCategory": "POS System", "subcategory": "Unassign License", "troubleshootingSteps": [] },
+  { "id": "pos.outOfStock", "tsId": "ts.outOfStock", "mainCategory": "POS System", "subcategory": "Out of Stock Error", "troubleshootingSteps": [] },
+  { "id": "pos.scalesSetup", "tsId": "ts.scalesSetup", "mainCategory": "POS System", "subcategory": "Scales Setup", "troubleshootingSteps": [] },
+  { "id": "pos.scannerError", "tsId": "ts.scannerError", "mainCategory": "POS System", "subcategory": "Scanner", "troubleshootingSteps": [] },
+
+  { "id": "backOffice.stock", "tsId": "ts.stock", "mainCategory": "Back Office", "subcategory": "Stock", "troubleshootingSteps": [] },
+  { "id": "backOffice.products", "tsId": "ts.products", "mainCategory": "Back Office", "subcategory": "Products / Categories", "troubleshootingSteps": [] },
+  { "id": "backOffice.reporting", "tsId": "ts.reporting", "mainCategory": "Back Office", "subcategory": "Reporting", "troubleshootingSteps": [] },
+  { "id": "backOffice.loginIssue", "tsId": "ts.loginIssue", "mainCategory": "Back Office", "subcategory": "Login Issue", "troubleshootingSteps": [] },
+  { "id": "backOffice.mfaDisable", "tsId": "ts.mfaDisable", "mainCategory": "Back Office", "subcategory": "MFA Disable", "troubleshootingSteps": [] },
+  { "id": "backOffice.appIntegration", "tsId": "ts.appIntegration", "mainCategory": "Back Office", "subcategory": "App Integration", "troubleshootingSteps": [] },
+
+  { "id": "retentionRecord.rt", "tsId": "ts.rt", "mainCategory": "Retention Record", "subcategory": "RT", "troubleshootingSteps": [] },
+  { "id": "junkCall.jc", "tsId": "ts.jc", "mainCategory": "Junk Call", "subcategory": "Junk Call", "troubleshootingSteps": [] },
+  { "id": "compliant.compliant", "tsId": "ts.compliant", "mainCategory": "Compliant", "subcategory": "Compliant", "troubleshootingSteps": [] },
+
+  { "id": "bookSession.bookSession", "tsId": "ts.bookSession", "mainCategory": "Book Session", "subcategory": "Book Session", "troubleshootingSteps": [] },
+  { "id": "contactPoints.contactPoints", "tsId": "ts.contactPoints", "mainCategory": "Contact Points", "subcategory": "Contact Points", "troubleshootingSteps": [] },
+  { "id": "billing.billing", "tsId": "ts.billing", "mainCategory": "Billing", "subcategory": "Billing", "troubleshootingSteps": [] },
+  
+
+  { "id": "callBackRequest.cbr", "tsId": "ts.cbr", "mainCategory": "Call Back Request", "subcategory": "CBR", "troubleshootingSteps": [] },
+
+  { "id": "sale.hardwarePurchase", "tsId": "ts.hardwarePurchase", "mainCategory": "Sale", "subcategory": "Hardware Purchase", "troubleshootingSteps": [] },
+  { "id": "sale.appPurchase", "tsId": "ts.appPurchase", "mainCategory": "Sale", "subcategory": "App Purchase", "troubleshootingSteps": [] },
+  { "id": "sale.capitalLoanOffer", "tsId": "ts.capitalLoanOffer", "mainCategory": "Sale", "subcategory": "Capital Loan Offer", "troubleshootingSteps": [] },
+  { "id": "sale.additionalDeviceLocation", "tsId": "ts.additionalDeviceLocation", "mainCategory": "Sale", "subcategory": "Additional Device & Location", "troubleshootingSteps": [] },
+
+  { "id": "feedbackReview.nps", "tsId": "ts.feedbackReviewNps", "mainCategory": "Feedback Review", "subcategory": "FeedBack (NPS)", "troubleshootingSteps": [] },
+
+  { "id": "swapItEmail.swapItEmail", "tsId": "ts.swapItEmail", "mainCategory": "Swap It Email", "subcategory": "Swap It Email", "troubleshootingSteps": [] },
+
+  { "id": "serverOutage.serverOutage", "tsId": "ts.serverOutage", "mainCategory": "Server Outage", "subcategory": "Server Outage", "troubleshootingSteps": [] }
+]

@@ -1,0 +1,125 @@
+{
+  "Payments": {
+    "description": "All payment-related issues, integrations, refunds, banking inquiries, and ENP/PDQ setup.",
+    "subcategories": [
+      { "name": "ENP (EposNow) Integration", "ref": "ENP (EposNow) Integration" },
+      { "name": "PDQ (Third Party) Integration", "ref": "PDQ (Third Party) Integration" },
+      { "name": "Manual Refund", "ref": "Manual Refund" },
+      { "name": "Moto (CNP) Setup/Increase", "ref": "Moto (CNP) Setup/Increase" },
+      { "name": "PBL Setup/Increase", "ref": "PBL Setup/Increase" },
+      { "name": "Adyen Inquiry", "ref": "Adyen Inquiry" },
+      { "name": "End YR Tax", "ref": "End YR Tax" },
+      { "name": "KYC Inquiry", "ref": "KYC Inquiry" },
+      { "name": "ENP (EposNow) PinCode", "ref": "ENP (EposNow) PinCode" },
+      { "name": "PM Team", "ref": "PM Team" },
+      { "name": "Money Tribe", "ref": "Money Tribe" },
+      { "name": "My Business Bank App Inquiry", "ref": "My Business Bank App Inquiry" },
+      { "name": "Capital Loan Inquiry", "ref": "Capital Loan Inquiry" },
+      { "name": "Tip Error", "ref": "Tip Error" },
+      { "name": "Standalone", "ref": "Standalone" },
+      { "name": "Bank Confirmation", "ref": "Bank Confirmation" },
+      { "name": "EposNow Payments Sub", "ref": "EposNow Payments Sub" },
+      { "name": "ENP Unresponsive/COG", "ref": "ENP Unresponsive/COG" }
+    ]
+  },
+
+  "POS System": {
+    "description": "Till app errors, printer issues, staff login problems, and all POS device troubleshooting.",
+    "subcategories": [
+      { "name": "Till App Loading Error", "ref": "Till App Loading Error" },
+      { "name": "Auto Close", "ref": "Auto Close" },
+      { "name": "EOD", "ref": "EOD" },
+      { "name": "Setup Till (POS System)", "ref": "Setup Till (POS System)" },
+      { "name": "Stuck Table", "ref": "Stuck Table" },
+      { "name": "Till Refund", "ref": "Till Refund" },
+      { "name": "Printer Error / Setup / Order Utilities", "ref": "Printer Error / Setup / Order Utilities" },
+      { "name": "CashDrawer Error", "ref": "CashDrawer Error" },
+      { "name": "Tax Break Down", "ref": "Tax Break Down" },
+      { "name": "Basket Error", "ref": "Basket Error" },
+      { "name": "Tender Type Error", "ref": "Tender Type Error" },
+      { "name": "Staff Login / Staff Roles Error", "ref": "Staff Login / Staff Roles Error" },
+      { "name": "Unassign License", "ref": "Unassign License" },
+      { "name": "Out of Stock Error", "ref": "Out of Stock Error" },
+      { "name": "Scales Setup", "ref": "Scales Setup" },
+      { "name": "KDS Setup / Error", "ref": "KDS Setup / Error" }
+    ]
+  },
+
+  "Back Office": {
+    "description": "Back Office issues including stock, products, reporting, login, MFA, and integrations.",
+    "subcategories": [
+      { "name": "Stock", "ref": "Stock" },
+      { "name": "Products", "ref": "Products" },
+      { "name": "Reporting", "ref": "Reporting" },
+      { "name": "Login Issue", "ref": "Login Issue" },
+      { "name": "MFA Disable", "ref": "MFA Disable" },
+      { "name": "App Integration", "ref": "App Integration" }
+    ]
+  },
+
+  "Retention Record": {
+    "description": "Retention record inquiries and RT-related requests.",
+    "subcategories": [
+      { "name": "RT", "ref": "RT" }
+    ]
+  },
+
+  "Compliant": {
+    "description": "Compliance-related questions and verification requests.",
+    "subcategories": [
+      { "name": "Compliant", "ref": "Compliant" }
+    ]
+  },
+
+  "Book Session": {
+    "description": "Requests to book onboarding, training, or support sessions.",
+    "subcategories": [
+      { "name": "Book Session", "ref": "Book Session" }
+    ]
+  },
+
+  "Billing": {
+    "description": "Billing inquiries including invoices, charges, and account balance questions.",
+    "subcategories": [
+      { "name": "Billing", "ref": "Billing" }
+    ]
+  },
+
+  "Call Back Request": {
+    "description": "Customer requests for a callback from support or sales.",
+    "subcategories": [
+      { "name": "CBR", "ref": "CBR" }
+    ]
+  },
+
+  "Sale": {
+    "description": "Sales inquiries including hardware, apps, capital loan offers, and additional devices.",
+    "subcategories": [
+      { "name": "Hardware Purchase", "ref": "Hardware Purchase" },
+      { "name": "App Purchase", "ref": "App Purchase" },
+      { "name": "Capital Loan Offer", "ref": "Capital Loan Offer" },
+      { "name": "Additional Device & Location", "ref": "Additional Device & Location" }
+    ]
+  },
+
+  "Feedback Review": {
+    "description": "Customer feedback, NPS reviews, and satisfaction scoring.",
+    "subcategories": [
+      { "name": "Feedback (NPS)", "ref": "Feedback (NPS)" }
+    ]
+  },
+
+  "Swap It Email": {
+    "description": "Swap It email requests and related communication.",
+    "subcategories": [
+      { "name": "Swap It Email", "ref": "Swap It Email" }
+    ]
+  },
+
+  "Server Outage": {
+    "description": "System-wide outages, downtime, and service disruption reports.",
+    "subcategories": [
+      { "name": "Server Outage", "ref": "Server Outage" }
+    ]
+  }
+}

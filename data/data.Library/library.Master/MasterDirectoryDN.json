@@ -1,0 +1,801 @@
+[{
+  "payments": {
+  "id": "payments",
+  "label": "Payments",
+  "subcategories": {
+
+    "payments.standalone": {
+      "id": "payments.standalone",
+      "label": "Standalone",
+      "schemaId": "payments.standalone",
+
+      "category": "Payments",
+      "subcategory": "Standalone",
+
+      "emailId": "payments.standalone",
+      "tsId": "ts.standalone"
+    },
+
+    "payments.bankConfirmation": {
+      "id": "payments.bankConfirmation",
+      "label": "Bank Confirmation",
+      "schemaId": "payments.bankConfirmation",
+
+      "category": "Payments",
+      "subcategory": "Bank Confirmation",
+
+      "emailId": "payments.bankConfirmation",
+      "tsId": "ts.bankConfirmation"
+    },
+
+    "payments.enpSubscription": {
+      "id": "payments.enpSubscription",
+      "label": "EposNow Payments Sub",
+      "schemaId": "payments.enpSubscription",
+
+      "category": "Payments",
+      "subcategory": "EposNow Payments Sub",
+
+      "emailId": null,
+      "tsId": "ts.enpSubscription"
+    },
+
+    "payments.enpUnresponsive": {
+      "id": "payments.enpUnresponsive",
+      "label": "ENP Unresponsive/COG",
+      "schemaId": "payments.enpUnresponsive",
+
+      "category": "Payments",
+      "subcategory": "ENP Unresponsive/COG",
+
+      "emailId": null,
+      "tsId": "ts.enpUnresponsive"
+    },
+
+    "payments.manualRefund": {
+      "id": "payments.manualRefund",
+      "label": "Manual Refund",
+      "schemaId": "payments.manualRefund",
+
+      "category": "Payments",
+      "subcategory": "Manual Refund",
+
+      "dynamicId": "payments.manualRefund",
+      "tsId": "ts.manualRefund"
+    },
+
+    "payments.pmTeam": {
+      "id": "payments.pmTeam",
+      "label": "PM Team",
+      "schemaId": "payments.pmTeam",
+
+      "category": "Payments",
+      "subcategory": "PM Team",
+
+      "emailId":"payments.pmTeam",
+      "tsId": "ts.pmTeam"
+    },
+
+    "payments.moneyTribe": {
+      "id": "payments.moneyTribe",
+      "label": "Money Tribe",
+      "schemaId": "payments.moneyTribe",
+
+      "category": "Payments",
+      "subcategory": "Money Tribe",
+
+      "dynamicId": "payments.moneyTribe",
+      "tsId": "ts.moneyTribe"
+    },
+
+    "payments.tipError": {
+      "id": "payments.tipError",
+      "label": "Tip Error",
+      "schemaId": "payments.tipError",
+
+      "category": "Payments",
+      "subcategory": "Tip Error",
+
+      "emailId": null,
+      "tsId": "ts.tipError"
+    },
+
+    "payments.payoutsInquiry": {
+      "id": "payments.payoutsInquiry",
+      "label": "Payouts (EposNow) Inquiry",
+      "schemaId": "payments.payoutsInquiry",
+
+      "category": "Payments",
+      "subcategory": "Payouts (EposNow) Inquiry",
+
+      "emailId": "payments.payoutsInquiry",
+      "tsId": "ts.payoutsInquiry"
+    },
+
+    "payments.enpIntegration": {
+      "id": "payments.enpIntegration",
+      "label": "ENP (EposNow) Integration",
+      "schemaId": "payments.enpIntegration",
+
+      "category": "Payments",
+      "subcategory": "ENP (EposNow) Integration",
+
+      "emailId": null,
+      "tsId": "ts.enpIntegration"
+    },
+
+    "payments.pdqIntegration": {
+      "id": "payments.pdqIntegration",
+      "label": "PDQ (Third Party) Integration",
+      "schemaId": "payments.pdqIntegration",
+
+      "category": "Payments",
+      "subcategory": "PDQ (Third Party) Integration",
+
+      "emailId": null,
+      "tsId": "ts.pdqIntegration"
+    },
+
+    "payments.motoCnpSetupIncrease": {
+      "id": "payments.motoCnpSetupIncrease",
+      "label": "Moto (CNP) Setup / Increase",
+      "schemaId": "payments.motoCnpSetupIncrease",
+
+      "category": "Payments",
+      "subcategory": "Moto (CNP) Setup / Increase",
+
+      "emailId": "payments.motoCnpSetupIncrease",
+      "tsId": "ts.motoCnpSetupIncrease"
+    },
+
+    "payments.pblSetup": {
+      "id": "payments.pblSetup",
+      "label": "PBL Setup / Increase",
+      "schemaId": "payments.pblSetup",
+
+      "category": "Payments",
+      "subcategory": "PBL Setup / Increase",
+
+      "emailId": "payments.pblSetup",
+      "tsId": "ts.pblSetupIncrease"
+    },
+
+    "payments.adyenInquiry": {
+      "id": "payments.adyenInquiry",
+      "label": "Adyen Inquiry",
+      "schemaId": "payments.adyenInquiry",
+
+      "category": "Payments",
+      "subcategory": "Adyen Inquiry",
+
+      "dynamicId": "payments.adyenInquiry",
+      
+      "tsId": "ts.adyenInquiry"
+    },
+
+    "payments.endYrTax": {
+      "id": "payments.endYrTax",
+      "label": "End YR Tax",
+      "schemaId": "payments.endYrTax",
+
+      "category": "Payments",
+      "subcategory": "End YR Tax",
+
+      "emailId": null,
+      "tsId": "ts.endYrTax"
+    },
+
+    "payments.kycInquiry": {
+      "id": "payments.kycInquiry",
+      "label": "KYC Inquiry",
+      "schemaId": "payments.kycInquiry",
+
+      "category": "Payments",
+      "subcategory": "KYC Inquiry",
+
+      "dynamicId": "payments.kycInquiry",
+      "tsId": "ts.kycInquiry"
+    },
+
+    "payments.enpPinCode": {
+      "id": "payments.enpPinCode",
+      "label": "ENP (EposNow) PinCode",
+      "schemaId": "payments.enpPinCode",
+
+      "category": "Payments",
+      "subcategory": "ENP (EposNow) PinCode",
+
+      "emailId": null,
+      "tsId": "ts.enpPinCode"
+    },
+
+    "payments.myBusinessBankAppInquiry": {
+      "id": "payments.myBusinessBankAppInquiry",
+      "label": "My Business Bank App Inquiry",
+      "schemaId": "payments.myBusinessBankAppInquiry",
+
+      "category": "Payments",
+      "subcategory": "My Business Bank App Inquiry",
+
+      "emailId": "payments.myBusinessBankAppInquiry",
+      "tsId": "ts.myBusinessBankAppInquiry"
+    },
+
+    "payments.capitalLoanInquiry": {
+      "id": "payments.capitalLoanInquiry",
+      "label": "Capital Loan Inquiry",
+      "schemaId": "payments.capitalLoanInquiry",
+
+      "category": "Payments",
+      "subcategory": "Capital Loan Inquiry",
+
+      "emailId": null,
+      "tsId": "ts.capitalLoanInquiry"
+    }
+
+  }
+}
+},
+{
+  "posSystem": {
+  "id": "posSystem",
+  "label": "POS System",
+  "subcategories": {
+
+    "pos.tillAppLoadingError": {
+      "id": "pos.tillAppLoadingError",
+      "label": "Till App Loading Error",
+      "schemaId": "pos.tillAppLoadingError",
+
+      "category": "POS System",
+      "subcategory": "Till App Loading Error",
+
+      "emailId": null,
+      "tsId": "ts.tillAppLoadingError"
+    },
+
+    "pos.autoClose": {
+      "id": "pos.autoClose",
+      "label": "Auto Close",
+      "schemaId": "pos.autoClose",
+
+      "category": "POS System",
+      "subcategory": "Auto Close",
+
+      "emailId": null,
+      "tsId": "ts.autoClose"
+    },
+
+    "pos.eod": {
+      "id": "pos.eod",
+      "label": "EOD",
+      "schemaId": "pos.eod",
+
+      "category": "POS System",
+      "subcategory": "EOD",
+
+      "emailId": null,
+      "tsId": "ts.eod"
+    },
+
+    "pos.setupTill": {
+      "id": "pos.setupTill",
+      "label": "Setup Till (Pos System)",
+      "schemaId": "pos.setupTill",
+
+      "category": "POS System",
+      "subcategory": "Setup Till (Pos System)",
+
+      "emailId": null,
+      "tsId": "ts.setupTill"
+    },
+     "pos.scannerError": {
+      "id": "pos.scannerError",
+      "label": "Scanner",
+      "schemaId": "pos.scannerError",
+
+      "category": "POS System",
+      "subcategory": "Scanner",
+
+      "emailId": null,
+      "tsId": "ts.scannerError"
+    },
+
+    "pos.stuckTable": {
+      "id": "pos.stuckTable",
+      "label": "Stuck Table",
+      "schemaId": "pos.stuckTable",
+
+      "category": "POS System",
+      "subcategory": "Stuck Table",
+
+      "emailId": null,
+      "tsId": "ts.stuckTable"
+    },
+
+    "pos.tillRefund": {
+      "id": "pos.tillRefund",
+      "label": "Till Refund",
+      "schemaId": "pos.tillRefund",
+
+      "category": "POS System",
+      "subcategory": "Till Refund",
+
+      "emailId": null,
+      "tsId": "ts.tillRefund"
+    },
+
+    "pos.printerError": {
+      "id": "pos.printerError",
+      "label": "Printer Error / Setup / Order Utilities",
+      "schemaId": "pos.printerError",
+
+      "category": "POS System",
+      "subcategory": "Printer Error / Setup / Order Utilities",
+
+      "emailId": null,
+      "tsId": "ts.printerError"
+    },
+
+    "pos.cashDrawerError": {
+      "id": "pos.cashDrawerError",
+      "label": "CashDrawer Error",
+      "schemaId": "pos.cashDrawerError",
+
+      "category": "POS System",
+      "subcategory": "CashDrawer Error",
+
+      "emailId": null,
+      "tsId": "ts.cashDrawerError"
+    },
+
+    "pos.taxBreakdown": {
+      "id": "pos.taxBreakdown",
+      "label": "Tax Break Down",
+      "schemaId": "pos.taxBreakdown",
+
+      "category": "POS System",
+      "subcategory": "Tax Break Down",
+
+      "emailId": null,
+      "tsId": "ts.taxBreakdown"
+    },
+
+    "pos.basketError": {
+      "id": "pos.basketError",
+      "label": "Basket Error",
+      "schemaId": "pos.basketError",
+
+      "category": "POS System",
+      "subcategory": "Basket Error",
+
+      "emailId": null,
+      "tsId": "ts.basketError"
+    },
+
+    "pos.tenderTypeError": {
+      "id": "pos.tenderTypeError",
+      "label": "Tender Type Error",
+      "schemaId": "pos.tenderTypeError",
+
+      "category": "POS System",
+      "subcategory": "Tender Type Error",
+
+      "emailId": null,
+      "tsId": "ts.tenderTypeError"
+    },
+
+    "pos.staffLoginError": {
+      "id": "pos.staffLoginError",
+      "label": "Staff Login / Staff Roles Error",
+      "schemaId": "pos.staffLoginError",
+
+      "category": "POS System",
+      "subcategory": "Staff Login / Staff Roles Error",
+
+      "emailId": null,
+      "tsId": "ts.staffLoginError"
+    },
+
+    "pos.unassignLicense": {
+      "id": "pos.unassignLicense",
+      "label": "Unassign License",
+      "schemaId": "pos.unassignLicense",
+
+      "category": "POS System",
+      "subcategory": "Unassign License",
+
+      "emailId": null,
+      "tsId": "ts.unassignLicense"
+    },
+
+    "pos.outOfStock": {
+      "id": "pos.outOfStock",
+      "label": "Out of Stock Error",
+      "schemaId": "pos.outOfStock",
+
+      "category": "POS System",
+      "subcategory": "Out of Stock Error",
+
+      "emailId": null,
+      "tsId": "ts.outOfStock"
+    },
+
+    "pos.scalesSetup": {
+      "id": "pos.scalesSetup",
+      "label": "Scales Setup",
+      "schemaId": "pos.scalesSetup",
+
+      "category": "POS System",
+      "subcategory": "Scales Setup",
+
+      "emailId": null,
+      "tsId": "ts.scalesSetup"
+    },
+
+    "pos.kdsSetup": {
+      "id": "pos.kdsSetup",
+      "label": "KDS Setup / Error",
+      "schemaId": "pos.kdsSetup",
+
+      "category": "POS System",
+      "subcategory": "KDS Setup / Error",
+
+      "emailId": null,
+      "tsId": "ts.kdsSetup"
+    }
+
+  }
+  }
+},
+{
+"backOffice": {
+  "id": "backOffice",
+  "label": "Back Office",
+  "subcategories": {
+
+    "backOffice.stock": {
+      "id": "backOffice.stock",
+      "label": "Stock",
+      "schemaId": "backOffice.stock",
+
+      "category": "Back Office",
+      "subcategory": "Stock",
+
+      "emailId": null,
+      "tsId": "ts.stock"
+    },
+
+    "backOffice.products": {
+      "id": "backOffice.products",
+      "label": "Products / Categories",
+      "schemaId": "backOffice.products",
+
+      "category": "Back Office",
+      "subcategory": "Products / Categories",
+
+      "emailId": null,
+      "tsId": "ts.products"
+    },
+
+    "backOffice.reporting": {
+      "id": "backOffice.reporting",
+      "label": "Reporting",
+      "schemaId": "backOffice.reporting",
+
+      "category": "Back Office",
+      "subcategory": "Reporting",
+
+      "emailId": null,
+      "tsId": "ts.reporting"
+    },
+
+    "backOffice.loginIssue": {
+      "id": "backOffice.loginIssue",
+      "label": "Login Issue",
+      "schemaId": "backOffice.loginIssue",
+
+      "category": "Back Office",
+      "subcategory": "Login Issue",
+
+      "emailId": null,
+      "tsId": "ts.loginIssue"
+    },
+
+    "backOffice.mfaDisable": {
+      "id": "backOffice.mfaDisable",
+      "label": "MFA Disable",
+      "schemaId": "backOffice.mfaDisable",
+
+      "category": "Back Office",
+      "subcategory": "MFA Disable",
+
+      "emailId": null,
+      "tsId": "ts.mfaDisable"
+    },
+
+    "backOffice.appIntegration": {
+      "id": "backOffice.appIntegration",
+      "label": "App Integration",
+      "schemaId": "backOffice.appIntegration",
+
+      "category": "Back Office",
+      "subcategory": "App Integration",
+
+      "emailId": null,
+      "tsId": "ts.appIntegration"
+    }
+
+  }
+}
+},
+
+{
+  "retentionRecord": {
+  "id": "retentionRecord",
+  "label": "Retention Record",
+  "subcategories": {
+
+    "retentionRecord.rt": {
+      "id": "retentionRecord.rt",
+      "label": "RT",
+      "schemaId": "retentionRecord.rt",
+
+      "category": "Retention Record",
+      "subcategory": "RT",
+
+      "emailId": null,
+      "tsId": "ts.rt"
+    }
+
+  }
+}
+},
+{
+  "junkCall": {
+  "id": "junkCall",
+  "label": "Junk Call",
+  "subcategories": {
+
+    "junkCall.jc": {
+      "id": "junkCall.jc",
+      "label": "JC",
+      "schemaId": "junkCall.jc",
+
+      "category": "Junk Call",
+      "subcategory": "Junk Call",
+
+      "emailId": null,
+      "tsId": "ts.jc"
+    }
+
+  }
+}
+},
+{
+"compliant": {
+  "id": "compliant",
+  "label": "Compliant",
+  "subcategories": {
+
+    "compliant.compliant": {
+      "id": "compliant.compliant",
+      "label": "Compliant",
+      "schemaId": "compliant.compliant",
+
+      "category": "Compliant",
+      "subcategory": "Compliant",
+
+      "emailId": null,
+      "tsId": "ts.compliant"
+    }
+
+  }
+}
+},
+{
+ "bookSession": {
+  "id": "bookSession",
+  "label": "Book Session",
+  "subcategories": {
+
+    "bookSession.bookSession": {
+      "id": "bookSession.bookSession",
+      "label": "Book Session",
+      "schemaId": "bookSession.bookSession",
+
+      "category": "Book Session",
+      "subcategory": "Book Session",
+
+      "emailId": null,
+      "tsId": "ts.bookSession"
+    }
+
+  }
+} 
+},
+
+{
+ "billing": {
+  "id": "billing",
+  "label": "Billing",
+  "subcategories": {
+
+    "billing.billing": {
+      "id": "billing.billing",
+      "label": "Billing",
+      "schemaId": "billing.billing",
+
+      "category": "Billing",
+      "subcategory": "Billing",
+
+      "dynamicId": "billing.billing",
+      "tsId": "ts.billing"
+    }
+
+  }
+} 
+},
+{
+ "contactPoints": {
+  "id": "contactPoints",
+  "label": "Contact Points",
+  "subcategories": {
+
+    "contactPoints.contactPoints": {
+      "id": "contactPoints.contactPoints",
+      "label": "Slack / Support Line",
+      "schemaId": "contactPoints.contactPoints",
+
+      "category": "Contact Points",
+      "subcategory": "Contact Points",
+
+      "emailId": null,
+      "tsId": "ts.contactPoints"
+    }
+  }
+  }
+}, 
+{
+  "callBackRequest": {
+  "id": "callBackRequest",
+  "label": "Call Back Request",
+  "subcategories": {
+
+    "callBackRequest.cbr": {
+      "id": "callBackRequest.cbr",
+      "label": "CBR",
+      "schemaId": "callBackRequest.cbr",
+
+      "category": "Call Back Request",
+      "subcategory": "CBR",
+
+      "emailId": null,
+      "tsId": "ts.cbr"
+    }
+
+  }
+}
+},
+{
+  "sale": {
+  "id": "sale",
+  "label": "Sale",
+  "subcategories": {
+
+    "sale.hardwarePurchase": {
+      "id": "sale.hardwarePurchase",
+      "label": "Hardware Purchase",
+      "schemaId": "sale.hardwarePurchase",
+
+      "category": "Sale",
+      "subcategory": "Hardware Purchase",
+
+      "emailId": null,
+      "tsId": "ts.hardwarePurchase"
+    },
+
+    "sale.appPurchase": {
+      "id": "sale.appPurchase",
+      "label": "App Purchase",
+      "schemaId": "sale.appPurchase",
+
+      "category": "Sale",
+      "subcategory": "App Purchase",
+
+      "emailId": null,
+      "tsId": "ts.appPurchase"
+    },
+
+    "sale.capitalLoanOffer": {
+      "id": "sale.capitalLoanOffer",
+      "label": "Capital Loan Offer",
+      "schemaId": "sale.capitalLoanOffer",
+
+      "category": "Sale",
+      "subcategory": "Capital Loan Offer",
+
+      "emailId": null,
+      "tsId": "ts.capitalLoanOffer"
+    },
+
+    "sale.additionalDeviceLocation": {
+      "id": "sale.additionalDeviceLocation",
+      "label": "Additional Device & Location",
+      "schemaId": "sale.additionalDeviceLocation",
+
+      "category": "Sale",
+      "subcategory": "Additional Device & Location",
+
+      "emailId": null,
+      "tsId": "ts.additionalDeviceLocation"
+    }
+
+  }
+}
+},
+{
+  "feedbackReview": {
+  "id": "feedbackReview",
+  "label": "Feedback Review",
+  "subcategories": {
+
+    "feedbackReview.nps": {
+      "id": "feedbackReview.nps",
+      "label": "FeedBack (NPS)",
+      "schemaId": "feedbackReview.nps",
+
+      "category": "Feedback Review",
+      "subcategory": "FeedBack (NPS)",
+
+      "dynamicId": "feedbackReview.nps",
+      "tsId": "ts.feedbackReviewNps"
+    }
+
+  }
+}
+},
+{
+  "swapItEmail": {
+  "id": "swapItEmail",
+  "label": "Swap It Email",
+  "subcategories": {
+
+    "swapItEmail.swapItEmail": {
+      "id": "swapItEmail.swapItEmail",
+      "label": "Swap It Email",
+      "schemaId": "swapItEmail.swapItEmail",
+
+      "category": "Swap It Email",
+      "subcategory": "Swap It Email",
+
+      "emailId": "swapItEmail.swapItEmail",
+      "tsId": "ts.swapItEmail"
+    }
+
+  }
+}
+},
+{
+  "serverOutage": {
+  "id": "serverOutage",
+  "label": "Server Outage",
+  "subcategories": {
+
+    "serverOutage.serverOutage": {
+      "id": "serverOutage.serverOutage",
+      "label": "Server Outage",
+      "schemaId": "serverOutage.serverOutage",
+
+      "category": "Server Outage",
+      "subcategory": "Server Outage",
+
+      "emailId": "serverOutage.serverOutage",
+      "tsId": "ts.serverOutage"
+    }
+
+  }
+}
+}
+
+]

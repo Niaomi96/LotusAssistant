@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lotus App Boot</title>
+
+  <!-- Load the manifest FIRST so PWA mode activates -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #loaderBox {
+      text-align: center;
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+
+    .loader {
+      width: 55px;
+      height: 55px;
+      border: 6px solid #333;
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px auto;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- Register the service worker -->
+  <script>
+    console.log("app.html loaded");
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker registered successfully.'))
+        .catch(err => console.error('Service Worker registration failed:', err));
+    } else {
+      console.log("Service workers not supported");
+    }
+
+    // Debug: confirm manifest is readable
+    fetch("manifest.json")
+      .then(res => {
+        console.log("Manifest fetch status:", res.status);
+        return res.json();
+      })
+      .then(data => console.log("Manifest content:", data))
+      .catch(err => console.error("Manifest fetch error:", err));
+  </script>
+
+  <!-- Load assistant.js AFTER manifest + service worker -->
+  <script src="assistant.js" defer></script>
+</head>
+
+<body>
+  <div id="loaderBox">
+    <div class="loader"></div>
+    <p>Loading Lotus Assistant…</p>
+  </div>
+
+  <script>
+  window.addEventListener("load", async () => {
+    console.log("Boot sequence started");
+
+    const loader = document.getElementById("loaderBox");
+
+    // 🌸 STEP 1 — Register service worker
+    if ("serviceWorker" in navigator) {
+      try {
+        console.log("Registering service worker…");
+        const reg = await navigator.serviceWorker.register("service-worker.js", { scope: "./" });
+        console.log("Service Worker registered:", reg.scope);
+
+        // 🌸 STEP 2 — Wait until service worker is fully active
+        console.log("Waiting for service worker to activate…");
+        await navigator.serviceWorker.ready;
+        console.log("Service Worker ready — caching complete");
+
+      } catch (err) {
+        console.error("Service Worker registration failed:", err);
+      }
+    }
+
+    // 🌸 STEP 3 — Fade out loader
+    setTimeout(() => {
+      loader.style.opacity = "0";
+
+      // 🌸 STEP 4 — Redirect AFTER caching is complete
+      setTimeout(() => {
+        console.log("Redirecting to assistant.html");
+        window.location.replace("assistant.html");
+      }, 400);
+
+    }, 800);
+  });
+</script>
+
+</body>
+</html>

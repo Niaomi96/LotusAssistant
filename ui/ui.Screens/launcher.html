@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lotus Launcher</title>
+
+  <!-- Manifest MUST be here -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#000000">
+
+  <!-- Register service worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+
+    // After SW + manifest load, go to LotusApplication
+    window.location.replace("LotusApplication.html");
+  </script>
+</head>
+
+<body>
+  Loading Lotus…
+</body>
+</html>

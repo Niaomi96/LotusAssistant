@@ -1,0 +1,67 @@
+[
+  { "id": "payments.motoCnpSetupIncrease", "schemaId": "payments.motoCnpSetupIncrease" },
+  { "id": "payments.pblSetup", "schemaId": "payments.pblSetup" },
+  { "id": "payments.adyenInquiry", "schemaId": "payments.adyenInquiry" },
+  { "id": "payments.endYrTax", "schemaId": "payments.endYrTax" },
+  { "id": "payments.kycInquiry", "schemaId": "payments.kycInquiry" },
+  { "id": "payments.enpPinCode", "schemaId": "payments.enpPinCode" },
+  { "id": "payments.pmTeam", "schemaId": "payments.pmTeam" },
+  { "id": "payments.moneyTribe", "schemaId": "payments.moneyTribe" },
+  { "id": "payments.businessBankApp", "schemaId": "payments.businessBankApp" },
+  { "id": "payments.capitalLoanInquiry", "schemaId": "payments.capitalLoanInquiry" },
+  { "id": "payments.tipError", "schemaId": "payments.tipError" },
+  { "id": "payments.standalone", "schemaId": "payments.standalone" },
+  { "id": "payments.payoutsInquiry", "schemaId": "payments.payoutsInquiry" },
+  { "id": "payments.myBusinessBankAppInquiry", "schemaId": "payments.myBusinessBankAppInquiry" },
+  { "id": "payments.enpSubscription", "schemaId": "payments.enpSubscription" },
+  { "id": "payments.enpUnresponsive", "schemaId": "payments.enpUnresponsive" },
+  { "id": "payments.enpIntegration", "schemaId": "payments.enpIntegration" },
+  { "id": "payments.pdqIntegration", "schemaId": "payments.pdqIntegration" },
+
+  { "id": "pos.tillAppLoadingError", "schemaId": "pos.tillAppLoadingError" },
+  { "id": "pos.eod", "schemaId": "pos.eod" },
+  { "id": "pos.setupTill", "schemaId": "pos.setupTill" },
+  { "id": "pos.stuckTable", "schemaId": "pos.stuckTable" },
+  { "id": "pos.tillRefund", "schemaId": "pos.tillRefund" },
+  { "id": "pos.printerError", "schemaId": "pos.printerError" },
+  { "id": "pos.cashDrawerError", "schemaId": "pos.cashDrawerError" },
+  { "id": "pos.taxBreakdown", "schemaId": "pos.taxBreakdown" },
+  { "id": "pos.basketError", "schemaId": "pos.basketError" },
+  { "id": "pos.tenderTypeError", "schemaId": "pos.tenderTypeError" },
+  { "id": "pos.staffLoginError", "schemaId": "pos.staffLoginError" },
+  { "id": "pos.unassignLicense", "schemaId": "pos.unassignLicense" },
+  { "id": "pos.outOfStock", "schemaId": "pos.outOfStock" },
+  { "id": "pos.scalesSetup", "schemaId": "pos.scalesSetup" },
+  { "id": "pos.kdsSetup", "schemaId": "pos.kdsSetup" },
+  { "id": "pos.autoClose", "schemaId": "pos.autoClose" },
+
+  { "id": "backOffice.stock", "schemaId": "backOffice.stock" },
+  { "id": "backOffice.products", "schemaId": "backOffice.products" },
+  { "id": "backOffice.reporting", "schemaId": "backOffice.reporting" },
+  { "id": "backOffice.loginIssue", "schemaId": "backOffice.loginIssue" },
+  { "id": "backOffice.mfaDisable", "schemaId": "backOffice.mfaDisable" },
+  { "id": "backOffice.appIntegration", "schemaId": "backOffice.appIntegration" },
+
+  { "id": "retentionRecord.rt", "schemaId": "retentionRecord.rt" },
+
+  { "id": "compliant.compliant", "schemaId": "compliant.compliant" },
+
+  { "id": "bookSession.bookSession", "schemaId": "bookSession.bookSession" },
+
+  { "id": "billing.billing", "schemaId": "billing.billing" },
+
+  { "id": "callBackRequest.cbr", "schemaId": "callBackRequest.cbr" },
+
+  { "id": "sale.hardwarePurchase", "schemaId": "sale.hardwarePurchase" },
+  { "id": "sale.appPurchase", "schemaId": "sale.appPurchase" },
+  { "id": "sale.capitalLoanOffer", "schemaId": "sale.capitalLoanOffer" },
+  { "id": "sale.additionalDeviceLocation", "schemaId": "sale.additionalDeviceLocation" },
+
+  { "id": "feedbackReview.nps", "schemaId": "feedbackReview.nps" },
+
+  { "id": "serverOutage.serverOutage", "schemaId": "serverOutage.serverOutage" },
+
+  { "id": "swapItEmail.swapItEmail", "schemaId": "swapItEmail.swapItEmail" },
+
+  { "id": "payments.manualRefund", "schemaId": "payments.manualRefund" }
+]

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lotus Assistant</title>
+
+<!-- 🌸 PWA Manifest -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+
+<link rel="stylesheet" href="../ui.Styles/main.css">
+<link rel="stylesheet" href="../ui.Styles/components.css">
+
+</head>
+
+<body>
+<div id="lotusRoot">
+
+    <!-- ⭐ STAR LAYERS -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <!-- 🌸 LOTUS LOGO -->
+    <div class="lotusWrapper">
+        <img id="lotusLogo" src="lotus.png" alt="Lotus Logo">
+        <div class="lotusLine"></div>
+    </div>
+
+    <!-- 🌸 HEADER -->
+    <div class="contentBox">
+        <div id="currentCategoryHeader">
+            <span id="currentMain"></span>
+            <span id="currentSub"></span>
+        </div>
+        <hr class="categoryLine">
+    </div>
+
+    <!-- ⭐ ALWAYS-VISIBLE BUBBLE TAB -->
+    <div id="categoryTab" class="categoryTab">
+        <img src="lotus.png" alt="Lotus Icon" class="lotusIcon">
+        <div class="dropdownIcon">
+            <div></div><div></div><div></div>
+        </div>
+    </div>
+
+    <!-- ⭐ SLIDE-OUT CATEGORY PANEL -->
+    <div id="categoryPanel">
+
+        <!-- MAIN CATEGORY -->
+        <div class="fieldLabel">Main Category</div>
+        <div id="mainWrapper" class="dropdownWrapper">
+            <div id="mainDisplayText" class="dropdownDisplay">
+                <span id="mainLabel">Select category...</span>
+
+                <div id="hamburgerIcon" class="dropdownIcon">
+                    <div></div><div></div><div></div>
+                </div>
+            </div>
+
+            <div id="mainPanel" class="dropdownPanel">
+                <div id="mainList" class="dropdownList"></div>
+            </div>
+        </div>
+
+        <!-- SUBCATEGORY -->
+        <div class="fieldLabel">Subcategory</div>
+        <div id="subWrapper" class="dropdownWrapper" style="display:none;">
+            <div id="subDisplayText" class="dropdownDisplay">
+                <span id="subLabel">Select subcategory...</span>
+
+                <div id="subHamburgerIcon" class="dropdownIcon">
+                    <div></div><div></div><div></div>
+                </div>
+            </div>
+
+            <div id="subPanel" class="dropdownPanel">
+                <div id="subList" class="dropdownList"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ⭐ TAB BUTTONS + REFRESH -->
+    <div style="display:flex; justify-content:center; align-items:center; gap:10px; margin-top:20px;">
+        <button id="caseHeader" class="tabBtn">Case Notes</button>
+        <button id="emailHeader" class="tabBtn">Email</button>
+        <button id="troubleshootingHeader" class="tabBtn">Troubleshooting</button>
+
+        <!-- 🌸 Refresh Button -->
+        <button id="refreshBtn" class="iconBtn" title="Refresh">&#x21bb;</button>
+    </div>
+
+    <!-- ⭐ CARD STACK -->
+    <div id="cardStack">
+
+        <!-- CASE NOTES -->
+        <div class="card" data-card="case">
+            <h3>Case Notes</h3>
+
+            <div id="schemaContainer"></div>
+
+            <br>
+            <button id="copyCaseBtn" class="actionBtn copyBtn">Copy Case Notes</button>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="card" data-card="email">
+            <h3>Email Output</h3>
+            <div id="emailContainer">
+                <div class="emailHeader">Email Preview</div>
+                <div id="emailOutput"></div>
+            </div>
+            <br>
+            <button id="copyEmailBtn" class="actionBtn copyBtn">Copy Email</button>
+        </div>
+
+        <!-- TROUBLESHOOTING -->
+        <div class="card" data-card="troubleshooting">
+            <h3>Troubleshooting</h3>
+            <div id="troubleshootingContainer"></div>
+        </div>
+
+    </div>
+
+    <!-- ⭐ COPY PREVIEW MODAL -->
+    <div id="copyPreviewModal" class="modal hidden">
+        <div class="modalContent">
+            <h3 id="copyPreviewTitle"></h3>
+            <pre id="copyPreviewText"></pre>
+
+            <div class="modalButtons">
+                <button id="modalCopyBtn" class="actionBtn copyBtn">Copy</button>
+                <button id="modalCloseBtn" class="actionBtn closeBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ⭐ JS FILES -->
+<script type="module" defer src="../ui.Scripts/index.js?v=9999"></script>
+<script type="module" defer src="../ui.Scripts/ui.cardStack.js?v=9999"></script>
+<script type="module" defer src="../ui.Scripts/ui.copyPreview.js?v=9999"></script>
+
+<!-- 🌸 Refresh Only -->
+<script>
+document.getElementById("refreshBtn").addEventListener("click", () => location.reload());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,906 @@
+/* ============================================================
+   Components.css — LOTUS GLASS CORE
+   ============================================================ */
+/* 🌌 Animated Starry Night Background */
+
+/* 🌅 Animated Gradient Background */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg,
+        #475569,
+        #414674,
+        #70415b,
+        #534c2e,
+        #40467c,
+        #1e3a8a,
+        #0f172a
+    );
+    background-size: 900% 900%;
+    animation: nightShift 30s ease infinite;
+
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ⭐ STAR LAYERS — FIXED SO THEY NEVER BREAK */
+.stars, .stars2, .stars3 {
+    position: fixed;   /* ⭐ THIS IS THE MAGIC FIX */
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    pointer-events: none;
+    background-repeat: repeat;
+    z-index: 1;
+}
+
+/* ⭐ Tiny stars */
+.stars {
+    background-image:
+        radial-gradient(2px 2px at 10% 20%, white 60%, transparent 60%),
+        radial-gradient(1.5px 1.5px at 30% 80%, white 60%, transparent 60%),
+        radial-gradient(1px 1px at 50% 40%, white 60%, transparent 60%),
+        radial-gradient(2px 2px at 70% 10%, white 60%, transparent 60%),
+        radial-gradient(1px 1px at 90% 60%, white 60%, transparent 60%);
+    animation: twinkle 6s infinite alternate;
+    opacity: 0.45;
+}
+
+/* ⭐ Medium stars */
+.stars2 {
+    background-image:
+        radial-gradient(2px 2px at 20% 70%, white 60%, transparent 60%),
+        radial-gradient(1px 1px at 40% 30%, white 60%, transparent 60%),
+        radial-gradient(1.5px 1.5px at 80% 50%, white 60%, transparent 60%);
+    animation: twinkle 8s infinite alternate-reverse;
+    opacity: 0.35;
+}
+
+/* ⭐ Soft glow stars */
+.stars3 {
+    background-image:
+        radial-gradient(3px 3px at 60% 20%, rgba(255,255,255,0.8) 60%, transparent 60%),
+        radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.8) 60%, transparent 60%);
+    animation: twinkle 10s infinite alternate;
+    opacity: 0.25;
+}
+
+/* 🌟 Twinkle Animation */
+@keyframes twinkle {
+    0% { opacity: 0.15; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.3); }
+    100% { opacity: 0.2; transform: scale(1); }
+}
+
+/* 🌌 Gradient Animation */
+@keyframes nightShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ⭐ UI ABOVE STARS */
+.lotusWrapper,
+.contentBox,
+#categoryPanel,
+#cardStack,
+.modal {
+    position: relative;
+    z-index: 5;
+}
+
+
+
+
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers horizontally */
+    width: 100%;
+}
+
+#currentCategoryHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+#currentMain {
+    margin-bottom: 2px;
+}
+
+#currentSub {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.categoryLine {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.281);
+    width: 80%; /* keeps the line centered and not full width */
+    margin-bottom: 15px;
+}
+
+.lotusWrapper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#lotusLogo {
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.25));
+}
+
+.lotusLine {
+    width: 90px; /* adjust length */
+    height: 2px;
+    background: rgba(255,255,255,0.25);
+    margin: 6px auto 0 auto; /* spacing under lotus */
+    border-radius: 2px;
+}
+
+
+.contentBox {
+    position: relative; /* allows lotus to anchor to this area */
+    padding-top: 50px; /* makes room for the lotus sitting on top */
+}
+
+
+
+/* ⭐ Slide-out panel */
+#categoryPanel {
+  position: fixed;
+  top: 0;
+  left: -320px; /* hidden */
+  width: 300px;
+  height: 100vh;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(18px);
+  border-right: 1px solid rgba(255,255,255,0.25);
+  padding: 20px;
+  transition: left 0.35s ease;
+  z-index: 999;
+}
+.lotusIcon {
+    width: 65px;
+    height: 50px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.8));
+    pointer-events: none; /* ensures clicks still trigger the bubble */
+}
+
+
+#categoryPanel.open {
+  left: 0;
+}
+
+/* ⭐ Bubble tab fixed beside the header */
+.categoryTab {
+    position: fixed;
+    top: 20px;          /* adjust until it lines up with your header text */
+    left: 0;            /* JS will animate this between 0px and 300px */
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 50%; /* full circle bubble */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: left 0.35s ease; /* smooth slide motion */
+    z-index: 2000;
+}
+
+
+
+/* ============================================================
+   LOTUS GLASS SURFACES — LINE DIVIDER STYLE
+   ============================================================ */
+
+/* Remove bubble from display bars */
+.dropdownDisplay {
+    background: none;
+    backdrop-filter: none;
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+    color: white;
+}
+
+/* Dropdown panel — keep the blur, remove box border */
+.dropdownPanel {
+    backdrop-filter: blur(16px);
+    background: rgba(255,255,255,0.08);
+    border: none;
+    border-radius: 0;
+    padding: 10px 12px;
+}
+
+/* Each item in the list gets a divider line */
+.dropdownList div {
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+/* Remove line from last item */
+.dropdownList div:last-child {
+    border-bottom: none;
+}
+
+/* Hover highlight */
+.dropdownList div:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* Wrapper positioning stays intact */
+.dropdownWrapper {
+    position: relative;
+}
+
+/* Hamburger icons remain clickable and above panel */
+#hamburgerIcon,
+#subHamburgerIcon {
+    position: relative;
+    z-index: 30;
+    cursor: pointer;
+}
+
+/* ============================================================
+   CATEGORY LABEL DIVIDERS — LOTUS GLASS
+   ============================================================ */
+
+.fieldLabel {
+    color: #fff;
+    font-weight: 600;
+    font-family: "Segoe UI", sans-serif;
+    letter-spacing: 0.3px;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+/* Add a thin line under each label */
+.fieldLabel::after {
+    content: "";
+    position: absolute;
+    bottom: -4px; /* space between text and line */
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.35);
+    border-radius: 2px;
+}
+
+
+/* ============================================================
+   UNIVERSAL WRAPPER (THE REAL FIX)
+   Applies to ALL expanding/multi-entry sections
+   ============================================================ */
+
+#schemaContainer {
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+/* ============================================================
+   MULTI-ENTRY INTERNAL SCROLLERS
+   ============================================================ */
+
+.fieldGroup,
+.fieldRow[data-multi-entry="true"],
+.fieldRow[data-type="multi"],
+.fieldRow[data-field] .fieldChildren {
+    max-height: 260px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 6px;
+    box-sizing: border-box;
+}
+
+/* ============================================================
+   SCROLLBAR STYLE
+   ============================================================ */
+
+#schemaContainer::-webkit-scrollbar,
+.fieldGroup::-webkit-scrollbar,
+.fieldChildren::-webkit-scrollbar,
+.multiEntryWrapper::-webkit-scrollbar,
+#emailOutput::-webkit-scrollbar {
+    width: 6px;
+}
+
+#schemaContainer::-webkit-scrollbar-thumb,
+.fieldGroup::-webkit-scrollbar-thumb,
+.fieldChildren::-webkit-scrollbar-thumb,
+.multiEntryWrapper::-webkit-scrollbar-thumb,
+#emailOutput::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* ============================================================
+   HORIZONTAL ROWS (Fix Missing Funds Overlap + Number Inputs)
+   ============================================================ */
+
+.horizontalRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.horizontalRow select,
+.horizontalRow input {
+    width: 140px;
+}
+
+/* Number input spinner behavior (MERGED HERE) */
+.horizontalRow input[type="number"] {
+    appearance: auto;
+    -moz-appearance: textfield;
+}
+
+.horizontalRow input[type="number"]::-webkit-inner-spin-button,
+.horizontalRow input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+    height: auto;
+}
+
+.multiEntryRemoveBtn {
+    margin-left: 10px;
+}
+
+/* ============================================================
+   COLLAPSIBLE SECTIONS (28% WIDTH + MATCH NORMAL FIELDS)
+   ============================================================ */
+
+.fieldRow[data-type="section"] {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    padding: 4px 6px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background: #fff;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.fieldRow[data-type="section"] .fieldLabel {
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.expandArrow {
+    font-size: 12px;
+    width: 12px;
+    transition: transform 0.2s ease;
+}
+
+.fieldRow[data-type="section"] .fieldChildren {
+    width: 100%;
+    margin-top: 6px;
+    padding-left: 0;
+    border-left: none;
+    overflow: visible;
+}
+
+.fieldRow[data-type="section"] .fieldChildren .fieldRow {
+    width: 100%;
+    padding: 0;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+}
+
+.fieldRow[data-type="section"] .fieldChildren .fieldInput {
+    width: 100%;
+    height: 28px;
+    padding: 2px 6px;
+    box-sizing: border-box;
+}
+
+/* ============================================================
+   MULTI-ENTRY: MISSING FUNDS / DEVICES / MANUAL REFUND
+   ============================================================ */
+
+.fieldRow[data-field="missingFunds"],
+.fieldRow[data-field="devicesNotOnPlatform"],
+.fieldRow[data-field="ManualRefund"] {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+}
+
+.fieldRow[data-field="missingFunds"] .fieldInput,
+.fieldRow[data-field="devicesNotOnPlatform"] .fieldInput,
+.fieldRow[data-field="ManualRefund"] .fieldInput {
+    height: auto;
+    flex-grow: 1;
+}
+
+/* ⭐ FIXED: SCROLL LIMITS FOR MULTI-ENTRY WRAPPERS */
+.fieldRow[data-field="missingFunds"] .multiEntryWrapper,
+.fieldRow[data-field="devicesNotOnPlatform"] .multiEntryWrapper,
+.fieldRow[data-field="ManualRefund"] .multiEntryWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 150px;   /* ⭐ SCROLLER NOW STARTS AT ~4 ROWS */
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 6px;
+    box-sizing: border-box;
+}
+
+
+.fieldRow[data-field="missingFunds"] .multiEntryList,
+.fieldRow[data-field="devicesNotOnPlatform"] .multiEntryList,
+.fieldRow[data-field="ManualRefund"] .multiEntryList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* ============================================================
+   NORMAL FIELD STYLING
+   ============================================================ */
+
+.fieldRow {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+    padding: 4px 0;
+}
+
+.fieldRow label {
+    width: 180px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fieldInput {
+    height: 28px;
+    padding: 2px 6px;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+select.fieldInput {
+    height: 28px;
+    padding: 2px 6px;
+    font-size: 14px;
+}
+
+.fieldsWrapper {
+    gap: 4px;
+}
+
+/* ============================================================
+   EMAIL OUTPUT CONTAINER — LOTUS GLASS
+   ============================================================ */
+
+#emailContainer {
+    margin-top: 10px;
+    width: 100%;
+
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 16px;
+
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+/* Header bar */
+.emailHeader {
+    background: rgba(255,255,255,0.28);
+    backdrop-filter: blur(20px);
+
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 14px;
+
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    font-family: "Segoe UI", sans-serif;
+    letter-spacing: 0.3px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+/* Email output area */
+#emailOutput {
+    height: 150px;
+    padding: 14px;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+
+    overflow-y: auto;
+    resize: none;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+
+    color: #fff;
+}
+
+/* Scrollbar styling */
+#emailOutput::-webkit-scrollbar {
+    width: 6px;
+}
+#emailOutput::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.35);
+    border-radius: 4px;
+}
+#emailOutput::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.15);
+}
+
+/* ============================================================
+   SCROLLER — Manual Refund Currency (Correct Wrapper)
+   ============================================================ */
+
+.multiEntryWrapper.fieldInput[data-label="Manual Refund Currency"] {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 150px;        /* prevents expansion */
+    overflow-y: auto;         /* enables scrolling */
+    overflow-x: hidden;
+    padding-right: 6px;
+    box-sizing: border-box;
+}
+
+/* Internal list layout */
+.multiEntryWrapper.fieldInput[data-label="Manual Refund Currency"] .multiEntryList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Horizontal row styling */
+.multiEntryWrapper.fieldInput[data-label="Manual Refund Currency"] .horizontalRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Number input spinner fix */
+.multiEntryWrapper.fieldInput[data-label="Manual Refund Currency"] input[type="number"] {
+    appearance: auto;
+    -moz-appearance: textfield;
+}
+
+.multiEntryWrapper.fieldInput[data-label="Manual Refund Currency"] input[type="number"]::-webkit-inner-spin-button,
+.multiEntryWrapper.fieldInput[data-label="Manual Refund Currency"] input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+    height: auto;
+}
+/* ============================================================
+   TROUBLESHOOTING SCROLLER
+   ============================================================ */
+#troubleshootingContainer {
+    max-height: 300px;       /* adjust to taste — 4–5 visible lines before scroll */
+    overflow-y: auto;        /* enables vertical scrolling */
+    overflow-x: hidden;
+    padding-right: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Optional scrollbar styling (matches your multi-entry look) */
+#troubleshootingContainer::-webkit-scrollbar {
+    width: 6px;
+}
+#troubleshootingContainer::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* ============================================================
+   TAB BUTTONS — LOTUS GLASS
+   ============================================================ */
+.tabBtn {
+    background: transparent;        /* removes gray background */
+    backdrop-filter: none;          /* disables frosted blur */
+    border: none;                   /* removes border */
+    border-radius: 0;               /* optional: keeps underline crisp */
+    padding: 8px 16px;
+    cursor: pointer;
+
+    color: #fff;
+    font-weight: 500;
+
+    position: relative;
+    transition: color 0.25s ease;
+    z-index: 10;
+}
+
+/* Underline animation */
+.tabBtn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.tabBtn:hover::after {
+    width: 60%;
+}
+/* ⭐ When active */
+.tabBtn.activeTab::after {
+    width: 100%; /* full underline when selected */
+    background: rgba(255,255,255,0.9);
+}
+
+/* ============================================================
+   COPY PREVIEW MODAL — LOTUS GLASS
+   ============================================================ */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modalContent {
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(18px);
+
+    padding: 20px;
+    width: 500px;
+    max-height: 70vh;
+
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.35);
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+
+    overflow-y: auto;
+    color: #fff;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#copyPreviewText {
+    white-space: pre-wrap;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+
+
+/* ============================================================
+   🌸 LOTUS CARD STACK SYSTEM — UPDATED + RESPONSIVE
+   ============================================================ */
+
+#cardStack {
+    position: relative;
+    width: 100%;
+    height: 460px; /* slightly taller for Lotus spacing */
+    margin-top: 20px;
+    perspective: 1200px;
+    
+}
+
+/* Base card styling */
+#cardStack .card {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+     left: 40px; /* moves all cards 40px to the right */
+
+    /* LOTUS GLASS EFFECT */
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 16px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease, opacity 0.3s ease;
+    backface-visibility: hidden;
+
+    overflow-y: auto;
+    padding: 18px;
+    box-sizing: border-box;
+    color: #fff;
+    
+}
+
+/* Active card (front) */
+.card.active {
+    z-index: 3;
+    transform: translateZ(0);
+    opacity: 1;
+}
+
+/* Middle card */
+.card.behind1 {
+    z-index: 2;
+    transform: translateZ(-40px) translateY(6px);
+    opacity: 0.85;
+}
+
+/* Back card */
+.card.behind2 {
+    z-index: 1;
+    transform: translateZ(-80px) translateY(12px);
+    opacity: 0.65;
+}
+
+/* Scrollbar styling */
+#cardStack .card::-webkit-scrollbar {
+    width: 6px;
+}
+#cardStack .card::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.35);
+    border-radius: 4px;
+}
+#cardStack .card::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.15);
+}
+/* ============================================================
+   ACTION BUTTONS — LOTUS GLASS
+   ============================================================ */
+
+.actionBtn {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+/* Hover glow */
+.actionBtn:hover {
+    background: rgba(255,255,255,0.22);
+    box-shadow: 0 0 8px rgba(255,255,255,0.35);
+}
+
+/* Click feedback */
+.actionBtn:active {
+    transform: scale(0.96);
+    box-shadow: 0 0 6px rgba(255,255,255,0.45);
+}
+/* 🌸 Icon Buttons */
+.iconBtn {
+    background: rgba(255,255,255,0.15);
+   
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    padding: 6px 10px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.iconBtn:hover {
+    background: rgba(255,255,255,0.25);
+    transform: scale(1.05);
+}
+.caseActions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+#refreshBtn {
+    border: none;
+    background: none;
+    border-bottom: 2px solid transparent; /* underline exists but invisible */
+    border-radius: 0;
+    padding: 6px 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: border-color 0.25s ease, transform 0.2s ease;
+}
+
+/* Hover effect like the tabs */
+#refreshBtn:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.836); /* underline becomes visible */
+    transform: scale(1.05);
+}
+
+
+
+/* ============================================================
+   COLOR VARIANTS
+   ============================================================ */
+
+/* Blue = Copy actions */
+.copyBtn {
+    border-color: rgba(168,199,255,0.45);
+}
+.copyBtn:hover {
+    background: rgba(168,199,255,0.25);
+}
+
+/* Red = Close actions */
+.closeBtn {
+    border-color: rgba(255,120,120,0.45);
+}
+.closeBtn:hover {
+    background: rgba(255,120,120,0.25);
+}

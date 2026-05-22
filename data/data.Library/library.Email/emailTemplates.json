@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "templates": [
+    {
+      "emailId": "payments.motoCnpSetupIncrease",
+      "label": "Moto (CNP) Setup / Increase Email",
+      "scope": "customer",
+      "body": "Apologies for the delay regarding your MOTO setup. Please ensure you sign the SAQ Merchant form at your earliest convenience. Please, make sure to email me back letting us know that it was signed.\nOnce completed, kindly allow 24 hours for the update to take effect. After this period, please perform a factory reset on your card reader by following the steps below:\nIf P400 - 9 then, the green. If not go to ->\nGo to Settings\nSelect Configuration\nEnter 0779\nChoose Reset\nThis will apply the necessary changes.\nHow to turn on Moto on till:\nGo to 3 lines upper left hand corner\nSelect Settings\nEnter Payments\nChoose Enable Card CNP (customer not present)\nYou will have to use the moto through the till, it doesn’t work without the Card CNP on the till. This will allow for the prompt customer not present on the card reader. In order to do the transaction, when the customer is not present.\n\nThank you for your patience and cooperation."
+    },
+    {
+      "emailId": "payments.pblSetup",
+      "label": "PBL Setup / Increase Email",
+      "scope": "customer",
+      "body": "Apologies for the delay regarding your Pay By Link( PBL ) setup.Cloud sync the till -> Go to 3 lines in upper left hand corner-> hit picture of the cloud."
+    },
+  
+
+    {
+      "emailId": "payments.standalone",
+      "label": "Standalone Email",
+      "scope": "customer",
+      "body": "Please find attached the standalone transaction list for the requested ENP.\nIf you require any additional information or further assistance, please do not hesitate to reach out."
+    },
+    {
+      "emailId": "payments.pmTeam",
+      "label": "PM Team Email",
+      "scope": "customer",
+      "body": "Regarding your account, please reach out directly to our Payments Monitoring Team at payments-monitoring@eposnow.com.\nKindly note that this department communicates exclusively via email, so all inquiries or updates related to your payments should be sent to them directly.\nThank you for your understanding and cooperation."
+    },
+    {
+      "emailId": "payments.bankConfirmation",
+      "label": "Bank Confirmation Email",
+      "scope": "customer",
+      "body": "Please find attached your bank confirmation letter.\nKindly contact your bank directly to locate the funds, as they have already been issued from the EPOS Now side.\nIf you require any further assistance, please do not hesitate to reach out."
+    },
+    {
+      "emailId": "swapItEmail.swapItEmail",
+      "label": "Swap It Email",
+      "scope": "customer",
+      "body": "To proceed with a Swap It request, we require specific information for verification purposes. Unfortunately, we are unable to bypass these requirements. Without the requested details, we cannot process a replacement.\n\nPlease provide the following based on the affected device:\n\n1. Till (POS Terminal)\n• Image or video clearly showing the error (e.g., built-in printer issue, unresponsive screen, system error).\n• Image of the serial number.\n\n2. External Printer\n• Image or video of the error.\n• Image of the serial number.\n\n3. Cash Drawer\n• Image of the serial number.\n• Image or video showing the issue.\n\n4. ENP Devices (Saturn, P400/V400, Air, S1F2, AMS1)\n• Image or video clearly showing the error.\n• Image of the serial number.\n\nPlease complete a speed test and send back an image of the grade letter \n(Only for Till App Won’t Load/ Card Reader not connecting to the cloud, of these Swap It related cases): https://www.waveform.com/tools/bufferbloat\n\n 5. Scanner\n• Image of the serial number.\n• Image or video showing the issue.\n\nPlease note the following important policy details:\n• If your till, scanner, printer, or cash drawer is out of warranty, a new hardware purchase will be required. Monthly subscriptions do not cover out-of-warranty hardware.\n• If you have Protection Now Care Plan (PNCP), coverage will depend on the terms of your agreement.\n• Devices purchased between 2016–2019 may require full replacement cost depending on coverage status.\n• All ENP devices remain under warranty and do not expire.\n• If an ENP device is lost, you will be required to pay the full replacement cost, and a Swap It cannot proceed until the device is located.\n• For damaged ENP devices, the first instance of damage is covered. Any subsequent damage may require payment of the difference for replacement.\n• Not all ENP errors qualify for a Swap It, as some issues may be environmental (e.g., network connectivity issues or signal dead zones). Rarely do we replace ENP devices for network-related issues.\n\nReturn Policy & Shipping Information:\n• Hardware devices (tills, printers, scanner, cash drawers) do not need to be returned to base.\n• ENP devices must be returned, as they are subscription-based equipment. Failure to return an ENP may result in full replacement charges.\n• UK customers will receive a DPD return link via email.\n• US and AUS customers will receive a PDF return label via email.\n\nOnce we receive the required documentation, we will review and advise on next steps promptly.\n\nPlease Note: You have 24 hours to send the Swap It information or the ticket will close.\n\nThank you for your cooperation."
+    },
+    {
+      "emailId": "serverOutage.serverOutage",
+      "label": "Server Outage Email",
+      "scope": "customer",
+      "body": "We are currently experiencing a server outage that may be impacting service availability. Our teams are actively investigating the issue and working to restore full functionality as quickly as possible.\n\nFor real-time updates, please visit and subscribe to our server outage status page:\nhttps://statuspage.eposnowhq.com/?subscription_confirmed=true\n & Ayden server status page: https://status.adyen.com/\n We sincerely apologize for any inconvenience caused and appreciate your patience while we resolve this matter.\n\nIf you have any urgent concerns, please do not hesitate to contact us."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "/app.html",
+  "name": "Lotus Assistant",
+  "short_name": "Lotus",
+  "start_url": "./app.html",
+  "display": "standalone",
+  "background_color": "rgba(255, 182, 193, 0.35)",
+
+  "theme_color": "rgba(255, 182, 193, 0.35)",
+
+  "icons": [
+    {
+      "src": "./lotus.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./lotus-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "./lotus-screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./lotus-screenshot-mobile.png",
+      "sizes": "720x1280",
+      "type": "image/png"
+    }
+  ]
+}

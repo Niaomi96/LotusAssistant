@@ -1,0 +1,145 @@
+{
+  "Till App Loading Error": {
+    "aliases": [
+      "till app loading error",
+      "till loading error",
+      "till wont load",
+      "till not loading",
+      "till app stuck",
+      "till app frozen",
+      "till app issue",
+      "till app problem"
+    ],
+    "keywords": [
+      "till loading",
+      "till stuck loading",
+      "till wont load",
+      "till no load",
+      "till frozen",
+      "till app stuck",
+      "till app error",
+      "till loading loop",
+      "till not opening",
+      "till wont start",
+      "till app crash",
+      "till app freeze",
+      "till lodin",
+      "till loadin",
+      "pos loading",
+      "pos stuck",
+      "pos wont load",
+      "pos frozen",
+      "pos app error",
+      "pos app stuck",
+      "pos not loading",
+      "till slow",
+      "till lagging",
+      "till taking long",
+      "till not responding",
+      "till unresponsive",
+      "till keeps crashing",
+      "till keeps freezing"
+    ]
+  },
+
+  "Printer Error / Setup / Order Utilities": {
+    "aliases": [
+      "printer error / setup / order utilities",
+      "printer error setup order utilities",
+      "printer setup",
+      "printer utilities",
+      "order utilities"
+    ],
+    "keywords": [
+      "printer error",
+      "printer setup",
+      "printer not printing",
+      "printer no work",
+      "printer offline",
+      "printer wont connect",
+      "printer wont print",
+      "printer stuck",
+      "printer jam",
+      "printer configuration",
+      "printer install",
+      "printer setup error",
+      "printer utility issue",
+      "order utility error",
+      "prnter error",
+      "prnter no work",
+      "printer ded",
+      "printer not working",
+      "printer issue",
+      "printer problem",
+      "printer not responding",
+      "printer keeps disconnecting",
+      "printer keeps going offline",
+      "printer not pairing",
+      "printer bluetooth issue",
+      "printer connection failed",
+      "printer setup failed",
+      "printer utility not loading",
+      "printer utility broken",
+      "printer utility missing"
+    ]
+  },
+
+  "Manual Refund": {
+    "aliases": [
+      "manual refund",
+      "manual refund request",
+      "refund manually"
+    ],
+    "keywords": [
+      "manual refund",
+      "refund manually",
+      "refund not going through",
+      "refund wont go thru",
+      "refund stuck",
+      "refund error",
+      "refund issue",
+      "refund problem",
+      "manual return",
+      "refund plz",
+      "refnd",
+      "refund help",
+      "refund needed",
+      "refund processing error",
+      "refund failed",
+      "refund declined",
+      "refund not processing",
+      "refund not working",
+      "refund wont process",
+      "refund wont complete"
+    ]
+  },
+
+  "KYC Inquiry": {
+    "aliases": [
+      "kyc inquiry",
+      "kyc issue",
+      "kyc verification"
+    ],
+    "keywords": [
+      "kyc",
+      "kyc verification",
+      "kyc check",
+      "kyc not working",
+      "kyc failed",
+      "kyc error",
+      "kyc issue",
+      "kyc problem",
+      "kyc wont verify",
+      "kyc stuck",
+      "kyc pending",
+      "kyc taking long",
+      "kyc wont load",
+      "kyc verification failed",
+      "kyc verification error",
+      "kyc verification issue",
+      "kyc verification problem",
+      "kyc help",
+      "kyc support"
+    ]
+  }
+}

@@ -1,0 +1,1285 @@
+Payments (Main Category)
+-> ENP(EposNow) integration (sub category)
+-> PDQ(Third Party) integration (sub category)
+-> Manual Refund (sub category)
+-> Moto (CNP) Setup/ Increase (sub category)
+-> PBL Setup/ Increase (sub category)
+-> Adyen Inquiry (sub category)
+-> End YR Tax (sub category)
+-> KYC Inquiry (sub category)
+-> ENP (EposNow) PinCode (sub category)
+-> PM Team (sub category)
+-> Money Tribe (sub category)
+-> My Business Bank App Inquiry (sub category)
+-> Capital Loan Inquiry (sub category)
+-> Tip Error (sub category)
+->  Standalone (sub category)
+           -> Bank  Confirmation (sub category)
+-> EposNow Payments Sub(sub category)
+-> ENP Unresponsive/ COG (sub category)
+-> Payouts(EposNow) Inquiry (sub category)
+POS System (Main Category)
+->Till App Loading Error (sub category)
+-> Auto Close (sub category)
+-> EOD (sub category)
+-> Setup Till (Pos System) (sub category)
+-> Stuck Table (sub category)
+-> Till Refund (sub category)
+-> Printer Error / Setup/ Order utilities (sub category)
+-> CashDrawer Error (sub category)
+-> Tax Break Down (sub category)
+-> Basket Error (sub category)
+-> Tender Type Error (sub category)
+-> Staff Login/ Staff Roles Error (sub category)
+-> Unassign License (subcategory)
+-> Out of Stock Error (sub category)
+-> Scales  Setup (sub category)
+-> KDS Setup/ Error (sub category)
+
+Back Office (Main Category)
+-> Stock (sub category)
+-> Products (sub category)
+-> Reporting (sub category)
+
+-> Login Issue (sub category)
+-> MFA Disable (sub category)
+-> App Integration (sub category)
+
+
+
+
+Retention Record (Main Category)
+-> RT (sub category)
+
+Compliant (Main Category)
+-> Compliant (sub category)
+
+Book Session (Main Category)
+-> Book Session (sub category)
+
+Billing (Main Category)
+-> Billing (sub category)
+
+Call Back Request (Main Category)
+-> CBR (sub category)
+
+Sale (Main Category)
+-> Hardware Purchase (sub category)
+-> App Purchase (sub category)
+-> Capital Loan Offer (sub category)
+-> Additional Device & Location (sub category)
+
+Feedback Review (Main Category)
+-> FeedBack (NPS) (sub category)
+
+Swap It Email (Main Category)
+-> Swap It Email(sub category)
+
+Server Outage (Main Category)
+-> Server Outage (sub category)
+
+____________________________________________________________________________
+
+
+
+Payments (Main Category)
+-> ENP(EposNow) integration (sub category)
+Troubleshooting Steps
+
+Question: Are you on Windows; Android; Apple device?
+Question: Are you setting up to the till or Saturn is your portal till?
+Step 1: Open up service account or remote into till or login to backoffice : eposnowhq.com -> setup-> payments- terminal setup & assign store location to ENP( saturn, Air ; P400) { If  setup in back end errors check location, under setup - location - location, and make sure everything is setup.}
+Step 2: Cloud sync the till (3 lines -> cloud sync.)
+Step 3: Settings-> payments -> eposnow payments -> enable it( if customer has more than one ENP, have them select the blue button that says change and they select the ENP that they want associated with the till.)
+Step 4: Turn on the ENP and go through the setup process of the hardware itself.
+Step 5: How to switch ENP to Cellular Data? :  Settings (Air & Saturn) ->network & Internet -> cellular data -> check to see if it says active -> press the back arrow , go to WiFi and turn it off. If the cellular data doesn't start once you do, that simple power cycle of the ENP should connect you to 4G/5G network depending on your region.
+Additional information: if customer wants to disable receipts or tips : settings -> payments -> eposnow payments.
+
+Note:  If a customer is using an Apple IOS product, and can't see Epos Now Payments options, they will need to reach out to Apple as their IOS firewall is blocking cloud service to Epos Now.
+
+backoffice : eposnowhq.com -> setup-> payments->payments set-up -> log back in ( if you don't have MFA setup. Make sure to select the correct region flag, add your phone number,  select codes to be sent to SMS. Save.  Log out & back in.)-> scroll to bottom and enable additional card types. ( This is also where you can change to/ from faster payouts or change your cut off time. Cut off time takes into effect after 24 hrs if you change it.)
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Setup ENP.
+Troubleshooting: Setup ENP.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+-> PDQ(Third Party) integration (sub category)
+Troubleshooting Steps
+Step 1: Open up service account or (till)3 lines -> App store -> Myapp or login ( eposnowhq.com) to backoffice-> app store-> my app-> locate third party PDQ( Teya, Take Payments, Dejavoo, Lloyd Cardnet(a.k.a. Castle PDQ, etc.)->  select setup & put in the information provided by the MP PDQ.
+Step 2: Cloud sync the till (3 lines -> cloud sync.)
+Step 3: Settings-> payments -> third party PDQ provider-> enable it( if customer has more than one PDQ, have them select the blue button that says change and they select the PDQ that they want associated with the till.)
+Step 4: Turn on the PDQ and go through the setup process of the hardware itself.
+Additional information: if a customer wants to disable receipts: settings -> payments -> Dejavoo or if it's another  provider they have to reach out to their MP (Merchant Processor).
+
+We are no longer partners with global payment( evo/ heartland) & paymentsense (dojo). 
+
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Setup PDQ.
+Troubleshooting: Setup PDQ.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+-> Payouts(EposNow) Inquiry (sub category)
+Troubleshooting Steps
+Step 1: Back office( eposnowhq.com) -> Reporting -> Payments Payout.
+Step 2:  move screen Left to right, till you see total deduction. It has a drop down you can select. To see the exact information you are looking for. ( Best to be Done on Desktop or Laptop.)
+Additional information:  you can also see the exact amount you made over cash and card in, Reporting -> Banking -> Tender Type. Go to show data drop down, and select what you need.
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Payouts Inquiry.
+Troubleshooting: Payouts Inquiry.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+-> Manual Refund (sub category)
+Troubleshooting Steps
+Raise a Jire Ticket 
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Manual Refund (Currency drop down: £ / $) & (  text system to add the currency amount & PSP reference number.) & (Calendar to add the date of the transaction.)
+Troubleshooting: Jire Ticket ( text system to add Jire Ticket).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+Email
+I wanted to inform you that your manual refund in the amount of [Amount(Currency drop down: £ / $) & (  text system to add the currency amount )] was successfully processed on [Date (give calendar for date to be added)]. Please allow 5 to 7 business days for the funds to appear back in your account, depending on your bank’s processing time.
+If you do not see the refund after this period, please feel free to reach back out, and we’ll be happy to investigate further.
+Download your refund confirmation letter.
+
+-> Moto (CNP) Setup/ Increase (sub category)
+Troubleshooting Steps
+Raise Jire Ticket 
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Moto (CNP)  Installation: (Drop down: Yes / No/ Error),Currency: ( drop down: N/A / $ /£), &  Increase : ( drop down: N/A / 1.5k /2.5k / 3.5k+ ), 
+Troubleshooting: Jire Ticket ( text system to add Jire Ticket).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+Email
+Apologies for the delay regarding your MOTO setup. Please ensure you sign the SAQ Merchant form at your earliest convenience. Please, make sure to email me back letting us know that it was signed.
+Once completed, kindly allow 24 hours for the update to take effect. After this period, please perform a factory reset on your card reader by following the steps below:
+       If P400 - 9 then, the green. if not go to ->
+Go to Settings
+
+
+Select Configuration
+
+
+Enter 0779
+
+
+Choose Reset
+
+
+This will apply the necessary changes.
+How to turn on Moto on till:
+Go to 3 lines upper left hand corner
+
+
+Select Settings
+
+
+Enter Payments
+
+
+Choose Enable Card CNP(customer not present)
+
+
+
+You will have to use the moto through the till, it doesn’t work without the Card CNP on the till. This will allow for the prompt customer not present  on the card reader. In order to do the transaction, when the customer is not present.
+
+
+Thank you for your patience and cooperation.
+
+
+-> PBL Setup/ Increase (sub category)
+Troubleshooting Steps
+Install or raise Jire Ticket 
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: PBL  Installation: (Drop down: Yes / No/ Error),Currency: ( drop down: N/A / $ /£), &  Increase : ( drop down: N/A / 1.5k /2.5k / 3.5k+ ), 
+Troubleshooting: (drop down: Agent Installed / Jire Ticket ( text system to add Jire Ticket, that comes after the drop down if selected.) .
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+Email
+Apologies for the delay regarding your setup of your Pay By Link. Update, please perform a factory reset on your card reader by following the steps below:
+       If P400 - 9 then, the green. if not go to ->
+Go to Settings
+
+
+Select Configuration
+
+
+Enter 0779
+
+
+Choose Reset
+
+
+This will apply the necessary changes.
+Thank you for your patience and cooperation.
+
+-> Adyen Inquiry (sub category)
+Troubleshooting Steps
+Raise Adyen Ticket 
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Adyen Ticket (drop down: Volume ( give a additional drop down if this one selected [drop down: increase/ decrease] / Missing funds( if selected, give a drop down for : Currency: ( drop down: $ /£) , however give an option where after you select currency amount, it sticks and give you option to add one by one, by hitting a plus symbol and it keeps recording up to 30 transactions and at the  it calculate the total value & give option with those transactions to add the PSP reference number that goes with the  correct transaction account.)/ ENP Not on platform/ Tax Form/ Cancel Capital Offer/ Other [ will have a text box, that shows  after it if prompted.]) 
+Troubleshooting: Adyen Case Number ( text system to add Jire Ticket).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+Email
+
+Ayden Email:
+
+Auto generate information that was taken from case info to generate email’s content from entities “ What” & “Troubleshooting,” Only. Always address this to Adyen when making the email, after adding contents add the information about the account entities, such as - “Name,” Account name,” Account Holder ID,” & “Account Reference Number.”
+Account name : Text box 
+Name: ( Draw from person name to automatically give the name from “who” entity and if it's not them give text box function to modify the correct name.)
+Account Holder ID: text box
+Account Reference Number: text box
+
+Customer email: 
+
+We would like to inform you that your ticket has now been successfully resolved by Adyen.
+If you have any further questions or require additional assistance, please do not hesitate to contact us.
+
+
+-> End YR Tax (sub category)
+Troubleshooting Steps
+US Customer: Go to Adyen and download the 1099 tax and email  it to the customer. 
+UK Customer:  Back office -> Reporting -> Accounting ( choose whatever tax information you need from our back end.)
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: End of the Yr Tax.
+Troubleshooting: End of the Yr Tax.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+Email
+Please find attached your end-of-year tax form for your records.
+If you have any questions or require further assistance, please do not hesitate to reach out.
+
+
+-> KYC Inquiry (sub category)
+Troubleshooting Steps
+KYC 
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: KYC Issue.
+Troubleshooting: KYC Issue:( Drop down: KYC Broken/ Setup KYC).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+Email
+Please reach out to your KYC agent using the details provided below. You may contact them directly via email or by calling in and requesting to be connected.
+KYC Agent Name: [Agent Name]
+Email Address: [Agent Email]
+If you require any further assistance, please let us know.
+
+-> ENP (EposNow) PinCode (sub category)
+Troubleshooting Steps
+Transaction - 5717
+Settings - 0779
+Master- 0856
+P400 - Transactions page 8*Green
+P400 - Settings page 9 * Green
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Pin code.
+Troubleshooting: Pin code.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+
+-> PM Team (sub category)
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Redacted.
+Troubleshooting: Reach out to Payments Monitoring Team.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+Email
+Regarding your account, please reach out directly to our Payments Monitoring Team at payments-monitoring@eposnow.com.
+Kindly note that this department communicates exclusively via email, so all inquiries or updates related to your payments should be sent to them directly.
+Thank you for your understanding and cooperation.
+
+-> Money Tribe (sub category)
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Funds won't transfer.
+Troubleshooting: Money Tribe Ticket ( text box).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+Email
+We are pleased to inform you that your fund transfer issue has now been resolved.
+The funds were successfully transferred on [Date (Calendar) ].
+If you have any further questions or require additional assistance, please do not hesitate to contact us.
+
+-> My Business Bank App Inquiry (sub category)
+Troubleshooting Steps
+App won't load - settings -apps- storage clear data or uninstall app 
+
+Update Google Play Services -settings- apps- press google play services -> all the way at the bottom - app details in store
+
+ My Business app -> transfer funds are at the bottom middle 
+
+How to cancel my card? -> Go to Card activation area -> cancel old card-> new card will be issued out
+
+How to set up my business app? 
+Step 1: Enable MFA -> Circle Icon with initials-> Setup MFA-> Select SMS & Save make sure flag is the correct region.
+Step 2: Log out the back office and re log back in.
+
+Step 3: Refresh the My Business App -> login.
+
+Cash Out -> Setup -> Payments -> Payments Setup -> Cash Out.
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What:My Business App 
+Troubleshooting: (drop down: Loading Issue/ Funds Transfer/ Card Replacement/ Login/ Cash Out.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+-> Capital Loan Inquiry (sub category)
+Troubleshooting Steps
+Back office -> nine squares in upper right hand corner -> Capital or to even pay off loan/ receive information.
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Capital Loan.
+Troubleshooting: (drop down: Pay of Loan/ Loan Information).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+-> Tip Error (sub category)
+Troubleshooting Steps
+Currency incorrect for region -> Have T2  fix it.
+Disable Tip adjust -> 3 lines -> Settings -> Payments ->  Tip Adjust Disable 
+Disable Tip-> 3 lines -> Settings -> Payments ->  Epos Now Payments -> Tips Disable
+Enable custom tips
+Step 1: Back office -> setup- payments - tip settings -> setup.
+Step 2: ENP - Settings (P400 - 9* green)  - configuration - 0779 - reset device. 
+Step 3: If the customer has 2 screens, make sure the customer display screen is disabled. As it won't prompt the ENP for custom tips. 3 lines -> settings -> customer display -> disable customer display tips. Can't have both enabled one or the other.
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Tips .
+Troubleshooting: (drop down: Tip Error/ Disable Tips/ Enable Tips).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+->  Standalone (sub category)
+Troubleshooting Steps
+Depending on customer setup the standalone tender type button can be one of the main tenders on the screen or under the keypad, under the more options with 3 dots. This is located in the area after you hit pay.( eposnowhq.com) back office -> setup->tender
+
+Explanation to why it happens? : If one or both devices are on wifi. The card reader will always have better connectivity( due to having cellular data.) . If the customer has either and the card reader on wifi and getting transactions not showing on the till. It means the POS system missed the transaction frequency length, when ENP was sending the data back. Always best to have ENP on cellular data. P400s don't come with cellular data. 
+
+How to switch ENP to Cellular Data? :  settings (Air & Saturn) ->network & Internet -> cellular data -> check to see if it says active -> press the back arrow , go to WiFi and turn it off. If the cellular data doesn't start once you do, that simple power cycle of the ENP should connect you to 4G/5G network depending on your region.
+
+How to rectify EOD Standalone transactions(a.k.a missing transactions on Pos system (Till))? :  Have customers mark it down as a miscellaneous  product or misc product, which is located at the bottom of the basket on the right hand side with Plus sign -> hit plus sign again on the left hand sign & enter the information needed-> pay-> Epos Now standalone or standalone ( it will record it like a cash transaction and not a card transaction customer will not be charged again.)
+
+Note: If a customer doesn't record those standalone transactions, through the till app. Customers will have to wait till they receive their payouts and visit -> reporting -> payments -> payments payout in the back office to view that information or customer can request for the standalone transactions through Epos now staff, where we can give a transaction list of the ENP, but customer must provide the full serial number of the device. Located on the back of the terminal. 
+
+If you have a PDQ machine from a third party, please reach out to your merchant provider, as epos now doesn't hold records of non-ENP customers.
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Standalone.
+Troubleshooting: Standalone
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+Email
+Please find attached the standalone transaction list for the requested ENP.
+If you require any additional information or further assistance, please do not hesitate to reach out.
+
+
+           -> Bank  Confirmation (sub category)
+Troubleshooting Steps
+Email bank confirmation letter or give via of live chats.
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Have not received Payouts.
+Troubleshooting:  Bank Confirmation Letter.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+Email
+Please find attached your bank confirmation letter.
+Kindly contact your bank directly to locate the funds, as they have already been issued from the EPOS Now side.
+If you require any further assistance, please do not hesitate to reach out.
+
+
+-> EposNow Payments Sub(sub category)
+Troubleshooting Steps
+Install or raise Jire Ticket  or  resync sublime then resync to back office- under subscriptions
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: eposnow payments subline cancel itself out. 
+Troubleshooting:Jire: (text box)
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> ENP Unresponsive/ COG (sub category)
+Troubleshooting Steps
+Config :settings (P400 9*green )-> configuration -> code: 0779 -> reset device .
+
+Software Version Update: Settings (P400 9*green )-> device Info->  software version updates -> update if available.
+
+Hard Rest: Turn the device over, till you see the back of the device. -> put your thumbs on the back of the lid, and pull towards you. -> it pops back a little, and lift the lid up. -> take the battery out, and time it for 2 minutes before putting the battery back in. ( Depending on the device, if you have a Saturn ( F1S2), there will be a  clamp on the  left hand side of the battery, pinch it towards the battery and it will fall out; if you have an Air (AMS1) just gently tap it on your hand.)
+
+Power Cycle: for p400 unplug it from the power source (outlet/ power point/ power socket/  wall socket/ main socket/ plug socket). Saturn press the power button on the left hand side. Air press the power button on the right hand side.
+
+Network:  (P400 9* green) settings-> network and Internet -> wifi or cellular data (cellular data is only for Air & Saturn)  P400 can only be connected via of ethernet or wifi. If you are connected via wifi make sure  the cable isn't damaged or try replacing it. P400 struggle with wifi, it's best to keep them on ethernet. If you enable cellular data, please make sure to connect to some sort of Wi-Fi/ hotspot to connect to the cellular data, as you will need a network to activate it, if you haven't already. Once you go to cellular data as long as it says active, your enp is connected to cellular data.  You will see this with towers in the upper right hand corner. If you don't see it at first, do a power cycle.
+
+ 
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: ENP Issue: (Drop down: ENP unresponsive/ COG). 
+Troubleshooting:Enp unresponsive: (Drop down: Screen not responding/ NFC(Tap) Unresponsive/  Swipe Unresponsive/ Tap Unresponsive/ Battery Unresponsive/ Enable Other Card Types/ Network Related/ Error Code 10019 (Tamper)/ N/A). Diagnostic testing: (drop down: Hard Reset/  Configuration/  Power Cycle/  Software Version Update/ Non - Recoverable/ All above [ if I select “ all above,” entities, ‘Hard rest’ configuration’ ‘power cycle’ &  ‘ software version updates’ should automatically be added to case notes. Don't add non- recoverable or COG.]/ COG).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation/ COG) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+POS System (Main Category)
+->Till App Loading Error (sub category)
+Troubleshooting Steps
+Question: What device do you have: Windows, Tablet, Mac,  POS System (Till) or Saturn (ENP)?
+
+Unassigned the license to do a force cloud sync -> back office -> setup -> locations -> devices -> Unassign license.
+
+Windows: 
+Option 1: clear temp files: use Windows search icon / press Windows icon type in run/ hot key Win+ R-> %temp% ( enter) -> clear all files .( Make sure to permanently delete & restart the till)
+Option 2:  update till app, by going to out back office -> till-> download.->  go into search type(or look  on your left hand side apps that's available and select settings.)settings -> press apps and notifications -> look for Epos Now Till -> uninstall it-> search engine -> File explorer -> downloads -> open newly installed app and install. ( Customers will not have to worry about re-setting up or login; it will already have them login.)
+Option 3: clear data,  file explorer -> press desktop → your local driver ( C: or Epos Now)-> Program files / Program files (86)[ depending where file was saved.] -> Right click and rename EposNow to EposNow.old. (if you can't see it  enabled  program Data: -> go to view-> show-> hidden items on file explorer.)
+Additional information: if your app isn't up to date which is 3.4.1.4 or 3.4.1.7( given from staff) please update your software version. Note:  Epos Now no longer supports Windows devices & Mac os devices. No more updates. Let's talk about upgrading your devices before the hard drive is unable to clear temp files anymore, which will bring down your system permanently.
+
+Tablets: Install and reinstall Epos Now Till app and reset up your information( you don't have to re-setup back office information, just hardware information to tablet.)
+
+POS System (Till):
+ Pull screen down in upper right hand corner, pull down the first box again -> bottom right corner it be a gear (⚙️)  next to a pencil, select the gear-> apps & notifications -> Epos Now Till-> storage -> Clear data -> got back to the till and reset up device and log back into the back office, select store, device and business as usual.
+
+Pull screen down in upper right hand corner, pull down the first box again -> bottom right corner it be a gear (⚙️)  next to a pencil, select the gear-> network & Internet-> Wi-Fi-> select network-> put in network password or connect it via of Ethernet.
+
+Check for updates: press the back arrow till your on main screen of settings again -> scroll to bottom till you see system -> select system ->  system updates -> go to apps -> look for Epos Now -> Look see  if it say Update or Up to Date, if it needs to be updated, select update.  Anything that's below 1.1.107+ is out of date and should be updated to the latest software version.
+
+ENP(Saturn) won't load till app: Epos now agent can uninstall and reinstall the latest version, please provide ENP serial number located on the back of the device.
+
+
+Case Notes
+                                   Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Till wont load.
+Troubleshooting:device type:  (drop down:  windows, mac, saturn, tablet, pos system(till)). Till wont load. Error Cause : ( drop down: Network / Software).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+-> Auto Close (sub category)
+Troubleshooting Steps
+Back office( eposnowhq.com)-> locations->devices-> edit-> unselect  auto close-> update-> load till
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Auto Close.
+Troubleshooting:Auto Close.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+-> EOD (sub category)
+Troubleshooting Steps
+3 lines -> settings ->EOD settings-> modify what you want to be printed off and not printed. ( for customers that want to shorten their EOD to save paper.)
+
+3lines -> admin -> back office  or login to back office ( eposnowhq.com) -> reporting-> banking->EOD( end of day).
+
+Back office -> manage -> staff - > Staff Roles ( edit staff roles to fix EOD issues where customers can't see reporting. Turn off blind EOD, or other issues like permissions.)
+
+How to close till(EOD) -> 3 lines -> Admin ->  close till ->  before you hit,” print to close,” make sure you input the value of your tender types ( cash, card, & etc.) , then hit print to close.
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: EOD Inquiry.
+Troubleshooting:device type:  (drop down:  EOD Reporting/  EOD Till settings / Error) EOD/ CLOSE TILL.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Setup Till (Pos System) (sub category)
+Troubleshooting Steps
+Follow the step by step guide instructions, that's built into the till to set up the pos system.
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: EOD Inquiry.
+Troubleshooting:device type:  (drop down:  EOD Reporting/  EOD Till settings / Error) EOD/ CLOSE TILL.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+-> Stuck Table (sub category)
+Troubleshooting Steps
+Back office-> setup-> location -> location-> edit-> edit table plan -> Delete old table with the error. Replace it with a new one.
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Stuck Table.
+Troubleshooting: Stuck Table.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Till Refund (sub category)
+Troubleshooting Steps
+Order -> complete -> refund -> refund reason -> select refund reason -> select card or cash or scan the customer receipt in the search icon and do the same steps to do a refund. If not, Back office -> reporting →  classic report -> completed transactions -> select date-> transactions barcode (Select on)-> go to till and search the transaction barcode in the search engine ( make sure to not get the O’s & 0’s mixed up or it won't load the information to do a refund.) same steps after that.
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Refund.
+Troubleshooting: Refund.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+-> Printer Error / Setup/ Order utilities (sub category)
+Troubleshooting Steps
+
+Order utilities has been discontinued for windows devices 
+Common Error for Order Utilities: It stops working or it gets flooded with printing inquiries. Pull screen down in upper right hand corner, pull down the first box again -> bottom right corner it be a gear (⚙️)  next to a pencil, select the gear-> apps & notifications -> Order Utilities-> storage -> Clear data -> scroll up from bottom of the screen -> hit the circle 🔴 button -> order utilities -> press start -> press Play (Start) ▶️ 
+
+Check behind the printer is connected properly to Ethernet to tower, if you're doing Ethernet ( make sure cable is in correct port. The Cashdrawer port is smaller than the Ethernet port. cashdrawer cable is flat, not Ethernet cable and is hardware into cashdrawer). There is USB B to USB A cable connector. Where you plug the USB B ( = ) connector into the till and the USB A ( [ ] ) connector to the  printer .
+If you're doing Ethernet and if your till haven't picked up the printer. To do a test print -> turn off the printer -> put your thumb on the feed button -> turn on the printer -> hold feed button for 2 sec -> take your thumb off the feed button. It should print you a long sheet of paper. Look for on the sheet of paper,  for the word protocol , then look for IP address, under Mac address. If the IP address states, “ 192.168.123.100,”  that means its static IP address and your printer is off line. Reboot your network tower and try again. If you get a fee dump paper, don't do feed dump try again.  There is also a possibility that you have gotten the printer setup confused, and have the printer on a USB connection. 
+
+We have our Epos now printer Pos80gx, we have third party printers we integrate with bixolon 220dx , Star printer (which has two versions Bluetooth and Ethernet/ USB printer.) ,  Epson printer, & Bixolon Label printer. Epos now only integrate these printers and have the drivers to supply to customers. We will not be able to set-up any other third party printers outside of Epos Now and third party partnerships we have. Windows may have more leeway, however, no guarantee it will work, and you as the customer will have to reach out to a third party vendor of the printer or buy a printer form Epos Now, so you have Warranty on the printers, if purchased through Epos Now.
+
+To setup receipt printer: 3 lines->  settings -> peripherals-> setup receipt printer-> follow the step provided by the pos system, to complete the setup process.( This is for Androids, POS systems & Saturns.)
+
+
+To setup order printer: 3 lines->  settings -> peripherals-> setup order printer-> follow the step provided by the pos system, to complete the setup process. ( This is for Androids, POS systems & Saturns.)
+
+To setup Bixolon Label( On Pos System): It is plug in and play. How to use it? Back office -> manage-> products -> advance (Depending on product list your on it be a button on left hand side that will say advance or  it be on the right hand side, press the 3 dots & then select advance edit.) -> Generate Labels. This is where you can generate labels. Highly advised for customers to play around with the generate labels page to customize to your preferences. 
+
+For Windows devices to set up the printer on your Windows devices, please download the driver provided by the agent. After downloading the file. Go to File Explorer ->  go to downloads or  the designated folder you have saved it to-> extract all-> windows settings ->  printers & devices -> add printer or search it in the search engine. You can also locate these settings options in the control panel or your printer & device folder.
+
+To set up USB to Windows: select local -> search for printer -> select add printer driver, go to  the file folder of the printer -> select printer driver ( If Epos Now, the driver is called Zling.)-> don't share the printer, keep it private -> name the printer.  Next-> right click printer or click printer, and select manage -> go to printer properties -> Port -> enable printer pooling -> select virtual ports and LTP1. Test print printer.  Next -> go to Epos now app ( login to register if you're not already) -> 3 lines->  settings -> peripherals-> App settings -> Receipt printer & select the printer you want to print your receipts.
+
+To set up Ethernet to Windows: select TCP/ IP -> Enter IP address -> search for printer -> select add printer driver, go to  the file folder of the printer -> select printer driver ( If Epos Now, the driver is called Zling.)-> don't share the printer, keep it private -> name the printer. Test print printer.  Next -> go to Epos now app ( login to register if you're not already) -> 3 lines->  settings -> peripherals-> App settings -> offline/online order printer -> select what order preference you want ( order A, order B, Kitchen, front, rear, & bar) & select the printer you want to print your order printer.
+
+Note: If you are going to do order printing, please ensure your categories are set up with correct printer preferences, to do that go to back office -> manage -> categories ->  under column “ order/ lay away", select your order printing preferences. This option will be presented during setup through the till app on Android device/ POS system, however for Windows users, please go to the back office.
+
+Built in printer common error: printer is not printing, to rectify this issue go to 3 lines->  settings -> peripherals-> setup receipt printer-> got to your printer that's already saved in the system, which is 1.1.1.1 ( built in printer) -> hit the three dots and delete the printer. Power off the till (restart is also an option). Power button located on bottom right hand side. Power back on the till. Next go back into peripherals to set up the receipt  printer again ( 3 lines->  settings -> peripherals-> setup receipt printer-> follow the pos system instructions to re-add  the receipt printer.). The reason the built in printer is not printing is due to the fact that the firmware of the printer got stuck installing during the first setup of the printer.  
+
+If order printer gets disconnected check to see if the order printer is disconnected via of Ethernet ( see if the light is still flashing where the Ethernet cable is plugged in at, if it's not flashing it could be disconnected via of Ethernet or cable has been damaged/ gone bad.) or the printer has been unplugged. This goes for Windows and Androids devices. Also, reboot network tower, if you are unable to do so, contact your network provider as  they can assist with IP address issues.  
+
+How to change Ip address of printer: Warning ⚠️ before proceeding you must have your previous network provider to do this if not. Reach out to your new provider and change your gateway to the original printer's gateway. So, say if your IP address was originally for printer 192.168.4.80, your gateway number would be 4 and it will fix your printer's connectivity issue. Or buy a new printer through Epos Now ( if the printer is still in warranty, then swap it for a new printer.) .
+
+Steps to changing printer IP address. Open up your web browser ( chrome, Firefox, edge or Opera.) ->  type in the IP Address of your printer, for example: “ 192. 168.4.80.” ->  enter -> TCP/ IP Settings or  Configuration settings -> go to IP address and type in the new free IP address given by the POS system to locate the free IP address. Go to network diagnostics -> IP scanner -> at the top it shows a free IP address.  If your till is a windows device it is best to reach out to your network provider to do this for you. If you don't feel comfortable changing IP addresses on your own, contact your network provider. Lastly, reboot the printer. 
+
+How to calibrate Bixolon Label Printer?   Press and hold the feed button, till the light  flashes yellow & red, then green -> then press the feed button again -> test print the printer. Or  set-up the Bixolon printer to your computer, where you have more customization in font sizes. To set up a label printer ( On Windows ) -> download the file given to you by the agent -> open  installation and start the install process -> follow the prompt-> test print the printer. (Please make sure the printer was already plugged into the windows devices.)
+
+If the printer isn't printing properly it is a swap or a new hardware purchase. 
+
+Epos Now printers are Thermal printers, buy thermal paper through Epos Now.
+
+Apple devices have cloud sync and printer setup issues, due to the terms of IOS  data protection protocol. May not be compatible with Epos Now devices and partnerships.
+
+Paper Issue -> make sure the paper is counter clock wise, and not clock wise, over the roller, not under the roller. Make sure paper is sticking out a little and the printer will readjust itself.
+
+Built- in printer blade error -> open the printer door ( leaver on the right hand side pop it towards you.)-> lay till onto it's back -> there will be half hexagon hole, on the top of under the screen of the till-> stick your finger in there, and pop it open -> there will be a white gear, spin it  counter clock wise 3 times, and try close printer door. Warning ⚠️ - Don't do it to much or it can get sucked up into the machine  or spin it down to much or the blade will fall out. If either of these happen, the printer blade can't be taken out or falls out; it can't be put back in. You will have to swap it for the till or if you're out of warranty, you will have to buy a new till or printer. 
+
+Note: If you're having issues removing a printer, go to your window’s search engine and type in print management -> go to printers-> right click -> cancel jobs-> right click again, and delete printer.
+
+Epos Now printers are Thermal printers, buy thermal paper through Epos Now.
+
+Apple devices have cloud sync and printer setup issues, due to the terms of IOS  data protection protocol. May not be compatible with Epos Now devices and partnerships.
+
+Paper Issue -> make sure the paper is counter clock wise, and not clock wise, over the roller, not under the roller. Make sure paper is sticking out a little and the printer will readjust itself.
+
+Built- in printer blade error -> open the printer door ( leaver on the right hand side pop it towards you.)-> lay till onto it's back -> there will be half hexagon hole, on the top of under the screen of the till-> stick your finger in there, and pop it open -> there will be a white gear, spin it  counter clock wise 3 times, and try close printer door. Warning ⚠️ - Don't do it to much or it can get sucked up into the machine  or spin it down to much or the blade will fall out. If either of these happen, the printer blade can't be taken out or falls out; it can't be put back in. You will have to swap it for the till or if you're out of warranty, you will have to buy a new till or printer. 
+
+Note: If you're having issues removing a printer, go to your window’s search engine and type in print management -> go to printers-> right click -> cancel jobs-> right click again, and delete printer.
+
+
+
+
+-> CashDrawer Error (sub category)
+Troubleshooting Steps
+Make sure the cash drawer is not plugged into the Ethernet port or it won't pop.
+
+ Cash drawer plugged in, but still won't pop: to rectify this issue go to 3 lines->  settings -> peripherals-> setup receipt printer-> got to your printer that's already saved in the system, which is 1.1.1.1 ( built in printer or USB printer [Doesn't have IP Address]) -> hit the three dots and delete the printer. Add it in again, by following the pos system instructions to set it up. If the cash drawer isn't popping on the Pos System, it is due to the printer cutting off services to the cashdrawer. It's a simple fix. By removing and adding the printer back in 
+
+If the cash drawer won't pop on windows device: go into your windows settings ->printer & devices -> go to your receipt printer, and click it or right click -> manage-> printer properties → printer settings -> go to cash drawer, and change it from after print receipts to before it prints receipts, you can also change it to 2 after receipts, as well 
+
+If the trouble shooting steps doesn't work, then it is a swap( swap it , will only be tailor to that serial number of the device giving error.) or a purchase of a printer and cash drawer, as we have no full certainty if it's the printer or cash drawer that's unresponsive or upgrade your till to a Built-in printer Pos system.
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Cash drawer unresponsive.
+Troubleshooting: Device Type: ( Windows / POS system)
+( Automatically generate  case notes , using entities, “ Device  Type,” where it takes the key word to generate the notes that came from the Troubleshooting steps.)
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Tax Break Down (sub category)
+Troubleshooting Steps
+Back office ( eposnowhq.com)  or 3 lines -> admin -> back office -> setup ->  company details ->  select exclusive tax/  inclusive tax break down or exc tax/ inc tax break down. Also make sure you already created your taxes before making your products. To make taxes,  back office -> setup-> banking ->  taxes. Next, go to the Till-> 3 lines -> Settings -> general -> at the bottom, go to tax mode, and select exclusive tax mode. If you don't see that option, cloud sync the till-> press the back arrow in the upper left hand corner -> 3 lines -> the hit cloud ☁️ (cloud sync).
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Tax break down.
+Troubleshooting: Tax break down.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Basket Error (sub category)
+Troubleshooting Steps
+Question: What device do you have: Windows, Tablet, Mac,  POS System (Till) or Saturn (ENP)?
+Unassigned the license to do a force cloud sync -> back office -> setup -> locations -> devices -> Unassign license.
+
+
+Windows: 
+Option 1: clear temp files: use Windows search icon / press Windows icon type in run/ hot key Win+ R-> %temp% ( enter) -> clear all files .( Make sure to permanently delete & restart the till)
+Option 2:  update till app, by going to out back office -> till-> download.->  go into search type(or look  on your left hand side apps that's available and select settings.)settings -> press apps and notifications -> look for Epos Now Till -> uninstall it-> search engine -> File explorer -> downloads -> open newly installed app and install. ( Customers will not have to worry about re-setting up or login; it will already have them login.)
+Option 3: clear data,  file explorer -> press desktop → your local driver ( C: or Epos Now)-> Program files / Program files (86)[ depending where file was saved.] -> Right click and rename EposNow to EposNow.old. (if you can't see it  enabled  program Data: -> go to view-> show-> hidden items on file explorer.)
+Additional information: if your app isn't up to date which is 3.4.1.4 or 3.4.1.7( given from staff) please update your software version. Note:  Epos Now no longer supports Windows devices & Mac os devices. No more updates. Let's talk about upgrading your devices before the hard drive is unable to clear temp files anymore, which will bring down your system permanently.
+
+Tablets: Install and reinstall Epos Now Till app and reset up your information( you don't have to re-setup back office information, just hardware information to tablet.)
+
+POS System (Till):
+
+Pull screen down in upper right hand corner, pull down the first box again -> bottom right corner it be a gear (⚙️)  next to a pencil, select the gear-> apps & notifications -> Epos Now Till-> storage -> Clear data -> got back to the till and reset up device and log back into the back office, select store, device and business as usual.
+
+Pull screen down in upper right hand corner, pull down the first box again -> bottom right corner it be a gear (⚙️)  next to a pencil, select the gear-> network & Internet-> Wi-Fi-> select network-> put in network password or connect it via of Ethernet.
+
+Check for updates: press the back arrow till your on main screen of settings again -> scroll to bottom till you see system -> select system ->  system updates -> go to apps -> look for Epos Now -> Look see  if it say Update or Up to Date, if it needs to be updated, select update.  Anything that's below 1.1.107+ is out of date and should be updated to the latest software version.
+
+
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Basket Error:( drop down: Tax Break down/  Hidden basket Items/ Duplicate Tax/ Gratuity Error).
+Troubleshooting: Diagnostic Testing: (drop down: Cleared storage/ clear cache/ check for updates/ all the above [ if all the above is selected, put everything in the drop down, under all the above, for troubleshooting]). Device Type: (drop down: Windows / POS system).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Tender Type Error (sub category)
+Troubleshooting Steps
+ Back office -> setup -> banking -> tender types -> delete the tender type that's giving an error or an issue in your EOD or Payment Page. If you want to make a new one, then select Add Tender Type.
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Tender Type Error.
+Troubleshooting: Tender Type Error.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Staff Login/ Staff Roles Error (sub category)
+Troubleshooting Steps
+create a service account , and fix the staff login, so customers can start trading again if it's staff and don't have access to the back office.
+
+Back office -> manage -> staff -> Staff ( To edit the staff information hit edit next to staff name. If you want to add staff, hit add staff in the upper right hand side.)
+
+Back office -> manage -> staff - > Staff Roles ( edit staff roles to fix EOD issues where customers can't see reporting. Turn off blind EOD, or other issues like permissions.)
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Staff: (drop down: Login to register/ staff roles/ add staff login/ Error).
+Troubleshooting: Staff: (drop down: Login to register/ staff roles/ add staff login/ Error).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+-> Unassign License (subcategory)
+Troubleshooting Steps
+ Unassigned the license to do a force cloud sync -> back office -> setup -> locations -> devices -> Unassign license.
+
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: unassigned license.
+Troubleshooting: unassigned licence.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+-> Out of Stock Error (sub category)
+Troubleshooting Steps
+If customer staff members hold down the button of the product, the staff will accidentally mark it off as out of stock. To fix this issue is the same way it transpired. Hold down on the product -> select in stock. Product will become available again.
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Product Greyed out “ Out of Stock.”
+Troubleshooting: Product Greyed out “ Out of Stock.”
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Scales  Setup (sub category)
+Troubleshooting Steps
+Please make sure before reaching out to Epos Now, you have already connected the scale to the till correctly or reached out to providers of the scale to have the hardware setup, before reaching out to us to set up the software program into till in order for them to work. We are partnered with few scale providers, they all have contact support line numbers. Whose our partners? Avery Berkeley, we can also set up CAS. 
+
+Set-up scale,  Back office-> app store-> Measurements app-> go back to back office -> Till -> 3 lines -> settings ->peripherals -> advance app settings -> setup scale-> select your scale type & communication type or COM type.
+
+ 3 lines -> settings ->peripherals -> select your scale weight matrices Kg, K , OZ, LB.
+
+3 lines -> Admin -> Back office -> location-> devices -> enable Scales.
+
+If you're doing variable barcodes, please go to setup-> then company details and add in information for variable barcodes, provided by the scale provider. Make sure to save. Disclaimer ⚠️ - variable barcodes only work unless it's already built into the code of the barcode, so beware if you try and make your own. It's best to get it through the vendor of the product itself.
+
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Scale Issue: (drop down: Setup scale / Error).
+Troubleshooting: Scale Type: drop down: Avery Berkeley/ CAS/ Other) Scale Diagnostic:(drop down: Setup scale / Error [Automatically generate the troubleshooting steps, if drop down entity “Error”, if selected].).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> KDS Setup/ Error (sub category)
+Troubleshooting Steps
+Must purchase the KDS subscription in order to do KDS. (If a customer already has KDS Sub , they must wait 24 hrs after purchasing the application, to receive the KDS device licenses.)
+
+Se-tup KDS: Login to back office on the KDS screen on EPOS NOW till app -> go to till-> select location -> device ( select KDS ) ( for additional information , you can go into the settings in the upper right hand corner and customize what you want to display on your screen using your order channels, such as, order A, order B, rear, front, bar & kitchen. Please note, your categories must be set up for order / layaway, and the kitchen display screen must be set to correct order channels in order to receive orders on the screen.)
+
+Common KDS Error, when items aren't showing on the till:  You would want to Unassign the KDS screens: back office ->  setup-> devices -> Unassign license to KDS. Go on KDS screen -Pull screen down in upper right hand corner, pull down the first box again -> bottom right corner it be a gear (⚙️)  next to a pencil, select the gear-> apps & notifications -> Epos Now Till-> storage -> Clear data -> got back to the till and reset up device and log back into the back office, select store, KDS device. Test to see if order appears on the screen.
+
+T2  Escalation Force Cloud sync maybe need (271828) can't be given to the customer, if error proceeds remote in and do it . If not, have the customer call in.
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: KDS Issue:(drop down: KDS Error/ KDS Set-up)
+Troubleshooting: KDS Diagnostic:(drop down: KDS Error/ KDS Set-up)
+Results: (drop down: Resolved/ Non - Resolved[ if “Non- Resolved,” is selected, pull Data from the “Troubleshooting Steps,” that starts off with “ Common KDS Error,” and put it  under entity “ KDS Diagnostic,” replacing  drop down entity, “KDS Error.”])
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+Back Office (Main Category)
+-> Stock (sub category)
+Troubleshooting Steps
+How to add stock to a product: Back office -> manage-> products -> advance (Depending on product list your on it be a button on left hand side that will say advance or  it be on the right hand side, press the 3 dots & then select advance edit.) -> scroll all the way down till you see stock adjust and add your stock there or when you first make the product, add the stock information, it's more clear if you do it under Quick Add, buy turning on stock level toggle or do bulk import app you can purchase from us, get 30 day free trial. Can uninstall to cancel subscription at any time.
+
+How to Update stock: back office -> stock management -> press stock adjust ( double tap if you're on Android or POS system or double click, that will open up the box line, where you update the stock. It is based on whatever location you set your products under for stock, so keep that in mind if you have multiple store locations. You can also customize the columns by hitting columns. Filter allows you to work on certain things, such as categories, and you can work on that whole entire stock inventory for one category.)
+
+Stock order: is only shared between store locations under one back office account can't happen outside of your back office. To do it  back office -> stock -> stock order ( this is where you can create stock order or receive and mark it as received, etc.)
+
+Track Stock:  back office-> reporting -> stock( you have 3 options, if you want to view your stock levels go to stock level. If you want to view stock changes, go to stock changes. Each one is pretty explanatory.)
+
+Can you get notifications about your stock dropping? Yes, just make sure when set up stock you select a stock alert. Which will alert you via of email. Or set-up a dashboard to do that: go to the dashboard , create it and select what you want to receive via of email, under reporting. Once you have done that, in reporting ->  schedule emails and create a schedule email for time and date where it issues out to you a report, just make sure you attach your dashboard you created earlier today.
+
+Use Bulk import application, it's a 30 day free trial and can cancel any time after that. Depending on the region, prices may vary.
+
+How to use Bulk Import: Back office -> app store -> my apps -> setup. Download the stock sheet and update your stock using Excel or Google sheets. You can use any of these templates to your specified need. How to upload the CSV file(must be CSV, and it must be files that come to back office bulk import, no outside or home made templates.) -> upload your modified template -> download -> Import.
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Stock Inquiry.
+Troubleshooting: Stock Inquiry.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Products (sub category)
+Troubleshooting Steps
+How to use Bulk Import: Back office -> app store -> my apps -> setup. Download the stock sheet and update your stock using Excel or Google sheets. You can use any of these templates to your specified need. How to upload the CSV file(must be CSV, and it must be files that come to back office bulk import, no outside or home made templates.) -> upload your modified template -> download -> Import.
+
+How to change pricing on multiple choice product groups?: back office -> MCPG-> details -> update prices.
+
+How to update products?: Back office -> manage-> products (Depending on product list your on it be a button on left hand side that will say Edit or  just  double tap/click the screen to modify the prices on the pop up box line (horizontal line) or highlight blue line.) ( on the non classic product it be option on the right hand side, press the 3 dots. This is where you can duplicate products, delete products, etc.) ( columns and filters give you customization over how you can view the table.)
+
+How to do anything else under the manage tab visit our YouTube channel: https://youtube.com/@eposnow?si=VBuelLZqmXKQfUf6
+
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Products Inquiry.
+Troubleshooting: Products Inquiry.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Reporting (sub category)
+Troubleshooting Steps
+Sales Report: to view information about your sales, back office -> reporting -> sales report.
+
+Classic report & Transaction Report , holds all data form your Till -back office -> reporting ->(  go to classic report -> completed transactions, if you want to pull up your transactions barcode or delete a transaction | go to transactions report -> transactions, to see transactions that may have not been received to see if it has PSP reference number on it for ENP transactions. Another cool trick is if you go into filters and go to advanced options at the bottom, and you can follow certain tender types such as card or pay by link.)
+
+How to do anything else under the reporting tab visit our YouTube channel: https://youtube.com/@eposnow?si=VBuelLZqmXKQfUf6
+
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Reporting Inquiry.
+Troubleshooting: Reporting Inquiry.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Login Issue (sub category)
+Troubleshooting Steps
+ Do forget the password to login to your back office. As Epos Now doesn't carry password login details. If you are a new customer please look for your activate account email to setup your account and login to the back office. Website: eposnowhq.com  .
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Login issue.
+Troubleshooting: Login issue.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2 Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> MFA Disable (sub category)
+Troubleshooting Steps
+Send AI EDPA code, so T2  disables MFA.
+ 
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Disable MFA.
+Troubleshooting: Disable MFA.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2 Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+-> App Integration (sub category)
+Troubleshooting Steps
+Give customers a support line of a third party app or put information into the queue.
+Case Notes
+
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: App.
+Troubleshooting: App: (drop down: Xero / Woocommerce/ API/ Otter/ Factor4/ Shopify/ .
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A /  Queue/ T2/ Customer Contact Third Party Support) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+Retention Record (Main Category)
+-> RT (sub category)
+Troubleshooting Steps 
+Back office ->  support -> billing/ subscription ( this is where you can cancel, update payment method.)
+Case Notes
+ RT: (Text Box).
+
+
+Compliant (Main Category)
+-> Compliant (sub category)
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Complaint: (Billing / Services/ Mis- Sold).
+Troubleshooting: (Text Box).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2 Swap it) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+
+Book Session (Main Category)
+-> Book Session (sub category)
+Troubleshooting Steps
+Back office ( eposnowhq.com) -> nine squares in upper right hand corner -> organization-> scroll to bottom, hit book implementation -> book session -> book session -> select date and time.
+
+Or
+
+Book session for customer.
+Case Notes
+
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Book Session Inquiry: ( drop down: booked / Cancel.).
+Troubleshooting: Book Session Inquiry: ( drop down: booked / Cancel.).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2 Swap it) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+
+Billing (Main Category)
+-> Billing (sub category)
+Troubleshooting Steps
+Back office ->  support -> billing/ subscription ( this is where you can cancel, update payment method, & pay bills or pay in front of the POS system, under till which will give a direct pop up for payment.)
+Or 
+
+Collect payment.
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Billing Inquiry.
+Troubleshooting: Billing Inquiry: (drop down: pay billing/ refusal to pay/ temporary access).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Swap It / T2  Escalation Escalation) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+Email
+
+Generate the email based on the entity “who” & “ billing inquiry ( under Troubleshooting).” if the customer pay billing (“pay billing” entity is selected.) generate a message with the entity, that states - ‘Thank You For Paying.’, if the customer doesn't “refusal to pay” entity - ‘Your Payment Still Over Due.’, if the customer does “temporary access” entity - ‘ You have 7 days of access. Please, don't forget to pay, after those 7 days temporary access.’). then add Sincerely, Epos Now at the end .
+
+Call Back Request (Main Category)
+-> CBR (sub category)
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What:  Call Back Request.
+Troubleshooting: ( text box).
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A / Escalate to Manager/ Transfer to Agent) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+Sale (Main Category)
+-> Hardware Purchase (sub category)
+Troubleshooting Steps
+Epos Now is powered by Adyen - P400, AIR, & the Saturn. Visit our website: eposnow.com  to view our items!!
+
+⭐ ENP Payments 
+
+The Air and Saturn devices are designed for fast, flexible, on‑the‑go transactions. Both run on cellular data and Wi‑Fi, making them perfect for mobile businesses. The Saturn also includes the Epos Now Till App and the Rescue App for quick troubleshooting and seamless trading.
+
+Our P400 card reader supports both Wi‑Fi and Ethernet, and it does require a constant power source, making it ideal for countertop setups.
+
+Epos Now offers fixed, transparent rates across Visa, Mastercard, and Debit cards. International cards like AMEX or Discover are processed at 2.5%, and depending on your agreement, you may qualify for a single fixed rate across all card types.
+
+We also provide:
+
+CNP (Moto) access, typically available after 6 months of trading at a 3.5% rate. You can fast‑track approval by sharing your previous merchant provider details.  
+ Pay by Link, similar to CNP but available in as little as 14 days.  
+ 24‑hour payouts at no extra cost, with the option for instant payouts at a 1% fee.  Which you can cancel at any time and comes with a 7 day free trial. After that the 1% fee is applied.
+Daily fee deductions, so you never face end‑of‑month surprises.  
+Capital loan offers, repayable directly through your ENP transactions.
+
+EBT is not available yet, but it is currently in development.
+
+Our ENP platform is powered by Adyen, and Epos Now provides annual tax forms upon request. Adyen also mails tax documentation for card transactions.
+
+Please note: Epos Now does not collect surcharge taxes in the US, so any applicable tax difference must be settled with the IRS.
+
+We also offer Buyout12, giving you 12 months of ENP free, even if your previous 12‑month period has already ended.
+
+
+
+⭐ Hardware Updates
+
+Epos Now has launched a new countertop solution in the UK — Countertop 2 — and it will be available in the US soon. Our current models include:
+
+ Countertop (single screen)  
+ Duo Countertop (dual screen: customer‑facing + staff‑facing)
+
+Both models are Android‑based and include a built‑in printer.
+
+We also supply scales, printers, and apps to complete your setup.
+
+
+
+⚠️ Discount Disclaimer
+
+To qualify for Epos Now’s best discounts, you must either:
+
+Already be using Epos Now Payments
+Or
+Be willing to begin trading with Epos Now Payments 
+
+ENP and the Protection Now Care Plan are subscription‑based and are required for discounted pricing. Without them, full retail pricing applies
+
+“Sign with me today and unlock a massive discount on a bundle of 4 tills and 4 ENPs — including 12 months free on ENP, plus $/£0 upfront on apps, cash drawers, and free shipping when eligible. Whatever hardware you need, I’ll help you build the perfect setup.”
+
+⚠️ Disclaimer 
+“Tills cannot be $/£0 upfront. $/£0 upfront for cash drawers and free shipping apply only when 5 or more items are in the basket.”
+
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Hardware Purchase.
+Troubleshooting: Hardware Purchase.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+Sale (Main Category)
+
+-> App Purchase (sub category)
+Troubleshooting Step 
+Epos Now integrates with 300+ partner apps, giving businesses the flexibility to build the exact system they need. Here are the top three most popular integrations customers love:
+
+1. QuickBooks
+Seamless accounting automation.  
+Sales, taxes, payouts, and reports sync automatically — saving hours of manual bookkeeping.
+
+2. Shopify
+Perfect for businesses selling online and in‑store.  
+Inventory updates in real time, orders sync instantly, and customers get a smooth omnichannel experience.
+
+3. Mailchimp
+Effortless marketing.  
+Customer data flows straight into Mailchimp so businesses can send targeted emails, promotions, and loyalty campaigns with zero extra work.
+
+Tell me what you're looking for and I can give you a 2- 3 weeks discount on the application of your desire. With $/£ 0 up front cost. Come sign with me today!!
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What:  App Purchase.
+Troubleshooting: App Purchase.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+
+-> Capital Loan Offer (sub category)
+Troubleshooting Steps
+“Epos Now offers Capital Loan options powered by Adyen, using your ENP transaction history to determine your eligibility. Repayments are taken automatically through your Epos Now Payments, keeping everything simple and seamless. Most customers become eligible after 6 months of trading.
+
+For businesses not using ENP, we also partner with YouLend, giving you access to flexible funding options no matter your setup.
+
+If you’re looking to streamline operations, expand, or invest back into your business, I can help guide you through the Capital Loan process and find the best option for your needs.”
+
+
+
+⚠️ Required Disclaimer
+“Epos Now is not licensed to discuss or disclose specific loan amounts.”
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Sign Up for Capital.
+Troubleshooting: Sign Up for Capital.
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+-> Additional Device & Location (sub category)
+Troubleshooting Steps.   
+Depending on the region, prices may vary to add additional devices or location & will bring up billing under your subscription line. 
+
+Case Notes
+Who: (text system to add name in)
+Role: (drop down for role : Primary, Staff, & Reseller.)
+What: Updating Subscription: (Drop down: Device/ location/ Both).
+Troubleshooting: Updating Subscription: (Drop down: Device/ location/ Both). Has the customer agreed?: (drop down: Yes/ No). 
+Results: (drop down: Resolved/ Non - Resolved)
+Next Steps: (drop down: N/A) 
+NPS: (drop down: Y / N)
+Sales Opportunity Explored: (drop down: N, Not Interested. / Y, Interested.)
+
+Feedback Review (Main Category)
+-> FeedBack (NPS) (sub category)
+Email
+When Case [Case Number( text box that replaces case number, once entered)] is closed, you’ll see a “Resolution Request.” Please don’t forget to leave your feedback and review. While I understand the frustration you’ve experienced, I also want to highlight the great representatives—like Niaomi James—who worked hard to support you and ensure your system is running smoothly again.
+You can also share your experience by leaving a review and mentioning Niaomi James directly in your comments:
+Trustpilot: https://www.trustpilot.com/evaluate/eposnow.com
+
+
+Better Business Bureau: https://www.bbb.org/us/fl/orlando/profile/point-of-sale-systems/epos-now-0733-90332889/leave-a-review
+
+
+Your feedback helps us improve our service and ensures that great reps like Niaomi James get the recognition they deserve.
+Thank you for your cooperation, and we appreciate your continued partnership.
+Swap It Email (Main Category)
+-> Swap It Email(sub category)
+Email
+To proceed with a Swap It request, we require specific information for verification purposes. Unfortunately, we are unable to bypass these requirements. Without the requested details, we cannot process a replacement.
+Please provide the following based on the affected device:
+1. Till (POS Terminal)
+Image or video clearly showing the error (e.g., built-in printer issue, unresponsive screen, system error).
+Image of the serial number.
+2. External Printer
+Image or video of the error.
+Image of the serial number.
+3. Cash Drawer
+Image of the serial number.
+Image or video showing the issue.
+4. ENP Devices (Saturn, P400/V400, Air, S1F2, AMS1)
+Image or video clearly showing the error.
+Image of the serial number.
+Please do speedtest and send back image of grade letter (Only for till app wont load swap it related cases) link: https://www.waveform.com/tools/bufferbloat 
+Please note the following important policy details:
+If your till, printer, or cash drawer is out of warranty, a new hardware purchase will be required. Monthly subscriptions do not cover out-of-warranty hardware.
+If you have Protection Now Care Plan (PNCP), coverage will depend on the terms of your agreement.
+Devices purchased between 2016–2019 may require full replacement cost depending on coverage status.
+All ENP devices remain under warranty and do not expire.
+If an ENP device is lost, you will be required to pay the full replacement cost, and a Swap It cannot proceed until the device is located.
+For damaged ENP devices, the first instance of damage is covered. Any subsequent damage may require payment of the difference for replacement.
+Not all ENP errors qualify for a Swap It, as some issues may be environmental (e.g., network connectivity issues or signal dead zones[Rarely we replace ENP for network related issues.]).
+Return Policy & Shipping Information:
+Hardware devices (tills, printers, cash drawers) do not need to be returned to base. However, ENP devices must be returned, as they are subscription-based equipment. Failure to return an ENP may result in full replacement charges.
+If you are located in the UK, you will receive a DPD return link via email.
+If you are located in the US or AUS, you will receive a PDF return label via email.
+Once we receive the required documentation, we will review and advise on next steps promptly.
+Please Note:  That you have 24 hrs, to send Swap it information or ticket closes.
+Thank you for your cooperation.
+
+
+
+Server Outage (Main Category)
+-> Server Outage (sub category)
+Case Notes
+Server Outage TDA. Please use the email and subscribe to the server page. Please and thank you.
+
+Email
+We are currently experiencing a server outage that may be impacting service availability. Our teams are actively investigating the issue and working to restore full functionality as quickly as possible.
+For real-time updates, please visit and subscribe to our server outage status page: https://statuspage.eposnowhq.com/?subscription_confirmed=true.
+We sincerely apologize for any inconvenience caused and appreciate your patience while we resolve this matter.
+If you have any urgent concerns, please do not hesitate to contact us.
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////-----------------------------------
+Data created by Niaomi James | powered the EposNow staff <3
+
+Coding assist Copliot |
+Assisted with complex coding breakage, during coding process.
+
+Main Coder Niaomi James|
+System.
+logic.
+architecture.
+content.
+workflow.
+taxonomy.
+structure.
+Troubleshooting.
+
+Start date : 4/3/26
+
