@@ -1257,7 +1257,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Payouts Inquiry"]
+          "options": ["Didn't receive payouts.","Payout amount is wrong.","How can I review, my payouts reporting?"]
         },
 
         "results": {
@@ -1761,7 +1761,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["EOD Issue"]
+          "options": ["Close till, won't close.","No EOD report, in the back office.","Why my clos till, show both yesterday's and today's report together?"," Can't see my EOD summary.","How I turn on blind EOD?","Why my EOD print off, shows nothing?"]
         },
 
         "results": {
@@ -1821,7 +1821,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Hardware Setup", "Network Error", "Other"]
+          "options": ["Hardware Setup", "Network Error", "Till screen won't turn on", "Other"]
         },
 
         "results": {
@@ -1881,7 +1881,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Stuck Table"]
+          "options": ["Stuck Table","Stuck Tabs"]
         },
 
         "results": {
@@ -1941,7 +1941,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Refund"]
+          "options": ["How do I a refund?","How do I do a partial refund?","How do I, do a refund without a receipt?"]
         },
 
         "results": {
@@ -2127,7 +2127,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Cash Drawer Unresponsive"]
+            "options": ["Tender type - cash drawer release issue.","Where so we plug in the cash drawer?"," My cash drawer won't pop."]
           },
 
           "results": {
@@ -2250,7 +2250,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Tax Breakdown Issue"]
+            "options": ["Tax mode -> change to inculsive","Tax mode -> change to exculsive","Tax break down error"]
           },
 
           "results": {
@@ -2406,7 +2406,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Tender Type Error"]
+            "options": ["Payments intergation -> under other (makes tender types not show)","Tender type unresponsive"]
           },
 
           "results": {
@@ -2467,7 +2467,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Staff Login Issue", "Staff Role Issue"]
+            "options": ["Staff Login Issue", "Staff Role Issue"," How make a staff memeber?"," How to modify staff roles?"]
           },
 
           "results": {
@@ -2972,6 +2972,7 @@
             "options": [
               "Forgot Password",
               "New Customer Activation",
+              "Additional Staff Login",
               "General Login Issue"
             ]
           },
@@ -3036,6 +3037,7 @@
             "options": [
               "Sent AI EDPA Code",
               "Tier 2 Escalation",
+              " Additional Sub Login MfA Disable",
               "General MFA Inquiry"
             ]
           },
@@ -3267,19 +3269,19 @@
           "nextSteps": {
             "label": "Next Steps",
             "type": "dropdown",
-            "options": ["JC"]
+            "options": ["J/C"]
           },
 
           "nps": {
             "label": "NPS",
             "type": "dropdown",
-            "options": ["JC"]
+            "options": ["J.C"]
           },
 
           "salesOpportunity": {
             "label": "Sales Opportunity Explored",
             "type": "dropdown",
-            "options": ["N/A"]
+            "options": ["J-C"]
           }
         },
 
@@ -3440,7 +3442,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Call Back Request"]
+            "options": ["Call Back Request","Call Back Not Met"]
           },
 
           "results": {
@@ -3500,7 +3502,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Hardware Purchase"]
+            "options": ["Hardware Purchase","ENP Purchase","Paper Purchase","Scanner Purchase","Scale Purchase","Countertop Purcahse","Duo Countertop Purcahse","Countertop 2 Purcahse","Countertop 2 (Customer Facing Screens) Purcahse","KDS Purchase"]
           },
 
           "results": {
