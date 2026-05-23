@@ -650,7 +650,9 @@
   "mainCategory": "POS System",
   "subcategory": "Stuck Table",
   "troubleshootingSteps": [
-    "Back Office -> Setup -> Location -> Location -> Edit -> Edit Table Plan -> Delete old table with the error -> Replace with a new one."
+    "Back Office -> Setup -> Location -> Location -> Edit -> Edit Table Plan -> Delete old table with the error -> Replace with a new one.",
+    "Back Office -> Setup -> Location -> Location -> Edit -> Scroll to the bottom, till you see tabs -> toggle back on.",
+    "Tabs, will need a T3 Dev to manaully remove the stuck tab/ tabs."
   ]
 },
 {
@@ -829,7 +831,8 @@
   "subcategory": "Unassign License",
   "troubleshootingSteps": [
     "Unassign the license to force a cloud sync.",
-    "Back Office → Setup → Locations → Devices → Unassign License."
+    "Back Office → Setup → Locations → Devices → Unassign License.",
+    "How to change store locations: 3 lines (front of the till)->  Admin-> Change Store Location-> Select store, you want to change to."
   ]
 },
 {
