@@ -86,7 +86,7 @@ function collectFilledFields(containerSelector) {
     // ======================================================
     // ⭐ Keyword Maps
     // ======================================================
-    const resultKeywords = ["resolved", "non-resolved","JC"];
+    const resultKeywords = ["resolved", "non-resolved","jc"];
     const nextStepKeywords = [
         "cmp",
         "manager escalation",
@@ -96,6 +96,7 @@ function collectFilledFields(containerSelector) {
         "accept",
         "decline",
         "n/a",
+        "j/c",
         "kyc transfer",
         "call back request",
         "raise rention",
@@ -103,8 +104,8 @@ function collectFilledFields(containerSelector) {
         "jire ticket",
         "acknowledge update"
     ];
-    const npsKeywords = ["y", "n","JC"];
-    const salesOppKeywords = ["y, interested", "n, not interested","JC"];
+    const npsKeywords = ["y", "n","j.c"];
+    const salesOppKeywords = ["y, interested", "n, not interested","j-c"];
 
     // ======================================================
     // ⭐ POSITIONAL MAPPING
