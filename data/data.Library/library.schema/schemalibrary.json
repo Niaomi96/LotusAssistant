@@ -2528,7 +2528,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Unassigned License"]
+            "options": ["Unassigned License","Change Store Location"]
           },
 
           "results": {
