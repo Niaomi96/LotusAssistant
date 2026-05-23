@@ -121,6 +121,26 @@ function collectFilledFields(containerSelector) {
         salesOpp: ""
     };
 
+// ======================================================
+// ⭐ BACK OFFICE LICENSES (Case Notes Append)
+// ======================================================
+const bolDeviceField = container.querySelector('input[data-label="Device"], #bolDevice');
+if (bolDeviceField && bolDeviceField.value.trim()) {
+    const bolDeviceLine = `Device: ${bolDeviceField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(bolDeviceLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + bolDeviceLine;
+    }
+}
+
+const bolLocationField = container.querySelector('input[data-label="Location"], #bolLocation');
+if (bolLocationField && bolLocationField.value.trim()) {
+    const bolLocationLine = `Location: ${bolLocationField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(bolLocationLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + bolLocationLine;
+    }
+}
+
+    
  // ======================================================
 // ⭐ FAILED DPA DETAILS (Case Notes Append)
 // ======================================================
