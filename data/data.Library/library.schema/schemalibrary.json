@@ -3684,11 +3684,37 @@
             "MXN Pricing"
           ]
         },
+       
 
         "what": {
           "label": "WHAT",
           "type": "text"
         },
+       "DLsale": {
+       "label": "Back Office Licenses",
+       "type": "dropdown",
+       "options": [
+         "Device",
+         "Location"
+       ]
+     },
+     
+     "bolDevice": {
+       "label": "Device",
+       "type": "text",
+       "visibleWhen": {
+         "DLsale": "Device"
+       }
+     },
+     
+     "bolLocation": {
+       "label": "Location",
+       "type": "text",
+       "visibleWhen": {
+         "DLsale": "Location"
+       }
+     }
+
 
         "results": {
           "label": "Results",
