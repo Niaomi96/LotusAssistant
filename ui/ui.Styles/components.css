@@ -800,8 +800,15 @@ select.fieldInput {
     padding: 18px;
     box-sizing: border-box;
 
-    /* ⭐ TEST MODE: FORCE ALL TEXT BLACK */
+    /* 🌸 Card text back to white */
+    color: #fff !important;
+}
+
+/* Keep collapsible boxes readable */
+#cardStack .card .fieldRow[data-type="section"],
+#cardStack .card .fieldRow[data-type="section"] * {
     color: #000 !important;
+    background: #fff !important;
 }
 
 /* Active card (front) */
@@ -836,6 +843,7 @@ select.fieldInput {
 #cardStack .card::-webkit-scrollbar-track {
     background: rgba(255,255,255,0.15);
 }
+
 
 
 /* ============================================================
