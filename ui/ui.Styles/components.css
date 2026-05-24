@@ -539,10 +539,11 @@ select.fieldInput {
     margin-top: 10px;
     width: 100%;
 
-    background: rgba(255,255,255,0.18);
+    /* Match card background */
+    background: rgba(255,255,255,0.10);
     backdrop-filter: blur(16px);
 
-    border: 1px solid rgba(255,255,255,0.35);
+    border: 1px solid rgba(255,255,255,0.25);
     border-radius: 16px;
 
     overflow: hidden;
@@ -552,7 +553,7 @@ select.fieldInput {
 
 /* Header bar */
 .emailHeader {
-    background: rgba(255,255,255,0.28);
+    background: rgba(255,255,255,0.15);
     backdrop-filter: blur(20px);
 
     color: #fff;
@@ -565,7 +566,7 @@ select.fieldInput {
     font-family: "Segoe UI", sans-serif;
     letter-spacing: 0.3px;
 
-    border-bottom: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(255,255,255,0.20);
 }
 
 /* Email output area */
@@ -581,8 +582,11 @@ select.fieldInput {
     overflow-y: auto;
     resize: none;
 
-    background: rgba(255,255,255,0.12);
+    /* MATCH CARD BACKGROUND — removes white box */
+    background: rgba(255,255,255,0.05);
     backdrop-filter: blur(12px);
+
+    border-top: 1px solid rgba(255,255,255,0.15);
 
     color: #fff;
 }
@@ -596,7 +600,7 @@ select.fieldInput {
     border-radius: 4px;
 }
 #emailOutput::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.10);
 }
 
 /* ============================================================
