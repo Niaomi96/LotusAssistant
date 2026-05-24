@@ -4,9 +4,9 @@
   "short_name": "Lotus",
   "start_url": "./app.html",
   "display": "standalone",
-  "background_color": "rgba(255, 182, 193, 0.35)",
 
-  "theme_color": "rgba(255, 182, 193, 0.35)",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
 
   "icons": [
     {
