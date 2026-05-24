@@ -1453,7 +1453,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Touchscreen Unresponsive", "NFC Not Working(TAP)", "Swipe Not Working", "Incert not working", "10019 Tamper Error","Battery Unresponsive", "Network Error","Charger Cable","COG"]
+          "options": ["Touchscreen Unresponsive", "NFC Not Working(TAP)", "Swipe Not Working", "Insert not working", "10019 Tamper Error","Battery Unresponsive", "Network Error/ Cloud Connection Issues","Charger Cable","COG"]
         },
 
         "results": {
@@ -2250,7 +2250,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Tax mode -> change to inculsive","Tax mode -> change to exculsive","Tax break down error"]
+            "options": ["Tax mode -> change to inculsive","Tax mode -> change to exculsive","Tax break down basket error"]
           },
 
           "results": {
@@ -2406,7 +2406,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Payments intergation -> under other (makes tender types not show)","Tender type unresponsive"]
+            "options": ["Payments intergation -> under other (makes tender types not show)","Tender type unresponsive","How make a tender type?"]
           },
 
           "results": {
@@ -2674,7 +2674,7 @@
           "salesOpportunity": {
             "label": "Sales Opportunity Explored",
             "type": "dropdown",
-            "options": ["N, Not Interested.", "Y, Interested."]
+            "options": ["N, Not Interested", "Y, Interested"]
           }
         },
 
@@ -2840,7 +2840,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["How to make a multiple choice product group", "How to add a product", "How to edit a product", "How to archive a product", "How to recover an archived product", "How to recover deleted products", "How to set up a master product", "How to add weight to a product", "How to make a category", "How to hide a product/category", "How to add courses to category","General product/ category inquiry"]
+            "options": ["How to make a multiple choice product group", "How to add a product", "How to edit a product", "How to archive a product", "How to recover an archived product", "How to recover deleted products", "How to set up a master product","How to make a promotion?", "How to add weight to a product", "How to make a category", "How to hide a product/category", "How to add courses to category","General product/ category inquiry"]
           },
 
           "results": {
