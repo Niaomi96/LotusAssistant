@@ -702,7 +702,7 @@ select.fieldInput {
 
 
 /* ============================================================
-   🌸 LOTUS CARD STACK SYSTEM — FINAL GLASS UPDATE (Transparent Dropdowns)
+   🌸 LOTUS CARD STACK SYSTEM — FINAL GLASS UPDATE (True Transparent Dropdowns)
    ============================================================ */
 
 #cardStack {
@@ -751,16 +751,39 @@ select.fieldInput {
     transition: background 0.3s ease, border 0.3s ease;
 }
 
-/* Transparent dropdown menus */
+/* 🌸 Transparent dropdown menus (custom glass look) */
 #cardStack .card select.fieldInput {
-    appearance: auto !important;
+    appearance: none !important; /* removes native dropdown */
     background: rgba(255,255,255,0.12) !important;
     backdrop-filter: blur(12px);
+    position: relative;
+    z-index: 2;
 }
 
+/* 🌸 Custom dropdown arrow */
+#cardStack .card select.fieldInput::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,0.6);
+    pointer-events: none;
+}
+
+/* 🌸 Dropdown options (simulated transparency) */
 #cardStack .card select.fieldInput option {
-    background: rgba(255,255,255,0.08); /* ✅ transparent dropdown */
-    color: #fff; /* ✅ white text for visibility */
+    background: rgba(255,255,255,0.10) !important;
+    color: #fff !important;
+    backdrop-filter: blur(10px);
+    border: none;
+}
+
+/* 🌸 Hover/focus glow for dropdown options */
+#cardStack .card select.fieldInput option:hover,
+#cardStack .card select.fieldInput:focus {
+    background: rgba(255,255,255,0.25) !important;
+    color: #000 !important;
 }
 
 /* ============================================================
@@ -825,7 +848,7 @@ select.fieldInput {
 
 /* Dropdowns inside collapsible sections */
 .fieldRow[data-type="section"] select.fieldInput option {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.10);
     color: #fff;
 }
 
@@ -850,7 +873,6 @@ select.fieldInput {
     transform: translateZ(-80px) translateY(12px);
     opacity: 0.65;
 }
-
 
 
 /* ============================================================
