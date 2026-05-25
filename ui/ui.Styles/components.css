@@ -701,7 +701,7 @@ select.fieldInput {
 
 
 /* ============================================================
-   🌸 LOTUS CARD STACK SYSTEM — FINAL GLASS UPDATE (Scroller + Readable Dropdowns)
+   🌸 LOTUS CARD STACK SYSTEM — FINAL GLASS UPDATE (Merged + Internal Scroller)
    ============================================================ */
 
 #cardStack {
@@ -729,7 +729,7 @@ select.fieldInput {
     transition: transform 0.4s ease, opacity 0.3s ease;
     backface-visibility: hidden;
 
-    overflow-y: auto; /* ✅ correct scroller restored */
+    overflow-y: auto; /* main card scroller */
     padding: 18px;
     box-sizing: border-box;
 
@@ -737,7 +737,7 @@ select.fieldInput {
 }
 
 /* ============================================================
-   🌸 GLASS SCROLLBAR
+   🌸 GLASS SCROLLBAR (MAIN CARD)
    ============================================================ */
 
 #cardStack .card::-webkit-scrollbar {
@@ -765,7 +765,7 @@ select.fieldInput {
     transition: background 0.3s ease, border 0.3s ease;
 }
 
-/* 🌸 Transparent dropdown menus */
+/* Transparent dropdown menus */
 #cardStack .card select.fieldInput {
     appearance: none !important;
     background: rgba(255,255,255,0.12) !important;
@@ -774,7 +774,7 @@ select.fieldInput {
     z-index: 2;
 }
 
-/* 🌸 Custom dropdown arrow */
+/* Custom dropdown arrow */
 #cardStack .card select.fieldInput::after {
     content: "▼";
     position: absolute;
@@ -785,10 +785,10 @@ select.fieldInput {
     pointer-events: none;
 }
 
-/* 🌸 Dropdown options (black text so you can SEE) */
+/* Dropdown options (black text) */
 #cardStack .card select.fieldInput option {
     background: rgba(255,255,255,0.15) !important;
-    color: #000 !important; /* ✅ readable */
+    color: #000 !important;
     backdrop-filter: blur(10px);
     border: none;
 }
@@ -832,11 +832,29 @@ select.fieldInput {
     gap: 4px;
 }
 
-/* Children container */
+/* ============================================================
+   🌸 INTERNAL SCROLLER FOR SELECTION AREA (MERGED)
+   ============================================================ */
+
 .fieldRow[data-type="section"] .fieldChildren {
     width: 100%;
     margin-top: 6px;
-    overflow: visible;
+
+    max-height: 160px;      /* limit expansion height */
+    overflow-y: auto;       /* internal scroller */
+    padding-right: 4px;     /* spacing from scrollbar */
+}
+
+/* Slim glass scrollbar for selection area */
+.fieldRow[data-type="section"] .fieldChildren::-webkit-scrollbar {
+    width: 4px;
+}
+.fieldRow[data-type="section"] .fieldChildren::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.25);
+    border-radius: 4px;
+}
+.fieldRow[data-type="section"] .fieldChildren::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 /* Child rows */
@@ -863,7 +881,7 @@ select.fieldInput {
 /* Dropdowns inside collapsible sections */
 .fieldRow[data-type="section"] select.fieldInput option {
     background: rgba(255,255,255,0.15);
-    color: #000; /* readable */
+    color: #000;
 }
 
 /* ============================================================
