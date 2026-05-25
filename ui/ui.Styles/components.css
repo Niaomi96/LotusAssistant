@@ -1008,13 +1008,12 @@ select.fieldInput {
     background: rgba(255,120,120,0.25);
 }
 /* ============================================================
-   LOTUS FOOTER — FROSTED GLASS
+   LOTUS FOOTER — FROSTED GLASS (UPDATED)
    ============================================================ */
 
 #lotusFooter {
     width: 100%;
     padding: 12px 16px;
-    margin-top: 25px;
 
     background: rgba(255,255,255,0.10);
     backdrop-filter: blur(14px);
@@ -1025,7 +1024,10 @@ select.fieldInput {
     font-family: "Segoe UI", sans-serif;
     font-size: 13px;
     letter-spacing: 0.3px;
-    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -1035,4 +1037,46 @@ select.fieldInput {
     position: relative;
     z-index: 5;
 }
+
+#lotusFooter .footerText {
+    opacity: 0.8;
+}
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+}
+
+.footerIcons .version {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-right: 12px;
+}
+
+/* ICON BASE */
+.icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 12px;
+    opacity: 0.6;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.2s ease;
+}
+
+.icon:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 4px rgba(255,255,255,0.4));
+}
+
+/* GitHub icon */
+.icon.github {
+    background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg');
+}
+
+/* LinkedIn icon */
+.icon.linkedin {
+    background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg');
+}
+
 
