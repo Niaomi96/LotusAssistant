@@ -324,7 +324,6 @@ body {
     padding-right: 6px;
     box-sizing: border-box;
 }
-
 /* ============================================================
    SCROLLBAR STYLE
    ============================================================ */
@@ -702,7 +701,7 @@ select.fieldInput {
 
 
 /* ============================================================
-   🌸 LOTUS CARD STACK SYSTEM — FINAL GLASS UPDATE (True Transparent Dropdowns)
+   🌸 LOTUS CARD STACK SYSTEM — FINAL GLASS UPDATE (Scroller + Readable Dropdowns)
    ============================================================ */
 
 #cardStack {
@@ -730,11 +729,26 @@ select.fieldInput {
     transition: transform 0.4s ease, opacity 0.3s ease;
     backface-visibility: hidden;
 
-    overflow-y: hidden; /* ✅ removes the extra scroller */
+    overflow-y: auto; /* ✅ correct scroller restored */
     padding: 18px;
     box-sizing: border-box;
 
     color: #fff !important;
+}
+
+/* ============================================================
+   🌸 GLASS SCROLLBAR
+   ============================================================ */
+
+#cardStack .card::-webkit-scrollbar {
+    width: 6px;
+}
+#cardStack .card::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.35);
+    border-radius: 4px;
+}
+#cardStack .card::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.15);
 }
 
 /* ============================================================
@@ -751,9 +765,9 @@ select.fieldInput {
     transition: background 0.3s ease, border 0.3s ease;
 }
 
-/* 🌸 Transparent dropdown menus (custom glass look) */
+/* 🌸 Transparent dropdown menus */
 #cardStack .card select.fieldInput {
-    appearance: none !important; /* removes native dropdown */
+    appearance: none !important;
     background: rgba(255,255,255,0.12) !important;
     backdrop-filter: blur(12px);
     position: relative;
@@ -771,15 +785,15 @@ select.fieldInput {
     pointer-events: none;
 }
 
-/* 🌸 Dropdown options (simulated transparency) */
+/* 🌸 Dropdown options (black text so you can SEE) */
 #cardStack .card select.fieldInput option {
-    background: rgba(255,255,255,0.10) !important;
-    color: #fff !important;
+    background: rgba(255,255,255,0.15) !important;
+    color: #000 !important; /* ✅ readable */
     backdrop-filter: blur(10px);
     border: none;
 }
 
-/* 🌸 Hover/focus glow for dropdown options */
+/* Hover/focus */
 #cardStack .card select.fieldInput option:hover,
 #cardStack .card select.fieldInput:focus {
     background: rgba(255,255,255,0.25) !important;
@@ -848,8 +862,8 @@ select.fieldInput {
 
 /* Dropdowns inside collapsible sections */
 .fieldRow[data-type="section"] select.fieldInput option {
-    background: rgba(255,255,255,0.10);
-    color: #fff;
+    background: rgba(255,255,255,0.15);
+    color: #000; /* readable */
 }
 
 /* ============================================================
@@ -873,7 +887,6 @@ select.fieldInput {
     transform: translateZ(-80px) translateY(12px);
     opacity: 0.65;
 }
-
 
 /* ============================================================
    ACTION BUTTONS — LOTUS GLASS
