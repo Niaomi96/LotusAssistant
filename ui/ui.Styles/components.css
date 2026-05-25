@@ -811,35 +811,61 @@ select.fieldInput {
     color: #fff !important;
 }
 
-/* Keep collapsible boxes readable */
+/* ============================================================
+   🌸 GLOBAL INPUT STYLING FOR ALL CARDS (WHITE THEME)
+   ============================================================ */
+
+#cardStack .card .fieldInput {
+    background: rgba(255,255,255,0.15) !important;
+    border: 1px solid rgba(255,255,255,0.35) !important;
+    color: #fff !important;
+    caret-color: #fff !important;
+}
+
+/* ============================================================
+   🌸 KEEP COLLAPSIBLE SELECTION BOXES BLACK
+   ============================================================ */
+
 #cardStack .card .fieldRow[data-type="section"],
 #cardStack .card .fieldRow[data-type="section"] * {
     color: #000 !important;
     background: #fff !important;
 }
 
-/* Active card (front) */
+/* Selection box inputs stay black */
+.fieldRow[data-type="section"] .fieldInput {
+    background: #f9f9f9 !important;
+    border: 1px solid #ccc !important;
+    color: #000 !important;
+    caret-color: #000 !important;
+}
+
+/* ============================================================
+   🌸 CARD STACK POSITIONS
+   ============================================================ */
+
 .card.active {
     z-index: 3;
     transform: translateZ(0);
     opacity: 1;
 }
 
-/* Middle card */
 .card.behind1 {
     z-index: 2;
     transform: translateZ(-40px) translateY(6px);
     opacity: 0.85;
 }
 
-/* Back card */
 .card.behind2 {
     z-index: 1;
     transform: translateZ(-80px) translateY(12px);
     opacity: 0.65;
 }
 
-/* Scrollbar styling */
+/* ============================================================
+   🌸 SCROLLBAR STYLING
+   ============================================================ */
+
 #cardStack .card::-webkit-scrollbar {
     width: 6px;
 }
