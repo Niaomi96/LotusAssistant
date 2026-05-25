@@ -1008,7 +1008,7 @@ select.fieldInput {
     background: rgba(255,120,120,0.25);
 }
 /* ============================================================
-   LOTUS FOOTER — FROSTED GLASS (UPDATED + WHITE ICONS)
+   LOTUS FOOTER — FROSTED GLASS (FIXED POSITION + WHITE ICONS)
    ============================================================ */
 
 #lotusFooter {
@@ -1034,22 +1034,24 @@ select.fieldInput {
 
     box-shadow: 0 -4px 12px rgba(0,0,0,0.25);
 
-    /* ✅ FIX POSITION */
     position: fixed;
     bottom: 0;
     left: 0;
 
-    /* ✅ ENSURE IT SITS ABOVE CONTENT */
-    z-index: 999;
+    /* ✅ Lower z-index so menu overlaps */
+    z-index: 2;
 
-    /* ✅ OPTIONAL: prevent overlap with scrollbars */
     box-sizing: border-box;
 }
 
+/* ✅ Center the footer text */
 #lotusFooter .footerText {
     opacity: 0.8;
+    text-align: center;
+    flex: 1;
 }
 
+/* ICONS */
 .footerIcons {
     display: flex;
     align-items: center;
@@ -1070,21 +1072,23 @@ select.fieldInput {
     background-size: contain;
     background-repeat: no-repeat;
     transition: 0.2s ease;
-    filter: brightness(0) invert(1); /* MAKES ICONS WHITE */
 }
 
 .icon:hover {
     opacity: 1;
-    filter: brightness(0) invert(1) drop-shadow(0 0 4px rgba(255,255,255,0.4));
+    filter: drop-shadow(0 0 4px rgba(255,255,255,0.4));
 }
 
 /* GitHub icon (white) */
 .icon.github {
     background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg');
+    filter: brightness(0) invert(1);
 }
 
-/* LinkedIn icon (white) */
+/* LinkedIn icon (true white SVG, no box) */
 .icon.linkedin {
-    background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg');
+    background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg');
+    filter: brightness(0) invert(1);
 }
+
 
