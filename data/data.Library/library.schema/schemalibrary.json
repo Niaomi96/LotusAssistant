@@ -3703,7 +3703,7 @@
        "label": "Device",
        "type": "text",
        "visibleWhen": {
-         "DLsale": "Device"
+         "Back Office Licenses": "Device"
        }
      },
      
@@ -3711,7 +3711,7 @@
        "label": "Location",
        "type": "text",
        "visibleWhen": {
-         "DLsale": "Location"
+         "Back Office Licenses": "Location"
        }
      },
 
