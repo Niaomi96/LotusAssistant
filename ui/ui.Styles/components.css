@@ -701,9 +701,8 @@ select.fieldInput {
 }
 
 
-
 /* ============================================================
-   🌸 LOTUS CARD STACK SYSTEM — FINAL UNIFIED GLASS THEME
+   🌸 LOTUS CARD STACK SYSTEM — FINAL GLASS UPDATE (Transparent Dropdowns)
    ============================================================ */
 
 #cardStack {
@@ -731,7 +730,7 @@ select.fieldInput {
     transition: transform 0.4s ease, opacity 0.3s ease;
     backface-visibility: hidden;
 
-    overflow-y: auto;
+    overflow-y: hidden; /* ✅ removes the extra scroller */
     padding: 18px;
     box-sizing: border-box;
 
@@ -744,7 +743,7 @@ select.fieldInput {
 
 #cardStack .card .fieldInput,
 #cardStack .card select.fieldInput {
-    background: rgba(255,255,255,0.15) !important;
+    background: rgba(255,255,255,0.12) !important;
     border: 1px solid rgba(255,255,255,0.35) !important;
     color: #fff !important;
     caret-color: #fff !important;
@@ -752,10 +751,16 @@ select.fieldInput {
     transition: background 0.3s ease, border 0.3s ease;
 }
 
-/* Dropdown transparency */
+/* Transparent dropdown menus */
+#cardStack .card select.fieldInput {
+    appearance: auto !important;
+    background: rgba(255,255,255,0.12) !important;
+    backdrop-filter: blur(12px);
+}
+
 #cardStack .card select.fieldInput option {
-    background: rgba(255,255,255,0.25);
-    color: #000;
+    background: rgba(255,255,255,0.08); /* ✅ transparent dropdown */
+    color: #fff; /* ✅ white text for visibility */
 }
 
 /* ============================================================
@@ -811,16 +816,17 @@ select.fieldInput {
     height: 28px;
     padding: 2px 6px;
     box-sizing: border-box;
-    background: rgba(255,255,255,0.25) !important;
+    background: rgba(255,255,255,0.12) !important;
     border: 1px solid rgba(255,255,255,0.45) !important;
     color: #fff !important;
     caret-color: #fff !important;
+    backdrop-filter: blur(10px);
 }
 
 /* Dropdowns inside collapsible sections */
 .fieldRow[data-type="section"] select.fieldInput option {
-    background: rgba(255,255,255,0.25);
-    color: #000;
+    background: rgba(255,255,255,0.08);
+    color: #fff;
 }
 
 /* ============================================================
@@ -845,20 +851,6 @@ select.fieldInput {
     opacity: 0.65;
 }
 
-/* ============================================================
-   🌸 SCROLLBAR STYLING
-   ============================================================ */
-
-#cardStack .card::-webkit-scrollbar {
-    width: 6px;
-}
-#cardStack .card::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.35);
-    border-radius: 4px;
-}
-#cardStack .card::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.15);
-}
 
 
 /* ============================================================
