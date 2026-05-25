@@ -1034,8 +1034,16 @@ select.fieldInput {
 
     box-shadow: 0 -4px 12px rgba(0,0,0,0.25);
 
-    position: relative;
-    z-index: 5;
+    /* ✅ FIX POSITION */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    /* ✅ ENSURE IT SITS ABOVE CONTENT */
+    z-index: 999;
+
+    /* ✅ OPTIONAL: prevent overlap with scrollbars */
+    box-sizing: border-box;
 }
 
 #lotusFooter .footerText {
