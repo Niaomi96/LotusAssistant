@@ -1008,7 +1008,7 @@ select.fieldInput {
     background: rgba(255,120,120,0.25);
 }
 /* ============================================================
-   LOTUS FOOTER — FROSTED GLASS (UPDATED)
+   LOTUS FOOTER — FROSTED GLASS (UPDATED + WHITE ICONS)
    ============================================================ */
 
 #lotusFooter {
@@ -1058,25 +1058,25 @@ select.fieldInput {
     width: 22px;
     height: 22px;
     margin-left: 12px;
-    opacity: 0.6;
+    opacity: 0.7;
     background-size: contain;
     background-repeat: no-repeat;
     transition: 0.2s ease;
+    filter: brightness(0) invert(1); /* MAKES ICONS WHITE */
 }
 
 .icon:hover {
     opacity: 1;
-    filter: drop-shadow(0 0 4px rgba(255,255,255,0.4));
+    filter: brightness(0) invert(1) drop-shadow(0 0 4px rgba(255,255,255,0.4));
 }
 
-/* GitHub icon */
+/* GitHub icon (white) */
 .icon.github {
     background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg');
 }
 
-/* LinkedIn icon */
+/* LinkedIn icon (white) */
 .icon.linkedin {
     background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg');
 }
-
 
