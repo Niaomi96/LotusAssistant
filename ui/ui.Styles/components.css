@@ -857,6 +857,18 @@ select.fieldInput {
     background: transparent;
 }
 
+/* 🌸 Hide scrollbar inside selection area */
+.fieldRow[data-type="section"] .fieldChildren {
+    max-height: 160px;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome/Edge */
+.fieldRow[data-type="section"] .fieldChildren::-webkit-scrollbar {
+    display: none;
+}
+
 /* Child rows */
 .fieldRow[data-type="section"] .fieldChildren .fieldRow {
     width: 100%;
