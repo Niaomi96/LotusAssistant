@@ -97,6 +97,7 @@ function collectFilledFields(containerSelector) {
         "decline",
         "n/a",
         "j/c",
+        "cog",
         "kyc transfer",
         "call back request",
         "raise rention",
