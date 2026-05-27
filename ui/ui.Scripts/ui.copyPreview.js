@@ -146,13 +146,18 @@ if (increaseField && increaseField.value.trim() && increaseField.value !== "N/A"
 // ======================================================
 // ⭐ JIRE TICKET (Case Notes Append)
 // ======================================================
-const jireTicketField = container.querySelector('input[data-label="Jire Ticket"], #jireTicket');
-if (jireTicket && jireTicket.value.trim()) {
-    const jireTicket = `Jire Ticket: ${jireTicket.value.trim()}`;
-    if (!mapped.troubleshooting.toLowerCase().includes(jireTicket.toLowerCase())) {
-        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + jireTicket;
+let jireTicketField =
+    container.querySelector('#jireTicket') ||
+    container.querySelector('#Jticket') ||
+    container.querySelector('#Jtt');
+
+if (jireTicketField && jireTicketField.value.trim()) {
+    const jireTicketLine = `Jire Ticket: ${jireTicketField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(jireTicketLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + jireTicketLine;
     }
 }
+
 
 // ======================================================
 // ⭐ BACK OFFICE LICENSES (Case Notes Append)
