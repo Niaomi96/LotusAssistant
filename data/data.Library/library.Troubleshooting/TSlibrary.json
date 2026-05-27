@@ -723,6 +723,7 @@
       "spin it  counter clock wise 3 times, and try close printer door.",
       "WWarning ⚠️ - Don't do it to much or it can get sucked up into the machine  or spin it down to much or the blade will fall out. If either of these happen,'",
       "the printer blade can't be taken out or falls out;",
+      "Saturnn or Andriod device: use V2 ethernet, to do that: 3 lines → Settings → Peripherals → Advanced App Settings -> Override Receipt Printing -> press the three dots in the upper right hnad corner-> add printer.",
       "it can't be put back in. You will have to swap it for the till or if you're out of warranty, you will have to buy a new till or printer."
     ],
     "Order Printer Setup (Android/POS/Saturn)": [
@@ -730,6 +731,7 @@
       "Category Printer Preferences: Back Office → Manage → Categories → Order/Layaway column → set printer preferences.",
       "Windows users must configure this in Back Office.",
       "If order printer disconnects: check Ethernet light, cable damage, or unplugged power.",
+      "Saturnn or Andriod device: use V2 ethernet, to do that: 3 lines → Settings → Peripherals → Advanced App Settings -> Offline Order Printing -> press the three dots in the upper right hnad corner-> add printer.",
       "Reboot network tower or contact ISP for IP issues."
     ],
     "Windows Printer Setup (USB/Ethernet)": [
