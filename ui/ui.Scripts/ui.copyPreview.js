@@ -122,6 +122,18 @@ function collectFilledFields(containerSelector) {
         salesOpp: ""
     };
 
+   // ======================================================
+// ⭐ ISSUE TYPE (Case Notes Append)
+// ======================================================
+const issueTypeField = container.querySelector('select[data-label="Issue Type"], #issueType');
+if (issueTypeField && issueTypeField.value.trim()) {
+    const issueTypeLine = `Issue Type: ${issueTypeField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(issueTypeLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + issueTypeLine;
+    }
+}
+ 
+
 // ======================================================
 // ⭐ CURRENCY (Case Notes Append)
 // ======================================================
