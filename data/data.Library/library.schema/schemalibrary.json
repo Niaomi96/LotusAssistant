@@ -3236,7 +3236,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Failed DPA", "US Location Pricing Campaign", "RT US Bing Brand", "EvoPayments inbound tracking","Black Banner (Suspended Account)","Canceled Account","Stactic Call","Butt Dial"]
+            "options": ["Failed DPA", "US Location Pricing Campaign", "RT US Bing Brand", "EvoPayments inbound tracking","Black Banner (Suspended Account)","Canceled Account","Static Call","Butt Dial"]
           },
           "failedDPA": {
           "label": "Failed DPA Details",
