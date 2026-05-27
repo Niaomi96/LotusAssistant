@@ -121,6 +121,39 @@ function collectFilledFields(containerSelector) {
         nps: "",
         salesOpp: ""
     };
+    // ======================================================
+// ⭐ INSTALLATION ERROR TICKET (Case Notes Append)
+// ======================================================
+const installationErrorTicketField = container.querySelector('input[data-label="Installation Error Ticket"], #installationErrorTicket');
+if (installationErrorTicketField && installationErrorTicketField.value.trim()) {
+    const installationErrorTicketLine = `Installation Error Ticket: ${installationErrorTicketField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(installationErrorTicketLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + installationErrorTicketLine;
+    }
+}
+
+    // ======================================================
+// ⭐ INSTALL TICKET (Case Notes Append)
+// ======================================================
+const installTicketField = container.querySelector('input[data-label="Install Ticket"], #installTicket');
+if (installTicketField && installTicketField.value.trim()) {
+    const installTicketLine = `Install Ticket: ${installTicketField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(installTicketLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + installTicketLine;
+    }
+}
+
+
+    // ======================================================
+// ⭐ INCREASE AMOUNT TICKET (Case Notes Append)
+// ======================================================
+const increaseAmountTicketField = container.querySelector('input[data-label="Increase Amount Ticket"], #increaseAmountTicket');
+if (increaseAmountTicketField && increaseAmountTicketField.value.trim()) {
+    const increaseAmountTicketLine = `Increase Amount Ticket: ${increaseAmountTicketField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(increaseAmountTicketLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + increaseAmountTicketLine;
+    }
+}
 
    // ======================================================
 // ⭐ ISSUE TYPE (Case Notes Append)
