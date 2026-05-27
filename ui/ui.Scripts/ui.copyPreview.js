@@ -122,7 +122,37 @@ function collectFilledFields(containerSelector) {
         salesOpp: ""
     };
 
+// ======================================================
+// ⭐ CURRENCY (Case Notes Append)
+// ======================================================
+const currencyField = container.querySelector('select[data-label="Currency"], #Currency');
+if (currencyField && currencyField.value.trim() && currencyField.value !== "N/A") {
+    const currencyLine = `Currency: ${currencyField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(currencyLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + currencyLine;
+    }
+}
 
+// ======================================================
+// ⭐ INCREASE (Case Notes Append)
+// ======================================================
+const increaseField = container.querySelector('select[data-label="Increase"], #Increase');
+if (increaseField && increaseField.value.trim() && increaseField.value !== "N/A") {
+    const increaseLine = `Increase: ${increaseField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(increaseLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + increaseLine;
+    }
+}
+// ======================================================
+// ⭐ JIRE TICKET (Case Notes Append)
+// ======================================================
+const jireTicketField = container.querySelector('#jireTicket, #Jticket, #Jtt');
+if (jireTicketField && jireTicketField.value.trim()) {
+    const jireTicketLine = `Jire Ticket: ${jireTicketField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(jireTicketLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + jireTicketLine;
+    }
+}
 
 
 // ======================================================
