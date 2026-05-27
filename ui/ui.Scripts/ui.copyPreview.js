@@ -121,6 +121,18 @@ function collectFilledFields(containerSelector) {
         nps: "",
         salesOpp: ""
     };
+
+   // ======================================================
+// ⭐ RAISE PBL JIRED TICKET (Case Notes Append)
+// ======================================================
+const raiseTicketPBLField = container.querySelector('input[data-label="Raise PBL Jired Ticket"], #raiseTicketPBL');
+if (raiseTicketPBLField && raiseTicketPBLField.value.trim()) {
+    const raiseTicketPBLLine = `Raise PBL Jired Ticket: ${raiseTicketPBLField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(raiseTicketPBLLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + raiseTicketPBLLine;
+    }
+}
+ 
     // ======================================================
 // ⭐ INSTALLATION ERROR TICKET (Case Notes Append)
 // ======================================================
