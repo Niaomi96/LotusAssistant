@@ -143,7 +143,16 @@ if (increaseField && increaseField.value.trim() && increaseField.value !== "N/A"
         mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + increaseLine;
     }
 }
-
+// ======================================================
+// ⭐ JIRE TICKET (Case Notes Append)
+// ======================================================
+const jireTicketField = container.querySelector('input[data-label="Jire Ticket"], #jireTicket');
+if (jireTicket && jireTicket.value.trim()) {
+    const jireTicket = `Jire Ticket: ${jireTicket.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(jireTicket.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + jireTicket;
+    }
+}
 
 // ======================================================
 // ⭐ BACK OFFICE LICENSES (Case Notes Append)
