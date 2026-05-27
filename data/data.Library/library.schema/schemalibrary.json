@@ -47,24 +47,24 @@
   },
   "row": "pblRow1"
 },
-  "jireTicket": {
-  "label": "Jire Ticket",
+  "increaseAmountTicket": {
+  "label": "Increase Amount Ticket",
   "type": "text",
   "visibleWhen": {
     "Moto (CNP) Installation": "Increase Amount"
   },
   "row": "pblRow1"
 },
-"Jticket": {
-  "label": "Jire Ticket",
+"installTicket": {
+  "label": "Install Ticket",
   "type": "text",
   "visibleWhen": {
     "Moto (CNP) Installation": "Install"
   },
   "row": "pblRow1"
 },
-"Jtt": {
-  "label": "Jire Ticket",
+"installationErrorTicket": {
+  "label": "Installation Error Ticket",
   "type": "text",
   "visibleWhen": {
     "Moto (CNP) Installation": "Installation Error"
