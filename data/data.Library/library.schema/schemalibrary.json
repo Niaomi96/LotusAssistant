@@ -25,7 +25,7 @@
   "motoInstallation": {
   "label": "Moto (CNP) Installation",
   "type": "dropdown",
-  "options": ["N/A", "Install", "Increase Amount", "Installation Error"]
+  "options": ["N/A", "Install Moto", "Increase Amount of Moto", "Installation Error of Moto"]
 },
 
 "Currency": {
@@ -33,7 +33,7 @@
   "type": "dropdown",
   "options": ["N/A", "$", "£"],
   "visibleWhen": {
-    "Moto (CNP) Installation": "Increase Amount"
+    "Moto (CNP) Installation": "Increase Amount of Moto"
   },
   "row": "pblRow1"
 },
@@ -43,7 +43,7 @@
   "type": "dropdown",
   "options": ["N/A", "1.5k", "2.5k", "3.5k+"],
   "visibleWhen": {
-    "Moto (CNP) Installation": "Increase Amount"
+    "Moto (CNP) Installation": "Increase Amount of Moto"
   },
   "row": "pblRow1"
 },
@@ -51,7 +51,7 @@
   "label": "Increase Amount Ticket",
   "type": "text",
   "visibleWhen": {
-    "Moto (CNP) Installation": "Increase Amount"
+    "Moto (CNP) Installation": "Increase Amount of Moto"
   },
   "row": "pblRow1"
 },
@@ -59,7 +59,7 @@
   "label": "Install Ticket",
   "type": "text",
   "visibleWhen": {
-    "Moto (CNP) Installation": "Install"
+    "Moto (CNP) Installation": "Install Moto"
   },
   "row": "pblRow1"
 },
@@ -67,7 +67,7 @@
   "label": "Installation Error Ticket",
   "type": "text",
   "visibleWhen": {
-    "Moto (CNP) Installation": "Installation Error"
+    "Moto (CNP) Installation": "Installation Error of Moto"
   },
   "row": "pblRow1"
 },
@@ -129,7 +129,7 @@
         "pblInstallation": {
           "label": "PBL Installation",
           "type": "dropdown",
-          "options": ["N/A", "Yes", "No", "Error"]
+          "options": ["N/A", "Install PBL", "Raise Jire"]
         },
 
         "Currency": {
@@ -137,7 +137,7 @@
           "type": "dropdown",
           "options": ["N/A", "$", "£"],
           "visibleWhen": {
-            "PBL Installation": "Yes"
+            "PBL Installation": "Install PBL"
           },
           "row": "pblRow1"
         },
@@ -147,11 +147,19 @@
           "type": "dropdown",
           "options": ["N/A", "1.5k", "2.5k", "3.5k+"],
           "visibleWhen": {
-            "PBL Installation": "Yes"
+            "PBL Installation": "Install PBL"
           },
           "row": "pblRow1"
         },
-
+       
+"raiseTicketPBL": {
+  "label": "Raise PBL Jired Ticket",
+  "type": "text",
+  "visibleWhen": {
+    "PBL Installation": "Raise Jire"
+  },
+  "row": "pblRow1"
+},
         "results": {
           "label": "Results",
           "type": "dropdown",
