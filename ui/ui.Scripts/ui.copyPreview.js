@@ -143,16 +143,6 @@ if (increaseField && increaseField.value.trim() && increaseField.value !== "N/A"
         mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + increaseLine;
     }
 }
-// ======================================================
-// ⭐ JIRE TICKET (Case Notes Append)
-// ======================================================
-const jireTicketField = container.querySelector('#jireTicket, #Jticket, #Jtt');
-if (jireTicketField && jireTicketField.value.trim()) {
-    const jireTicketLine = `Jire Ticket: ${jireTicketField.value.trim()}`;
-    if (!mapped.troubleshooting.toLowerCase().includes(jireTicketLine.toLowerCase())) {
-        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + jireTicketLine;
-    }
-}
 
 
 // ======================================================
