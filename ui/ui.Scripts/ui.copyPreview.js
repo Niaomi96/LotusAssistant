@@ -122,6 +122,53 @@ function collectFilledFields(containerSelector) {
         salesOpp: ""
     };
 
+  // ======================================================
+// ⭐ MOTO (CNP) INSTALLATION — Increase Amount Fields
+// ======================================================
+
+const currencyField = container.querySelector('select[data-label="Currency"], #Currency');
+if (currencyField && currencyField.value.trim()) {
+    const currencyLine = `Currency: ${currencyField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(currencyLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + currencyLine;
+    }
+}
+
+
+const increaseField = container.querySelector('select[data-label="Increase"], #Increase');
+if (increaseField && increaseField.value.trim()) {
+    const increaseLine = `Increase: ${increaseField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(increaseLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + increaseLine;
+    }
+}
+
+const jireTicketField = container.querySelector('input[data-label="Jire Ticket"], #jireTicket');
+if (jireTicketField && jireTicketField.value.trim()) {
+    const jireTicketLine = `Jire Ticket: ${jireTicketField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(jireTicketLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + jireTicketLine;
+    }
+}
+
+const jticketField = container.querySelector('input[data-label="Jire Ticket"], #Jticket');
+if (jticketField && jticketField.value.trim()) {
+    const jticketLine = `Jire Ticket: ${jticketField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(jticketLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + jticketLine;
+    }
+}
+
+const jttField = container.querySelector('input[data-label="Jire Ticket"], #Jtt');
+if (jttField && jttField.value.trim()) {
+    const jttLine = `Jire Ticket: ${jttField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(jttLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + jttLine;
+    }
+}
+
+
+
 // ======================================================
 // ⭐ BACK OFFICE LICENSES (Case Notes Append)
 // ======================================================
