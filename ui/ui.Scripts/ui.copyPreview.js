@@ -123,13 +123,13 @@ function collectFilledFields(containerSelector) {
     };
 
 // ======================================================
-// ⭐ RAISE A JIRED TICKET (Case Notes Append)
+// ⭐ ISSUE (Case Notes Append)
 // ======================================================
-const raiseJiredTicketsField = container.querySelector('input[data-label="Raise a Jired Ticket"], #raiseJiredTickets');
-if (raiseJiredTicketsField && raiseJiredTicketsField.value.trim()) {
-    const raiseJiredTicketsLine = `Raise a Jired Ticket: ${raiseJiredTicketsField.value.trim()}`;
-    if (!mapped.troubleshooting.toLowerCase().includes(raiseJiredTicketsLine.toLowerCase())) {
-        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + raiseJiredTicketsLine;
+const issueField = container.querySelector('input[data-label="Issue"], #Issue');
+if (issueField && issueField.value.trim()) {
+    const issueLine = `Issue: ${issueField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(issueLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + issueLine;
     }
 }
 
