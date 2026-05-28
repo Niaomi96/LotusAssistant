@@ -122,6 +122,30 @@ function collectFilledFields(containerSelector) {
         salesOpp: ""
     };
 
+// ======================================================
+// ⭐ RAISE A JIRED TICKET (Case Notes Append)
+// ======================================================
+const raiseJiredTicketsField = container.querySelector('input[data-label="Raise a Jired Ticket"], #raiseJiredTickets');
+if (raiseJiredTicketsField && raiseJiredTicketsField.value.trim()) {
+    const raiseJiredTicketsLine = `Raise a Jired Ticket: ${raiseJiredTicketsField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(raiseJiredTicketsLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + raiseJiredTicketsLine;
+    }
+}
+
+    
+    // ======================================================
+// ⭐ RAISE A RETENTION RECORD (Case Notes Append)
+// ======================================================
+const raiseRTRetentionField = container.querySelector('input[data-label="Raise a Retention Record"], #raiseRTRetention');
+if (raiseRTRetentionField && raiseRTRetentionField.value.trim()) {
+    const raiseRTRetentionLine = `Raise a Retention Record: ${raiseRTRetentionField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(raiseRTRetentionLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + raiseRTRetentionLine;
+    }
+}
+
+
    // ======================================================
 // ⭐ RAISE PBL JIRED TICKET (Case Notes Append)
 // ======================================================
