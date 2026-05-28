@@ -529,7 +529,26 @@
   }
 }
 },
+{
+  "dispatch": {
+  "id": "Dispatch",
+  "label": "Dispatch",
+  "subcategories": {
 
+    "deliveryIssue": {
+      "id": "delivery.di",
+      "label": "Delivery",
+      "schemaId": "delivery.di",
+
+      "category": "Dispatch",
+      "subcategory": "Dispatch",
+       "emailId": null,
+      "tsId": "ts.deliverydi"
+    }
+
+  }
+}
+},
 {
   "retentionRecord": {
   "id": "retentionRecord",
