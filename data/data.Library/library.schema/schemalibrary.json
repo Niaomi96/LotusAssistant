@@ -1411,17 +1411,21 @@
          
         },
        "raiseRTRetention": {
-       "label": "Raise a Retention Record",
-       "type": "text",
-       "visibleWhen": {
-         "Subscription Error (ENP)": "RAISE RT"
-       },
-       "raiseJiredTickets": {
-       "label": "Raise a Jired Ticket",
-       "type": "text",
-       "visibleWhen": {
-         "Subscription Error (ENP)": "RAISE JIRE TICKET"
-       },
+  "label": "Raise a Retention Record",
+  "type": "text",
+  "visibleWhen": {
+    "Subscription Error (ENP)": "RAISE RT"
+  }
+},
+
+"raiseJiredTickets": {
+  "label": "Raise a Jired Ticket",
+  "type": "text",
+  "visibleWhen": {
+    "Subscription Error (ENP)": "RAISE JIRE TICKET"
+  }
+},
+
 
         "results": {
           "label": "Results",
@@ -1433,21 +1437,6 @@
           "label": "Next Steps",
           "type": "dropdown",
           "options": ["N/A","Raise Rention", "Resync Sub", "JIRE Ticket"]
-        },
-
-        "raiseRt": {
-          "label": "RT Ticket Number",
-          "type": "text",
-          "visibleWhen": {
-            "Subscription Error (ENP)": "RAISE RT"
-          }
-        },
-        "raiseJire": {
-          "label": "JIRE Ticket Number",
-          "type": "text",
-          "visibleWhen": {
-            "Subscription Error (ENP)": "RAISE JIRE TICKET"
-          }
         },
 
         "nps": {
