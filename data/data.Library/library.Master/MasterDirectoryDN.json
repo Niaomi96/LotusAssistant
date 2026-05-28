@@ -537,7 +537,7 @@
 
     "deliveryIssue": {
       "id": "delivery.di",
-      "label": "Delivery",
+      "label": "Dispatch",
       "schemaId": "delivery.di",
 
       "category": "Dispatch",
