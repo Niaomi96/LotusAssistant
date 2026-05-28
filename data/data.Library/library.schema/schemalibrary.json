@@ -3856,6 +3856,67 @@
   "troubleshootingNotes": ""
 },
  {
+  "id": "delivery.di",
+  "title": "Dispatch",
+  "category": "Dispatch",
+  "subcategory": "Delivery",
+  "tsId": "ts.deliverydi"
+  
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "dispatchSend": {
+            "label": "Dispatch Issue",
+            "type": "dropdown",
+            "options": ["When is my order comming?", "Can you change the address? It is wrong.", "My package wasn't delivered.", "My package went to the wrong location."]
+          },
+         "Issue": { "label": "Issue", "type": "text" },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options": ["N/A", "Swap It", "T2 Escalation"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+
+
+
+ {
     "id": "backOffice.appIntegration",
     "title": "App Integration",
     "category": "Back Office",
