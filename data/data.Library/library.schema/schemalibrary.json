@@ -828,7 +828,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Pin code"]
+          "options": ["Transaction Pin Code- 5717","Settings Pin Code- 0779"]
         },
 
         "results": {
@@ -1227,7 +1227,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Standalone"]
+          "options": ["Epos Now Standalone","Third Party Standalone"]
         },
 
         "results": {
@@ -1410,6 +1410,18 @@
           "options": ["N/A", "RAISE RT", "RESYNC SUBSCRIPTION","RAISE JIRE TICKET"]
          
         },
+       "raiseRTRetention": {
+       "label": "Raise a Retention Record",
+       "type": "text",
+       "visibleWhen": {
+         "Subscription Error (ENP)": "RAISE RT"
+       },
+       "raiseJiredTickets": {
+       "label": "Raise a Jired Ticket",
+       "type": "text",
+       "visibleWhen": {
+         "Subscription Error (ENP)": "RAISE JIRE TICKET"
+       },
 
         "results": {
           "label": "Results",
@@ -1792,7 +1804,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Close till, won't close.","No EOD report, in the back office.","Why my clos till, show both yesterday's and today's report together?"," Can't see my EOD summary.","How I turn on blind EOD?","Why my EOD print off, shows nothing?"]
+          "options": ["Close till, won't close.","No EOD report, in the back office.","How do I do a EOD?","Why my close till, show both yesterday's and today's report together?"," Can't see my EOD summary.","How I turn on blind EOD?","Why my EOD print off, shows nothing?"]
         },
 
         "results": {
@@ -1852,7 +1864,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Hardware Setup", "Network Error", "Till screen won't turn on", "Other"]
+          "options": ["Hardware Setup", "Network Error", "Till screen won't turn on","Till on vendor factory mode.", "Other"]
         },
 
         "results": {
@@ -2625,7 +2637,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Product Marked Out of Stock"]
+            "options": ["Product Marked Out of Stock on the Till"]
           },
 
           "results": {
@@ -2747,7 +2759,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["KDS Setup Issue", "KDS Error"]
+            "options": ["KDS Setup", "KDS not loading","KDS not showing orders","How to modify KDS","Can I setup KDS, with WIFI?", "Can I setup KDS, with Ethernet?"]
           },
 
           "results": {
@@ -2876,7 +2888,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["How to make a multiple choice product group", "How to add a product", "How to edit a product", "How to archive a product", "How to recover an archived product", "How to recover deleted products", "How to set up a master product","How to make a promotion?", "How to add weight to a product", "How to make a category", "How to hide a product/category", "How to add courses to category","General product/ category inquiry"]
+            "options": ["Bulk Import","How to make a multiple choice product group", "How to add a product", "How to edit a product", "How to archive a product", "How to recover an archived product", "How to recover deleted products", "How to set up a master product","How to make a promotion?", "How to add weight to a product", "How to make a category", "How to hide a product/category", "How to add courses to category","General product/ category inquiry"]
           },
 
           "results": {
@@ -3073,7 +3085,7 @@
             "options": [
               "Sent AI EDPA Code",
               "Tier 2 Escalation",
-              " Additional Sub Login MfA Disable",
+              "Additional Sub Login MfA Disable",
               "General MFA Inquiry"
             ]
           },
