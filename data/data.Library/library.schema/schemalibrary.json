@@ -2138,68 +2138,63 @@
   "troubleshootingNotes": ""
 },
 
- {
-  
-    "id": "pos.cashDrawerError",
-    "title": "CashDrawer Error",
-    "category": "POS System",
-    "subcategory": "CashDrawer Error",
-    "tsId": "ts.cashDrawerError",
+{
+  "id": "pos.cashDrawerError",
+  "title": "CashDrawer Error",
+  "category": "POS System",
+  "subcategory": "CashDrawer Error",
+  "tsId": "ts.cashDrawerError",
 
-    "caseNotes": {
-      "Case Details": {
-        "fields": {
-
-          "who": {
-            "label": "Who",
-            "type": "text"
-          },
-
-          "role": {
-            "label": "Role",
-            "type": "dropdown",
-            "options": ["Primary", "Staff", "Reseller"]
-          },
-
-          "what": {
-            "label": "What",
-            "type": "dropdown",
-            "options": ["Tender type - cash drawer release issue.","Where so we plug in the cash drawer?"," My cash drawer won't pop."]
-          },
-
-          "results": {
-            "label": "Results",
-            "type": "dropdown",
-            "options": ["Resolved", "Non-Resolved"]
-          },
-
-          "nextSteps": {
-            "label": "Next Steps",
-            "type": "dropdown",
-            "options": ["N/A", "Swap It", "T2 Escalation"]
-          },
-
-          "nps": {
-            "label": "NPS",
-            "type": "dropdown",
-            "options": ["Y", "N"]
-          },
-
-          "salesOpportunity": {
-            "label": "Sales Opportunity Explored",
-            "type": "dropdown",
-            "options": ["N, Not Interested", "Y, Interested"]
-          }
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+        "who": {
+          "label": "Who",
+          "type": "text"
         },
-
-        "autoPopulate": {}
-      
-    },
-
-    "troubleshootingSteps": [],
-    "troubleshootingNotes": ""
-  }
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": [
+            "Tender type - cash drawer release issue.",
+            "Where do we plug in the cash drawer?",
+            "My cash drawer won't pop."
+          ]
+        },
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+      "autoPopulate": {}
+    }
   },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
+
  {
     "id": "pos.scannerError",
     "title": "Scanner",
