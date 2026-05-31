@@ -157,16 +157,7 @@ function collectFilledFields(containerSelector) {
         salesOpp: ""
     };
 
-    // ======================================================
-// ⭐ MANUAL REFUND TICKET (Case Notes Append)
-// ======================================================
-const manualRefundJiredTicketField = container.querySelector('input[data-label="Manual Refund Ticket"], #manualRefundJiredTicket');
-if (manualRefundJiredTicketField && manualRefundJiredTicketField.value.trim()) {
-    const manualRefundJiredTicketLine = `Manual Refund Ticket: ${manualRefundJiredTicketField.value.trim()}`;
-    if (!mapped.troubleshooting.toLowerCase().includes(manualRefundJiredTicketLine.toLowerCase())) {
-        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + manualRefundJiredTicketLine;
-    }
-}
+
 
 // ======================================================
 // ⭐ ISSUE (Case Notes Append)
