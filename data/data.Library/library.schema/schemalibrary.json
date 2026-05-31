@@ -1544,7 +1544,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Air (AMS1) Integration", "Saturn (S2F1) Integration", "P400 (V400) Integration","ENP No Network","ENP Not Connected to the Cloud"]
+          "options": ["Air (AMS1) Integration", "Saturn (S2F1) Integration", "P400 (V400) Integration","ENP No Network","ENP Not Connected to the Cloud","Setup Cellular Data"]
         },
 
         "results": {
@@ -1913,7 +1913,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Stuck Table","Stuck Tabs"]
+          "options": ["Stuck Table","Stuck Tabs","Tables aren't syncing","Tables have disappeared"]
         },
 
         "results": {
