@@ -59,41 +59,6 @@ function attachCopyButtons() {
     };
 }
 }
-// ======================================================
-// ⭐ SHOW PREVIEW MODAL
-// ======================================================
-export function showCopyPreview(title, text) {
-    document.getElementById("copyPreviewTitle").innerText = title;
-    document.getElementById("copyPreviewText").innerText = text;
-    document.getElementById("copyPreviewModal").classList.remove("hidden");
-}
-
-// ======================================================
-// ⭐ BUTTON ATTACHMENT
-// ======================================================
-function attachCopyButtons() {
-    const caseBtn = document.getElementById("copyCaseBtn");
-    const emailBtn = document.getElementById("copyEmailBtn");
-
-    // ⭐ CASE NOTES COPY
-    if (caseBtn) {
-        caseBtn.onclick = () => {
-            const filteredText = collectFilledFields("#schemaContainer");
-            showCopyPreview("Case Notes", filteredText);
-        };
-    }
-
-    // ⭐ EMAIL OUTPUT COPY (with beautifier)
-    if (emailBtn) {
-        emailBtn.onclick = () => {
-            const raw = document.getElementById("emailOutput").innerText.trim();
-            const formatted = formatEmailOutput(raw);
-            const finalText = formatted || "No email content available.";
-
-            showCopyPreview("Email Output", finalText);
-        };
-    }
-}
 
 // ======================================================
 // ⭐ DEDUPLICATION SAFEGUARD
@@ -118,6 +83,7 @@ function collectFilledFields(containerSelector) {
     const inputs = container.querySelectorAll("input, select, textarea");
     const values = Array.from(inputs).map(el => el.value?.trim() || "");
 
+   
     // ======================================================
     // ⭐ Keyword Maps
     // ======================================================
@@ -158,6 +124,16 @@ function collectFilledFields(containerSelector) {
     };
 
 
+     // ======================================================
+// ⭐ MANUAL REFUND TICKET (Case Notes Append)
+// ======================================================
+const manualRefundJiredTicketField = container.querySelector('input[data-label="Manual Refund Ticket"], #manualRefundJiredTicket');
+if (manualRefundJiredTicketField && manualRefundJiredTicketField.value.trim()) {
+    const manualRefundJiredTicketLine = `Manual Refund Ticket: ${manualRefundJiredTicketField.value.trim()}`;
+    if (!mapped.troubleshooting.toLowerCase().includes(manualRefundJiredTicketLine.toLowerCase())) {
+        mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + manualRefundJiredTicketLine;
+    }
+}
 
 // ======================================================
 // ⭐ ISSUE (Case Notes Append)
@@ -484,7 +460,6 @@ if (connectionTypeField && connectionTypeField.value.trim()) {
             mapped.troubleshooting += (mapped.troubleshooting ? "\n" : "") + dateLine;
         }
     }
-
     // ======================================================
     // ⭐ TROUBLESHOOTING CANDIDATES (indexes 3–6)
 // ======================================================
@@ -613,6 +588,15 @@ Sales Opportunity Explored: ${mapped.salesOpp}
 // ⭐ AUTO‑INIT
 // ======================================================
 document.addEventListener("DOMContentLoaded", initCopyPreview);
+
+
+
+
+
+
+
+
+
 
 
 
