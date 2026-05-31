@@ -4085,7 +4085,13 @@
             "Manual Refund": "Manual Refund"
           }
         },
-
+        "manualRefundJiredTicket": {
+          "label": "Manual Refund Ticket",
+          "type": "text",
+          "visibleWhen": {
+             "Manual Refund": "Manual Refund"
+          }
+        },
         "results": {
           "label": "Results",
           "type": "dropdown",
