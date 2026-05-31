@@ -1,38 +1,10 @@
 // ======================================================
 // ⭐ COPY PREVIEW MODULE (FINAL — Keyword Mapping +
-//  Multi‑Entry + Cross‑Field + Null‑Safe Deduplication +
-//  Date Inside Troubleshooting + Email Beautifier)
+//  Multi‑Entry + Cross‑Field + Null‑Safe Deduplication + Date Inside Troubleshooting)
 // ======================================================
 
 console.log("🟧 [COPY PREVIEW] Loaded");
 
-// ======================================================
-// ⭐ EMAIL BEAUTIFIER — Makes pasted emails clean + readable
-// ======================================================
-function formatEmailOutput(raw) {
-    let text = raw;
-
-    // Add spacing + uppercase headers
-    text = text.replace(/(Issue:)/gi, "\n\nISSUE:\n");
-    text = text.replace(/(Resolution:)/gi, "\n\nRESOLUTION:\n");
-    text = text.replace(/(Next Steps:)/gi, "\n\nNEXT STEPS:\n");
-    text = text.replace(/(Notes:)/gi, "\n\nNOTES:\n");
-
-    // Simulated bold for important lines
-    text = text.replace(/(IMPORTANT)/gi, "\n\n**IMPORTANT**");
-
-    // Convert hyphens to bullets
-    text = text.replace(/- /g, "• ");
-
-    // Clean excessive spacing
-    text = text.replace(/\n{3,}/g, "\n\n");
-
-    return text.trim();
-}
-
-// ======================================================
-// ⭐ INIT COPY PREVIEW
-// ======================================================
 export function initCopyPreview() {
     const modal = document.getElementById("copyPreviewModal");
     const closeBtn = document.getElementById("modalCloseBtn");
@@ -48,26 +20,45 @@ export function initCopyPreview() {
 
     closeBtn.onclick = () => modal.classList.add("hidden");
 
-    // ======================================================
-    // ⭐ UPDATED COPY LOGIC — Forces pasted text to be BLACK
-    // ======================================================
     copyBtn.onclick = () => {
         const text = textBox.innerText;
-
-        // Remove hidden formatting (ANSI, invisible chars)
-        const cleaned = text.replace(/\u001b
-
-\[[0-9;]*m/g, "");
-
-        navigator.clipboard.writeText(cleaned);
-
+        navigator.clipboard.writeText(text);
         modal.classList.add("hidden");
-        console.log("✅ [COPY PREVIEW] Copied to clipboard (forced black text)");
+        console.log("✅ [COPY PREVIEW] Copied to clipboard");
     };
 
     attachCopyButtons();
 }
 
+export function showCopyPreview(title, text) {
+    document.getElementById("copyPreviewTitle").innerText = title;
+    document.getElementById("copyPreviewText").innerText = text;
+    document.getElementById("copyPreviewModal").classList.remove("hidden");
+}
+
+// ======================================================
+// ⭐ BUTTON ATTACHMENT
+// ======================================================
+function attachCopyButtons() {
+    const caseBtn = document.getElementById("copyCaseBtn");
+    const emailBtn = document.getElementById("copyEmailBtn");
+
+    if (caseBtn) {
+        caseBtn.onclick = () => {
+            const filteredText = collectFilledFields("#schemaContainer");
+            showCopyPreview("Case Notes", filteredText);
+        };
+    }
+
+   if (emailBtn) {
+    emailBtn.onclick = () => {
+        const text = document.getElementById("emailOutput").innerText.trim();
+        const finalText = text || "No email content available.";
+
+        showCopyPreview("Email Output", finalText);
+    };
+}
+}
 // ======================================================
 // ⭐ SHOW PREVIEW MODAL
 // ======================================================
