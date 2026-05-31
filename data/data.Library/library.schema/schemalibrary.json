@@ -2872,7 +2872,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Bulk Import","How to make a multiple choice product group", "How to add a product", "How to edit a product", "How to archive a product", "How to recover an archived product", "How to recover deleted products", "How to set up a master product","How to make a promotion?", "How to add weight to a product", "How to make a category", "How to hide a product/category", "How to add courses to category","General product/ category inquiry"]
+            "options": ["Bulk Import","How do I genreate barcodes?","How do I generate labels?","How do I scan a barcode into backoffice?","How to make a multiple choice product group", "How to add a product", "How to edit a product", "How to archive a product", "How to recover an archived product", "How to recover deleted products", "How to set up a master product","How to make a promotion?", "How to add weight to a product", "How to make a category", "How to hide a product/category", "How to add courses to category","General product/ category inquiry"]
           },
 
           "results": {
