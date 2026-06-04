@@ -1544,7 +1544,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Touchscreen Unresponsive","Staging Unsuccessful", "NFC Not Working(TAP)", "Swipe Not Working", "Insert not working", "10019 Tamper Error","Battery Unresponsive", "Network Error/ Cloud Connection Issues","Charger Cable","COG"]
+          "options": ["Touchscreen Unresponsive","Staging Unsuccessful", "NFC Not Working(TAP)", "Swipe Not Working", "Insert not working", "10019 Tamper Error","Battery Unresponsive", "Network Error/ Cloud Connection Issues","Charger Cable","Charging Dock","COG"]
         },
 
         "results": {
