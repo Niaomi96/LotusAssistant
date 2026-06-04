@@ -192,6 +192,66 @@
   "troubleshootingSteps": [],
   "troubleshootingNotes": ""
 },
+  {
+  "id": "payments.enpRates",
+  "title": "ENP Transaction Rates",
+  "category": "Payments",
+  "subcategory": "ENP Transaction Rates",
+  "tsId": "ts.enpRates",
+
+  "caseNotes": {
+    "Case Details": {
+      "fields": {
+
+        "who": {
+          "label": "Who",
+          "type": "text"
+        },
+
+        "role": {
+          "label": "Role",
+          "type": "dropdown",
+          "options": ["Primary", "Staff", "Reseller"]
+        },
+
+        "what": {
+          "label": "What",
+          "type": "dropdown",
+          "options": ["Change Transaction Rate","What Is My Transaction Rate?"]
+        },
+
+        "results": {
+          "label": "Results",
+          "type": "dropdown",
+          "options": ["Resolved", "Non-Resolved"]
+        },
+
+        "nextSteps": {
+          "label": "Next Steps",
+          "type": "dropdown",
+          "options": ["N/A", "Swap It", "T2 Escalation"]
+        },
+
+        "nps": {
+          "label": "NPS",
+          "type": "dropdown",
+          "options": ["Y", "N"]
+        },
+
+        "salesOpportunity": {
+          "label": "Sales Opportunity Explored",
+          "type": "dropdown",
+          "options": ["N, Not Interested", "Y, Interested"]
+        }
+      },
+
+      "autoPopulate": {}
+    }
+  },
+
+  "troubleshootingSteps": [],
+  "troubleshootingNotes": ""
+},
 {
   "id": "payments.adyenInquiry",
   "title": "Adyen Inquiry",
@@ -1287,7 +1347,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Didn't receive payouts.","Payout amount is wrong.","How can I review, my payouts reporting?"]
+          "options": ["Didn't receive payouts.","Payout amount is wrong.","How can I review, my payouts reporting?","How can I change My payouts Cut off time?"]
         },
 
         "results": {
@@ -3663,6 +3723,63 @@
             "label": "Next Steps",
             "type": "dropdown",
             "options": ["N/A", "Accept", "Decline","Active Offer"]
+          },
+
+          "nps": {
+            "label": "NPS",
+            "type": "dropdown",
+            "options": ["Y", "N"]
+          },
+
+          "salesOpportunity": {
+            "label": "Sales Opportunity Explored",
+            "type": "dropdown",
+            "options": ["N, Not Interested", "Y, Interested"]
+          }
+        },
+
+        "autoPopulate": {}
+      }
+    },
+
+    "troubleshootingSteps": [],
+    "troubleshootingNotes": ""
+  },
+  {
+    "id": "sale.referFriend",
+    "title": "Referral Offer",
+    "category": "Sale",
+    "subcategory": "Referral Offer",
+    "tsId": "ts.referFriend",
+
+    "caseNotes": {
+      "Case Details": {
+        "fields": {
+
+          "who": { "label": "Who", "type": "text" },
+
+          "role": {
+            "label": "Role",
+            "type": "dropdown",
+            "options": ["Primary", "Staff", "Reseller"]
+          },
+
+          "what": {
+            "label": "What",
+            "type": "dropdown",
+            "options": ["How do I refer a friend?", "How do a get a referral?","Why was I not paid out for refferal?"]
+          },
+
+          "results": {
+            "label": "Results",
+            "type": "dropdown",
+            "options": ["Resolved", "Non-Resolved"]
+          },
+
+          "nextSteps": {
+            "label": "Next Steps",
+            "type": "dropdown",
+            "options":  ["N/A", "CMP", "Manager Escalation"]
           },
 
           "nps": {
