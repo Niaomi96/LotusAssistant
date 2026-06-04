@@ -9,7 +9,7 @@
     "https://support.eposnow.com/s/billing - This is the direct link to the billing portal where customers can manage their subscriptions, view invoices, and make payments."
 
   ]
-},
+
 {
   "tsId": "ts.bookSession",
   "mainCategory": "Book Session",
@@ -166,7 +166,18 @@
     ]
   }
 },
+},
+{
+ "tsId": "ts.referFriend",
+  "mainCategory": "Sale",
+  "subcategory": "Referral Offer",
+  "troubleshootingSteps": [
+    "Back office -> Referrals",
+    "How to do a referral on the salesforce for revenu: Referrals ->  Refer to Marchent Partners. ",
+    "Reach out to @bradley.goldsmith, regarding refferal funds."
 
+  ]
+}, 
 
 {
   "tsId": "ts.feedbackReviewNps",
@@ -405,6 +416,15 @@
   ]
 },
 {
+  "tsId": "ts.enpRates",
+  "mainCategory": "Payments",
+  "subcategory": "ENP Transaction Rates",
+  "troubleshootingSteps": [
+    "How to check customer rate for ENP?: Salesforce -> EN Paypents -> Epos Now Payments.",
+    "How to change rates?: Reach out to Payments Saves."
+  ]
+},
+  {
   "tsId": "ts.manualRefund",
   "mainCategory": "Payments",
   "subcategory": "Manual Refund",
