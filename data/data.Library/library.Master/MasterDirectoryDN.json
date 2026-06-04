@@ -39,6 +39,18 @@
       "emailId": null,
       "tsId": "ts.enpSubscription"
     },
+      "payments.enpRates": {
+      "id": "payments.enpRates",
+      "label": "ENP Transaction Rates",
+      "schemaId": "payments.enpRates",
+
+      "category": "Payments",
+      "subcategory": "ENP Transaction Rates",
+
+      "emailId": null,
+      "tsId": "ts.enpRates"
+    },
+
 
     "payments.enpUnresponsive": {
       "id": "payments.enpUnresponsive",
@@ -724,6 +736,17 @@
 
       "emailId": null,
       "tsId": "ts.appPurchase"
+    },
+     "sale.referFriend": {
+      "id": "sale.referFriend",
+      "label": "Referral Offer",
+      "schemaId": "sale.referFriend",
+
+      "category": "Sale",
+      "subcategory": "Referral Offer",
+
+      "emailId": null,
+      "tsId": "ts.referFriend"
     },
 
     "sale.capitalLoanOffer": {
