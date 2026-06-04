@@ -18,7 +18,8 @@
   { "id": "payments.enpSubscription", "tsId": "ts.enpSubscription", "mainCategory": "Payments", "subcategory": "EposNow Payments Sub", "troubleshootingSteps": [] },
   { "id": "payments.enpUnresponsive", "tsId": "ts.enpUnresponsive", "mainCategory": "Payments", "subcategory": "ENP Unresponsive/COG", "troubleshootingSteps": [] },
   { "id": "payments.payoutsInquiry", "tsId": "ts.payoutsInquiry", "mainCategory": "Payments", "subcategory": "Payouts (EposNow) Inquiry", "troubleshootingSteps": [] },
-
+  { "id": "payments.enpRates", "tsId": "ts.enpRates", "mainCategory": "Payments", "subcategory": "ENP Transaction Rates", "troubleshootingSteps": [] },
+  
   { "id": "pos.tillAppLoadingError", "tsId": "ts.tillAppLoadingError", "mainCategory": "POS System", "subcategory": "Till App Loading Error", "troubleshootingSteps": [] },
   { "id": "pos.autoClose", "tsId": "ts.autoClose", "mainCategory": "POS System", "subcategory": "Auto Close", "troubleshootingSteps": [] },
   { "id": "pos.eod", "tsId": "ts.eod", "mainCategory": "POS System", "subcategory": "EOD", "troubleshootingSteps": [] },
@@ -56,6 +57,7 @@
 
   { "id": "sale.hardwarePurchase", "tsId": "ts.hardwarePurchase", "mainCategory": "Sale", "subcategory": "Hardware Purchase", "troubleshootingSteps": [] },
   { "id": "sale.appPurchase", "tsId": "ts.appPurchase", "mainCategory": "Sale", "subcategory": "App Purchase", "troubleshootingSteps": [] },
+  { "id": "sale.referFriend", "tsId": "ts.referFriend", "mainCategory": "Sale", "subcategory": "Referral Offer", "troubleshootingSteps": [] },
   { "id": "sale.capitalLoanOffer", "tsId": "ts.capitalLoanOffer", "mainCategory": "Sale", "subcategory": "Capital Loan Offer", "troubleshootingSteps": [] },
   { "id": "sale.additionalDeviceLocation", "tsId": "ts.additionalDeviceLocation", "mainCategory": "Sale", "subcategory": "Additional Device & Location", "troubleshootingSteps": [] },
 
