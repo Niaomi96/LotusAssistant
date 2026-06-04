@@ -61,7 +61,7 @@
   { "id": "sale.capitalLoanOffer", "tsId": "ts.capitalLoanOffer", "mainCategory": "Sale", "subcategory": "Capital Loan Offer", "troubleshootingSteps": [] },
   { "id": "sale.additionalDeviceLocation", "tsId": "ts.additionalDeviceLocation", "mainCategory": "Sale", "subcategory": "Additional Device & Location", "troubleshootingSteps": [] },
 
-  {"id": "delivery.di", "tsId": "ts.deliverydi", "mainCategory": "Dispatch","subcategory": "Dispatch", "troubleshootingSteps": []}
+  {"id": "delivery.di", "tsId": "ts.deliverydi", "mainCategory": "Dispatch","subcategory": "Dispatch", "troubleshootingSteps": []},
 
 
   { "id": "feedbackReview.nps", "tsId": "ts.feedbackReviewNps", "mainCategory": "Feedback Review", "subcategory": "FeedBack (NPS)", "troubleshootingSteps": [] },
