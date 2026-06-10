@@ -1347,7 +1347,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Didn't receive payouts.","Payout amount is wrong.","How can I review, my payouts reporting?","How can I change My payouts Cut off time?"]
+          "options": ["Didn't receive payouts.","Total Deduction","Payout amount is wrong.","How can I review, my payouts reporting?","How can I change My payouts Cut off time?"]
         },
 
         "results": {
