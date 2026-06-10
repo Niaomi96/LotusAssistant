@@ -786,7 +786,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Setup KYC", "Broken KYC", "Redacted"]
+          "options": ["Setup KYC", "Broken KYC", "Redacted","Missing additional back office location Payout Account"]
         },
                        "setupKycSection": {
           "label": "NO.1: Setup KYC",
