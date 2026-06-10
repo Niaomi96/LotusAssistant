@@ -413,7 +413,9 @@
   "troubleshootingSteps": [
     "Step 1: Back office (eposnowhq.com) -> Reporting -> Payments Payout.",
     "Step 2: Move screen left to right until you see Total Deduction. It has a dropdown you can select to see the exact information you are looking for. (Best done on Desktop or Laptop.)",
-    "Additional information: You can also see the exact amount made over cash and card in Reporting -> Banking -> Tender Type. Go to the Show Data dropdown and select what you need."
+    "Additional information: You can also see the exact amount made over cash and card in Reporting -> Banking -> Tender Type. Go to the Show Data dropdown and select what you need.",
+    "Total deductions, show you your deductions what was deducted from your card reader transactions. One is your rate : Transaction Processing Fees & + 10 cents / pent is Acquiring scheme all fees"
+  
   ]
 },
 {
