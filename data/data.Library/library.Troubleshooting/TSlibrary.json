@@ -697,6 +697,12 @@
     "Select a keyword below to load the correct troubleshooting block."
   ],
   "keywordTroubleshooting": {
+    "Receipt Printing Enable/ Disable": [
+      "How to disable/ re-enable receipt printing on a saturn: 3lines-> setting-> payemets-> epos now payments -> toggle off merchant copy and customer copy.",
+      "This is the same process if you want, just have one on and not the other.",
+      "How to disable/ enable pos receipts: 3lines-> setting-> general-> print after each transactions, you can turn it on or off.",
+      "Third parties, execpt Dejavoo, will need to contact there merchant processor to enable or disable receipts, otherwise, dejavoo can be done from settings infront of the till."
+    ],
     "Order Utilities": [
       "Order Utilities has been discontinued for Windows devices.",
       "Common error: Order Utilities stops working or becomes flooded with print requests.",
