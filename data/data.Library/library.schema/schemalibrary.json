@@ -2096,7 +2096,8 @@
             "Unsupported Printers",
             "Receipt Printer Setup (Android/POS/Saturn)",
             "Order Printer Setup (Android/POS/Saturn)",
-            "Windows Printer Setup (USB/Ethernet)"
+            "Windows Printer Setup (USB/Ethernet)",
+            "Receipt Printing Enable/ Disable"
           ]
         },
 
@@ -2188,6 +2189,10 @@
           "Windows Printer Setup (USB/Ethernet)": {
             "what": "Windows Printer Setup (USB/Ethernet) — has been added to case notes.",
             "mapTo": "Windows Printer Setup (USB/Ethernet)"
+            },
+          "Receipt Printing Enable/ Disable": {
+            "what": "Receipt Printing Enable/ Disable — has been added to case notes.",
+            "mapTo": "Receipt Printing Enable/ Disable"
           }
         }
       }
