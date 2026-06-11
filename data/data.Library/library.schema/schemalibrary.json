@@ -1853,7 +1853,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Close till, won't close.","No EOD report, in the back office.","How do I do a EOD?","Why my close till, show both yesterday's and today's report together?"," Can't see my EOD summary.","How I turn on blind EOD?","Why my EOD print off, shows nothing?"]
+          "options": ["Close till, won't close.","No EOD report, in the back office.","Ghost Tender Types on EOD","How do I do a EOD?","Why my close till, show both yesterday's and today's report together?"," Can't see my EOD summary.","How I turn on blind EOD?","Why my EOD print off, shows nothing?"]
         },
 
         "results": {
