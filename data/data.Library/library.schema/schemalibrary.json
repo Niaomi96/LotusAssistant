@@ -25,7 +25,7 @@
   "motoInstallation": {
   "label": "Moto (CNP) Installation",
   "type": "dropdown",
-  "options": ["N/A", "Install Moto", "Increase Amount of Moto", "Installation Error of Moto"]
+  "options": ["N/A", "Install Moto", "Increase Amount of Moto", "Installation Error of Moto","Setup Moto","How to use moto?"]
 },
 
 "Currency": {
@@ -129,7 +129,7 @@
         "pblInstallation": {
           "label": "PBL Installation",
           "type": "dropdown",
-          "options": ["N/A", "Install PBL", "Raise Jire"]
+          "options": ["N/A", "Install PBL", "Raise Jire","How use PBL?","Setup PBL"]
         },
 
         "Currency": {
@@ -1105,7 +1105,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["My Business App"]
+          "options": ["My Business App Setup","App wont Load For My Business","Login Error For My Bussiness","How transfer funds"]
         },
 
         "results": {
@@ -1165,7 +1165,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Capital Loan"]
+          "options": ["What is my loan amount?","What my loan rate?", "When did i open my loan?"]
         },
 
         "results": {
@@ -1287,7 +1287,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Epos Now Standalone","Third Party Standalone"]
+          "options": ["Epos Now Standalone","Third Party Standalone","How do I do a standalone transaction?"," How do I find standalone transaction reporting?","How do I manually record standalone transaction on the till?"]
         },
 
         "results": {
@@ -1544,7 +1544,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Touchscreen Unresponsive","Staging Unsuccessful", "NFC Not Working(TAP)", "Swipe Not Working", "Insert not working", "10019 Tamper Error","Battery Unresponsive", "Network Error/ Cloud Connection Issues","Charger Cable","Charging Dock","COG"]
+          "options": ["Touchscreen Unresponsive","My transactions not going through.","Staging Unsuccessful", "NFC Not Working(TAP)", "Swipe Not Working", "Insert not working", "10019 Tamper Error","Battery Unresponsive", "Network Error/ Cloud Connection Issues","Charger Cable","Charging Dock","COG"]
         },
 
         "results": {
@@ -1604,7 +1604,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Air (AMS1) Integration", "Saturn (S2F1) Integration", "P400 (V400) Integration","ENP No Network","ENP Not Connected to the Cloud","Setup Cellular Data"]
+          "options": ["Air (AMS1) Integration", "Saturn (S2F1) Integration", "P400 (V400) Integration","ENP No Network","ENP Not Connected to the Cloud","Setup Cellular Data","How I do a transaction?"]
         },
 
         "results": {
@@ -1792,6 +1792,7 @@
             "Update Required",
             "Network Issue",
             "Clear Data",
+            "Clearing Temp files",
             "Other"
           ]
         },
@@ -1913,7 +1914,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Hardware Setup", "Network Error", "Till screen won't turn on","Till on vendor factory mode.", "Other"]
+          "options": ["Hardware Setup", " Till Network Error", "Till screen won't turn on","Till on vendor factory mode.", "Other"]
         },
 
         "results": {
@@ -2564,7 +2565,7 @@
           "what": {
             "label": "What",
             "type": "dropdown",
-            "options": ["Staff Login Issue", "Staff Role Issue"," How make a staff memeber?"," How to modify staff roles?"]
+            "options": ["Staff Login Issue", "Staff Role Issue"," How make a staff memeber?"," How to modify staff roles?","Staffing hours", "Staff clock in/ clock out", "Staff/ employee reporting"]
           },
 
           "results": {
