@@ -1165,7 +1165,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["What is my loan amount?","What my loan rate?", "When did i open my loan?"]
+          "options": ["What is my loan amount?","What my loan rate?", "When did I open my loan?","Did my payment go through?","Why am I still getting charged?"]
         },
 
         "results": {
@@ -1225,7 +1225,7 @@
         "what": {
           "label": "What",
           "type": "dropdown",
-          "options": ["Tips"]
+          "options": ["Custom Tips Setup", "Tip Adjust Setup","Tip Setup","How so I use tips?","Disable Tips"]
         },
 
         "results": {
