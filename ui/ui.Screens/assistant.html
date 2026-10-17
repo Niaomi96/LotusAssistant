@@ -1,173 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Lotus Assistant</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lotus Assistant — Support Workspace</title>
+<meta name="theme-color" content="#172b3a">
+<!-- Fresh standalone design: intentionally does not load the legacy CSS files. -->
+<style>
+:root{--ink:#172b3a;--ink2:#294454;--paper:#f5f2eb;--surface:#fffdf8;--line:#deded5;--muted:#69777b;--teal:#147d78;--tealDark:#0c625e;--lime:#d9ef8a;--coral:#e87e63;--shadow:0 18px 45px rgba(23,43,58,.08)}
+*{box-sizing:border-box}html{min-height:100%;background:var(--paper)}body{margin:0;color:var(--ink);background:var(--paper);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}button,input,textarea,select{font:inherit}button{cursor:pointer}.lotusAppShell{min-height:100vh;display:grid;grid-template-columns:270px minmax(0,1fr)}
+.appSidebar{min-height:100vh;padding:26px 19px 22px;background:var(--ink);color:#f5f5ef;display:flex;flex-direction:column;gap:28px;position:relative;z-index:5}.lotusWrapper{display:grid;grid-template-columns:44px 1fr;align-items:center;gap:12px}#lotusLogo{width:43px;height:43px;object-fit:contain;border-radius:12px;background:rgba(255,255,255,.08);padding:5px}.lotusLine{display:none}.brandText{display:flex;flex-direction:column;gap:3px}.brandText strong{font-size:15px;letter-spacing:-.025em}.brandText span{font-size:10px;color:#aab9bb;letter-spacing:.1em;text-transform:uppercase}.sidebarIntro{display:flex;flex-direction:column;gap:8px;padding:0 4px}.sidebarEyebrow,.eyebrow,.currentIssueLabel,.modalEyebrow{font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:800}.sidebarEyebrow{color:var(--lime)}.sidebarHint{font-size:18px;line-height:1.25;font-weight:650;letter-spacing:-.035em}.categoryTab{display:none;width:100%;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:white;border-radius:12px;padding:12px}.lotusIcon{width:22px;height:22px;object-fit:contain}.categoryPanel{display:flex;flex-direction:column;gap:10px}.fieldLabel{margin:5px 3px 0;color:#aab9bb;font-size:11px;font-weight:700}.dropdownWrapper{position:relative}.dropdownDisplay{min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid rgba(255,255,255,.16);border-radius:11px;padding:11px 12px;color:#f6f5ef;background:rgba(255,255,255,.055);cursor:pointer;outline:none;transition:border-color .18s,background .18s}.dropdownDisplay:hover,.dropdownDisplay:focus-visible{border-color:var(--lime);background:rgba(255,255,255,.09)}#mainLabel,#subLabel{font-size:13px;overflow-wrap:anywhere}.dropdownIcon{width:18px;height:18px;display:flex;flex-direction:column;justify-content:center;gap:3px;flex-shrink:0}.dropdownIcon div,.dropdownIcon span{height:2px;border-radius:4px;background:currentColor;width:100%}.dropdownPanel{display:none;position:absolute;top:calc(100% + 7px);left:0;right:0;z-index:20;padding:6px;border-radius:12px;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:var(--shadow)}.dropdownWrapper.open .dropdownPanel,.dropdownPanel.open{display:block}.dropdownList{display:flex;flex-direction:column;gap:3px;max-height:300px;overflow:auto}.dropdownList>*{border-radius:8px;padding:10px;cursor:pointer}.dropdownList>*:hover{background:#edf5f0}.sidebarFooter{margin-top:auto;padding:13px 4px 0;border-top:1px solid rgba(255,255,255,.13);display:flex;align-items:center;gap:9px;color:#aab9bb;font-size:11px}.sidebarFooterDot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(217,239,138,.12)}
+.appMain{min-width:0;display:flex;flex-direction:column}.appTopbar{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:23px clamp(22px,4vw,56px) 18px;background:var(--paper);border-bottom:1px solid #e4e1d9}.contentBox{min-width:0}.currentIssueLabel{color:var(--teal);margin-bottom:9px}#currentCategoryHeader{display:flex;flex-wrap:wrap;align-items:center;gap:8px;min-height:23px;font-size:14px;font-weight:700}#currentMain:not(:empty){background:#e2eee7;padding:5px 9px;border-radius:7px}#currentSub:not(:empty){color:var(--muted);font-weight:500}.categoryLine{display:none}.topbarActions{display:flex;align-items:center;gap:12px}.workspaceStatus{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px;white-space:nowrap}.workspaceStatus span{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--teal)}.iconBtn{width:39px;height:39px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:11px;font-size:22px;line-height:1;transition:transform .2s,background .2s}.iconBtn:hover{background:#e7eee7;transform:rotate(30deg)}
+.workspace{width:100%;max-width:1500px;margin:0 auto;padding:clamp(25px,4vw,52px) clamp(22px,4vw,56px) 48px}.workspaceHeading{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:28px}.eyebrow{color:var(--teal);margin-bottom:10px}.workspaceHeading h1{margin:0;font-size:clamp(34px,4vw,50px);letter-spacing:-.065em;line-height:1.02;font-weight:760}.workspaceHeading p{margin:13px 0 0;max-width:630px;color:var(--muted);font-size:14px;line-height:1.7}.workspaceToolbar{display:flex;gap:5px;padding:5px;width:fit-content;max-width:100%;background:#e9e6dd;border:1px solid #dfdcd2;border-radius:13px;margin-bottom:18px}.tabBtn{display:flex;align-items:center;gap:9px;border:0;border-radius:9px;padding:12px 16px;background:transparent;color:#667276;font-size:13px;font-weight:750;white-space:nowrap;transition:background .18s,color .18s}.tabBtn:hover{color:var(--ink)}.tabBtn.active,.tabBtn[aria-selected="true"]{background:var(--ink);color:#fffdf8;box-shadow:0 4px 12px rgba(23,43,58,.13)}.tabGlyph{font-size:10px;letter-spacing:.04em;opacity:.8}.workspaceContent{min-width:0}.workspacePane{display:none;min-width:0}.workspacePane.active,.workspacePane.isActive{display:block}.paneHeading{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:25px 0 20px;border-bottom:1px solid var(--line);margin-bottom:23px}.paneHeading .eyebrow{margin-bottom:8px}.paneHeading h2{margin:0;font-size:24px;letter-spacing:-.045em}.paneHeading p{margin:7px 0 0;color:var(--muted);font-size:13px;line-height:1.55}#schemaContainer,#emailContainer,#troubleshootingContainer{min-width:0}#schemaContainer{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 22px}#schemaContainer>*{min-width:0}#schemaContainer label,#emailOutput label,#troubleshootingContainer label{display:block;margin:0 0 7px;font-size:12px;font-weight:750;color:#344d57}#schemaContainer input,#schemaContainer textarea,#schemaContainer select,#emailOutput input,#emailOutput textarea,#emailOutput select,#troubleshootingContainer input,#troubleshootingContainer textarea,#troubleshootingContainer select{width:100%;min-width:0;border:1px solid #d7dcd5;border-radius:10px;background:var(--surface);padding:12px 13px;color:var(--ink);outline:none;transition:border-color .15s,box-shadow .15s;font-size:13px}#schemaContainer textarea,#emailOutput textarea,#troubleshootingContainer textarea{min-height:110px;resize:vertical}#schemaContainer input:focus,#schemaContainer textarea:focus,#schemaContainer select:focus,#emailOutput input:focus,#emailOutput textarea:focus,#emailOutput select:focus,#troubleshootingContainer input:focus,#troubleshootingContainer textarea:focus,#troubleshootingContainer select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(20,125,120,.12)}#schemaContainer button,#emailOutput button,#troubleshootingContainer button{border-radius:9px}.paneActions{display:flex;justify-content:flex-end;align-items:center;gap:10px;padding-top:22px;margin-top:23px;border-top:1px solid var(--line)}.actionBtn{border:1px solid transparent;border-radius:10px;padding:12px 17px;font-size:12px;font-weight:800;transition:transform .15s,background .15s}.actionBtn:hover{transform:translateY(-1px)}.copyBtn{color:#fffdf8;background:var(--teal)}.copyBtn:hover{background:var(--tealDark)}.closeBtn{background:#e9e6dd;color:var(--ink);border-color:#d9d6cc}.emailHeader{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 0 13px;margin-bottom:16px;border-bottom:1px solid var(--line);font-size:13px;font-weight:800}.emailHeaderHint{color:var(--muted);font-size:11px;font-weight:500}#emailOutput{display:grid;gap:14px}#troubleshootingContainer{line-height:1.65}#troubleshootingContainer ol,#troubleshootingContainer ul{padding-left:22px}#troubleshootingContainer li{padding:5px 0}
+/* Keep the case-schema action wrappers functional, while presenting them as fields rather than cards. */
+#schemaContainer .fieldGroup,#schemaContainer .schemaField,#schemaContainer .formGroup,#schemaContainer .fieldWrapper{min-width:0;max-width:100%}#schemaContainer .actionGroup,#schemaContainer .fieldActions{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:8px}#schemaContainer .entryList,#schemaContainer .entriesList,#schemaContainer .multiEntryList{display:flex;flex-direction:column;gap:8px;max-height:260px;overflow:auto;padding-right:4px}#schemaContainer .entryItem,#schemaContainer .multiEntryItem{display:flex;align-items:flex-start;gap:8px;min-width:0}
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:rgba(15,31,41,.55);backdrop-filter:blur(5px)}.modal.hidden{display:none}.modalContent{width:min(650px,100%);max-height:min(82vh,850px);overflow:auto;background:var(--surface);border-radius:18px;padding:27px;box-shadow:0 25px 80px rgba(0,0,0,.25)}.modalEyebrow{color:var(--teal);margin-bottom:10px}.modalContent h3{margin:0 0 15px;font-size:24px;letter-spacing:-.04em}#copyPreviewText{white-space:pre-wrap;overflow-wrap:anywhere;max-height:48vh;overflow:auto;background:#f0eee7;border-radius:12px;padding:16px;font:12px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace;color:#2b424c}.modalButtons{display:flex;justify-content:flex-end;gap:9px;margin-top:18px}[hidden]{display:none!important}
 
-<!-- 🌸 PWA Manifest -->
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#000000">
+/* LOTUS ASSISTANT FOOTER */
+#lotusFooter{width:100%;margin-top:auto;padding:22px clamp(22px,4vw,56px);display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;border-top:1px solid var(--line);background:var(--paper);color:var(--muted);font-size:12px}
+#lotusFooter .footerText{line-height:1.6;letter-spacing:.015em}
+#lotusFooter .footerIcons{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px}
+#lotusFooter .version{display:inline-flex;align-items:center;padding:5px 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink2);font-size:11px;font-weight:700}
+#lotusFooter .icon{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink2);text-decoration:none;transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+#lotusFooter .icon:hover{background:var(--ink);border-color:var(--ink);color:#fff;transform:translateY(-2px)}
+#lotusFooter .icon:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+#lotusFooter .icon.github::before{content:"";width:18px;height:18px;background:currentColor;-webkit-mask:url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg") center/contain no-repeat;mask:url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg") center/contain no-repeat}
+#lotusFooter .icon.linkedin::before{content:"";width:18px;height:18px;background:currentColor;-webkit-mask:url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg") center/contain no-repeat;mask:url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg") center/contain no-repeat}
+@media(max-width:600px){#lotusFooter{padding:18px 16px;gap:11px}#lotusFooter .footerText{font-size:11px}}
 
-<link rel="stylesheet" href="../ui.Styles/main.css">
-<link rel="stylesheet" href="../ui.Styles/components.css">
-
+@media(max-width:900px){.lotusAppShell{grid-template-columns:1fr}.appSidebar{min-height:0;padding:16px 20px;gap:15px}.lotusWrapper{grid-template-columns:38px 1fr}#lotusLogo{width:37px;height:37px}.categoryTab{display:flex}.categoryPanel{display:none;padding:2px 0 10px}.categoryPanel.open{display:flex}.sidebarIntro{display:none}.sidebarFooter{margin-top:12px}.appTopbar{padding:18px 22px}.workspace{padding-top:30px}}
+@media(max-width:600px){.appTopbar{align-items:flex-start}.workspaceStatus{display:none}.workspaceHeading{margin-bottom:22px}.workspaceHeading h1{font-size:36px}.workspaceToolbar{width:100%;overflow:auto}.tabBtn{padding:11px 12px;font-size:12px}.tabGlyph{display:none}#schemaContainer{grid-template-columns:1fr}.paneHeading{padding-top:20px}.paneActions{justify-content:stretch}.paneActions .actionBtn{width:100%}.modalContent{padding:21px}}
+</style>
 </head>
-
 <body>
-<div id="lotusRoot">
 
 
-    <!-- ⭐ STAR LAYERS -->
-    <div class="stars"></div>
-    <div class="stars2"></div>
-    <div class="stars3"></div>
+<div id="lotusRoot" class="lotusAppShell">
+  <aside class="appSidebar" aria-label="Support navigation">
 
-    <!-- 🌸 LOTUS LOGO -->
     <div class="lotusWrapper">
-        <img id="lotusLogo" src="lotus.png" alt="Lotus Logo">
-        <div class="lotusLine"></div>
+      <img id="lotusLogo" src="lotus.png" alt="Lotus Assistant logo">
+      <div class="lotusLine"></div>
+      <div class="brandText">
+        <strong>Lotus Assistant</strong>
+        <span>Support workspace</span>
+      </div>
     </div>
 
-    <!-- 🌸 HEADER -->
-    <div class="contentBox">
-        <div id="currentCategoryHeader">
-            <span id="currentMain"></span>
-            <span id="currentSub"></span>
-        </div>
-        <hr class="categoryLine">
+    <button id="categoryTab" class="categoryTab" type="button"
+      aria-label="Open category navigation" aria-controls="categoryPanel">
+      <img src="lotus.png" alt="" class="lotusIcon">
+      <span class="categoryTabLabel">Browse issues</span>
+      <span class="dropdownIcon" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+
+    <div class="sidebarIntro">
+      <span class="sidebarEyebrow">WORKSPACE / 01</span>
+      <span class="sidebarHint">What are we solving today?</span>
     </div>
 
-    <!-- ⭐ ALWAYS-VISIBLE BUBBLE TAB -->
-    <div id="categoryTab" class="categoryTab">
-        <img src="lotus.png" alt="Lotus Icon" class="lotusIcon">
-        <div class="dropdownIcon">
-            <div></div><div></div><div></div>
+    <div id="categoryPanel" class="categoryPanel">
+
+      <div class="fieldLabel"></div>
+      <div id="mainWrapper" class="dropdownWrapper">
+        <div id="mainDisplayText" class="dropdownDisplay"
+          role="button" tabindex="0" aria-haspopup="listbox">
+          <span id="mainLabel">Select category...</span>
         </div>
-    </div>
-
-    <!-- ⭐ SLIDE-OUT CATEGORY PANEL -->
-    <div id="categoryPanel">
-
-        <!-- MAIN CATEGORY -->
-        <div class="fieldLabel">Main Category</div>
-        <div id="mainWrapper" class="dropdownWrapper">
-            <div id="mainDisplayText" class="dropdownDisplay">
-                <span id="mainLabel">Select category...</span>
-
-                <div id="hamburgerIcon" class="dropdownIcon">
-                    <div></div><div></div><div></div>
-                </div>
-            </div>
-
-            <div id="mainPanel" class="dropdownPanel">
-                <div id="mainList" class="dropdownList"></div>
-            </div>
+        <div id="mainPanel" class="dropdownPanel">
+          <div id="mainList" class="dropdownList"></div>
         </div>
+      </div>
 
-        <!-- SUBCATEGORY -->
-        <div class="fieldLabel">Subcategory</div>
-        <div id="subWrapper" class="dropdownWrapper" style="display:none;">
-            <div id="subDisplayText" class="dropdownDisplay">
-                <span id="subLabel">Select subcategory...</span>
-
-                <div id="subHamburgerIcon" class="dropdownIcon">
-                    <div></div><div></div><div></div>
-                </div>
-            </div>
-
-            <div id="subPanel" class="dropdownPanel">
-                <div id="subList" class="dropdownList"></div>
-            </div>
+      <div class="fieldLabel"></div>
+      <div id="subWrapper" class="dropdownWrapper" style="display:none">
+        <div id="subDisplayText" class="dropdownDisplay"
+          role="button" tabindex="0" aria-haspopup="listbox">
+          <span id="subLabel">Select subcategory...</span>
         </div>
+        <div id="subPanel" class="dropdownPanel">
+          <div id="subList" class="dropdownList"></div>
+        </div>
+      </div>
+
+      <div class="sidebarFooter">
+        <span class="sidebarFooterDot"></span>
+        <span>Support content connected</span>
+      </div>
 
     </div>
+  </aside>
 
-    <!-- ⭐ TAB BUTTONS + REFRESH -->
-    <div style="display:flex; justify-content:center; align-items:center; gap:10px; margin-top:20px;">
-        <button id="caseHeader" class="tabBtn">Case Notes</button>
-        <button id="emailHeader" class="tabBtn">Email</button>
-        <button id="troubleshootingHeader" class="tabBtn">Troubleshooting</button>
 
-        <!-- 🌸 Refresh Button -->
-        <button id="refreshBtn" class="iconBtn" title="Refresh">&#x21bb;</button>
-    </div>
-
-    <!-- ⭐ CARD STACK -->
-    <div id="cardStack">
-
-        <!-- CASE NOTES -->
-        <div class="card" data-card="case">
-            <h3>Case Notes</h3>
-
-            <div id="schemaContainer"></div>
-
-            <br>
-            <button id="copyCaseBtn" class="actionBtn copyBtn">Copy Case Notes</button>
-        </div>
-
-        <!-- EMAIL -->
-        <div class="card" data-card="email">
-            <h3>Email Output</h3>
-            <div id="emailContainer">
-                <div class="emailHeader">Email Preview</div>
-                <div id="emailOutput"></div>
-            </div>
-            <br>
-            <button id="copyEmailBtn" class="actionBtn copyBtn">Copy Email</button>
-        </div>
-
-        <!-- TROUBLESHOOTING -->
-        <div class="card" data-card="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <div id="troubleshootingContainer"></div>
-        </div>
-
-    </div>
-
-    <!-- ⭐ COPY PREVIEW MODAL -->
-    <div id="copyPreviewModal" class="modal hidden">
-        <div class="modalContent">
-            <h3 id="copyPreviewTitle"></h3>
-            <pre id="copyPreviewText"></pre>
-
-            <div class="modalButtons">
-                <button id="modalCopyBtn" class="actionBtn copyBtn">Copy</button>
-                <button id="modalCloseBtn" class="actionBtn closeBtn">Close</button>
-            </div>
-        </div>
-    </div>
-
- <!-- 🌸 LOTUS FOOTER -->
-<div id="lotusFooter">
-    <span class="footerText">Lotus Assistant © 2026 — All Systems Operational</span>
-    <br>
-    <br>
-
-    <div class="footerIcons">
-        <span class="version">v2.3.2.7</span>
-        <br>
-        <br>
-
-        <a href="https://github.com/Niaomi96" class="icon github" target="_blank"></a>
-        
-        <a href="https://www.linkedin.com/in/niaomi-james-173abb259/" class="icon linkedin" target="_blank"></a>
-    </div>
+  <main class="appMain">
+    <header class="appTopbar"><div class="contentBox"><div class="currentIssueLabel">CURRENT WORK ITEM</div><div id="currentCategoryHeader" aria-live="polite"><span id="currentMain"></span><span id="currentSub"></span></div><hr class="categoryLine"></div><div class="topbarActions"><span class="workspaceStatus"><span></span> Workspace ready</span><button id="refreshBtn" class="iconBtn" type="button" title="Refresh" aria-label="Refresh application">↻</button></div></header>
+    <section class="workspace" aria-label="Support tools">
+      <div class="workspaceHeading"><div><div class="eyebrow">LOTUS / SUPPORT OPERATIONS</div><h1>Make the next step<br>clear.</h1><p>Build consistent case notes, prepare customer communications, and work through issue-specific guidance from one focused workspace.</p></div></div>
+      <div class="workspaceToolbar" role="tablist" aria-label="Support tool views"><button id="caseHeader" class="tabBtn active" type="button" role="tab" aria-controls="caseWorkspace" aria-selected="true"><span class="tabGlyph" aria-hidden="true">01</span> Case notes</button><button id="emailHeader" class="tabBtn" type="button" role="tab" aria-controls="emailWorkspace" aria-selected="false"><span class="tabGlyph" aria-hidden="true">02</span> Email</button><button id="troubleshootingHeader" class="tabBtn" type="button" role="tab" aria-controls="troubleshootingWorkspace" aria-selected="false"><span class="tabGlyph" aria-hidden="true">03</span> Troubleshooting</button></div>
+      <div id="cardStack" class="workspaceContent">
+        <section class="workspacePane active" data-card="case" id="caseWorkspace" role="tabpanel" aria-labelledby="caseHeader"><div class="paneHeading"><div><div class="eyebrow">01 / DOCUMENTATION</div><h2>Case notes</h2><p>Capture the details that make the case easy to understand and hand over.</p></div></div><div id="schemaContainer"></div><div class="paneActions"><button id="copyCaseBtn" class="actionBtn copyBtn" type="button">Copy case notes&nbsp; ↗</button></div></section>
+        <section class="workspacePane" data-card="email" id="emailWorkspace" role="tabpanel" aria-labelledby="emailHeader"><div class="paneHeading"><div><div class="eyebrow">02 / CUSTOMER COMMUNICATION</div><h2>Email</h2><p>Review and edit the message generated from the case information.</p></div></div><div id="emailContainer"><div class="emailHeader">Email preview <span class="emailHeaderHint">Editable where supported</span></div><div id="emailOutput"></div></div><div class="paneActions"><button id="copyEmailBtn" class="actionBtn copyBtn" type="button">Copy email&nbsp; ↗</button></div></section>
+        <section class="workspacePane" data-card="troubleshooting" id="troubleshootingWorkspace" role="tabpanel" aria-labelledby="troubleshootingHeader"><div class="paneHeading"><div><div class="eyebrow">03 / GUIDED RESOLUTION</div><h2>Troubleshooting</h2><p>Follow the steps for the selected support issue, one step at a time.</p></div></div><div id="troubleshootingContainer"></div></section>
+      </div>
+    </section>
+  </main>
+ 
+ 
+  <div id="copyPreviewModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="copyPreviewTitle"><div class="modalContent"><div class="modalEyebrow">COPY PREVIEW</div><h3 id="copyPreviewTitle"></h3><pre id="copyPreviewText"></pre><div class="modalButtons"><button id="modalCopyBtn" class="actionBtn copyBtn" type="button">Copy</button><button id="modalCloseBtn" class="actionBtn closeBtn" type="button">Close</button></div></div></div>
 </div>
-
-
-</div>
-
-<!-- ⭐ JS FILES -->
 <script type="module" defer src="../ui.Scripts/index.js?v=9999"></script>
-<script type="module" defer src="../ui.Scripts/ui.cardStack.js?v=9999"></script>
-<script type="module" defer src="../ui.Scripts/ui.copyPreview.js?v=9999"></script>
 
-<!-- 🌸 Refresh Only -->
+<script type="module" defer src="../ui.Scripts/ui.copyPreview.js?v=9999"></script>
 <script>
-document.getElementById("refreshBtn").addEventListener("click", () => location.reload());
+document.getElementById('refreshBtn').addEventListener('click',()=>location.reload());
+
+// Tab presentation only: preserves the original pane IDs and data-card attributes.
+const lotusTabs=[['caseHeader','caseWorkspace'],['emailHeader','emailWorkspace'],['troubleshootingHeader','troubleshootingWorkspace']];
+lotusTabs.forEach(([tabId,paneId])=>{document.getElementById(tabId).addEventListener('click',()=>{lotusTabs.forEach(([otherTab,otherPane])=>{const chosen=otherTab===tabId;document.getElementById(otherTab).classList.toggle('active',chosen);document.getElementById(otherTab).setAttribute('aria-selected',String(chosen));document.getElementById(otherPane).classList.toggle('active',chosen);});});});
+
 </script>
+
+    <!-- 🌸 LOTUS FOOTER -->
+    <footer id="lotusFooter">
+      <span class="footerText">Lotus Assistant © 2026 — All Systems Operational</span>
+
+      <div class="footerIcons">
+        <span class="version">v3.1.0.7</span>
+
+        <a href="https://github.com/Niaomi96"
+           class="icon github"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub profile"
+           title="GitHub"></a>
+
+        <a href="https://www.linkedin.com/in/niaomi-james-173abb259/"
+           class="icon linkedin"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn profile"
+           title="LinkedIn"></a>
+      </div>
+    </footer>
 
 </body>
 </html>
-
 
