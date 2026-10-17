@@ -1,72 +1,148 @@
+
 <!-- 🌸 Lotus Assistant — Install Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
   <title>Install Lotus Assistant</title>
 
-  <!-- Manifest so Chrome knows it's installable -->
   <link rel="manifest" href="./manifest.json" />
   <link rel="icon" href="./lotus-192.png" />
 
   <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background: #111;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    h1 {
-      margin-bottom: 1rem;
-      color: #ffb6c1;
-    }
-    button {
-      background: #ffb6c1;
-      color: #111;
-      border: none;
-      padding: 0.8rem 1.6rem;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-    button:hover {
-      background: #fff;
-      color: #111;
-    }
+    *{box-sizing:border-box}
+    body{font-family:"Segoe UI",sans-serif;background:#111;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:24px;text-align:center}
+    h1{margin-bottom:12px;color:#ffb6c1}
+    p{color:#ccc;line-height:1.6;max-width:380px}
+    button{background:#ffb6c1;color:#111;border:0;padding:13px 24px;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;transition:.2s}
+    button:hover{background:#fff}
+    button:disabled{cursor:default;opacity:.85}
+    #installStatus{margin-top:18px;padding:12px 16px;border:1px solid #444;border-radius:10px;max-width:420px;line-height:1.5}
+    #installStatus.success{color:#b8f7cb;border-color:#39764b;background:#15271b}
+    #installStatus.info{color:#ffe3a3;border-color:#80672d;background:#282214}
+    #helpText{font-size:.9rem;color:#aaa;margin-top:12px}
+    [hidden]{display:none!important}
   </style>
 </head>
+
 <body>
   <h1>🌸 Install Lotus Assistant</h1>
-  <button id="installBtn">Download App</button>
+  <p>Install the app for easier access to your Lotus Assistant workspace.</p>
+
+  <button id="installBtn" type="button">Install Lotus Assistant</button>
+
+  <div id="installStatus" role="status" aria-live="polite">
+    Checking installation status…
+  </div>
+
+  <p id="helpText" hidden>
+    If installation is unavailable, open your browser menu and look for
+    “Install app” or “Add to Home screen.”
+  </p>
 
   <script>
-    let deferredPrompt;
+    const installBtn = document.getElementById("installBtn");
+    const installStatus = document.getElementById("installStatus");
+    const helpText = document.getElementById("helpText");
 
-    // Detect install prompt
-    window.addEventListener("beforeinstallprompt", e => {
-      e.preventDefault();
-      deferredPrompt = e;
-      document.getElementById("installBtn").style.display = "block";
+    const INSTALL_KEY = "lotusInstallConfirmed";
+    let deferredPrompt = null;
+
+    function showStatus(message, type = "") {
+      installStatus.textContent = message;
+      installStatus.className = type;
+    }
+
+    function markInstalled(message = "✓ Lotus Assistant is installed on this browser.") {
+      installBtn.textContent = "✓ Installed";
+      installBtn.disabled = true;
+      helpText.hidden = true;
+      showStatus(message, "success");
+
+      try {
+        localStorage.setItem(INSTALL_KEY, "true");
+      } catch (error) {
+        // Installation status can still be shown for this page session.
+      }
+    }
+
+    function isRunningAsApp() {
+      return window.matchMedia("(display-mode: standalone)").matches ||
+             window.matchMedia("(display-mode: minimal-ui)").matches ||
+             window.navigator.standalone === true;
+    }
+
+    // If the page is running as the installed app, installation is confirmed.
+    if (isRunningAsApp()) {
+      markInstalled("✓ Lotus Assistant is open as an installed app.");
+    } else {
+      let previouslyConfirmed = false;
+
+      try {
+        previouslyConfirmed = localStorage.getItem(INSTALL_KEY) === "true";
+      } catch (error) {}
+
+      if (previouslyConfirmed) {
+        markInstalled("✓ Installation was previously confirmed in this browser.");
+      } else {
+        showStatus("Not installed yet. Select Install Lotus Assistant to begin.");
+      }
+    }
+
+    // The browser provides its native installation prompt when available.
+    window.addEventListener("beforeinstallprompt", (event) => {
+      event.preventDefault();
+      deferredPrompt = event;
+
+      if (!isRunningAsApp()) {
+        installBtn.disabled = false;
+        installBtn.textContent = "Install Lotus Assistant";
+        showStatus("Ready to install Lotus Assistant.");
+        helpText.hidden = true;
+      }
     });
 
-    // Trigger install
-    document.getElementById("installBtn").addEventListener("click", async () => {
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        const choice = await deferredPrompt.userChoice;
-        console.log("User choice:", choice.outcome);
-        deferredPrompt = null;
-      } else {
-        alert("App already installed or not installable yet.");
+    installBtn.addEventListener("click", async () => {
+      if (installBtn.disabled) return;
+
+      if (!deferredPrompt) {
+        showStatus(
+          "The install prompt isn't available right now. The app may already be installed, or this browser may not support installation from this page.",
+          "info"
+        );
+        helpText.hidden = false;
+        return;
       }
+
+      const promptEvent = deferredPrompt;
+      deferredPrompt = null;
+      installBtn.disabled = true;
+
+      try {
+        await promptEvent.prompt();
+        const choice = await promptEvent.userChoice;
+
+        if (choice.outcome === "accepted") {
+          showStatus("Installation accepted. Waiting for the browser to confirm…");
+          installBtn.textContent = "Installing…";
+        } else {
+          installBtn.disabled = false;
+          showStatus("Installation was cancelled. You can try again whenever you're ready.");
+        }
+      } catch (error) {
+        installBtn.disabled = false;
+        showStatus("We couldn't open the install prompt. Try the browser menu instead.", "info");
+        helpText.hidden = false;
+      }
+    });
+
+    // The browser fires this after an installation completes.
+    window.addEventListener("appinstalled", () => {
+      markInstalled("✓ Installation successful! Lotus Assistant is now installed.");
     });
   </script>
 </body>
 </html>
+
