@@ -1,4 +1,5 @@
 
+
 <!-- 🌸 Lotus Assistant — Install Page -->
 <!DOCTYPE html>
 <html lang="en">
@@ -40,10 +41,7 @@
       box-shadow:0 16px 45px #0005
     }
 
-    .lotusIcon{
-      font-size:42px;
-      margin-bottom:12px
-    }
+    .lotusIcon{font-size:42px;margin-bottom:12px}
 
     h1{
       margin:0 0 12px;
@@ -82,10 +80,7 @@
       outline-offset:4px
     }
 
-    button:disabled{
-      cursor:default;
-      opacity:.85
-    }
+    button:disabled{cursor:default;opacity:.85}
 
     #installStatus{
       margin:20px auto 0;
@@ -119,12 +114,13 @@
     #helpText{
       font-size:.88rem;
       color:#aaa;
-      margin:16px auto 0
+      margin:16px auto 0;
+      line-height:1.7
     }
 
-    #helpText a{
-      color:#ffb6c1
-    }
+    #helpText p{margin:0 auto 10px}
+
+    #helpText strong{color:#ffb6c1}
 
     .footerNote{
       margin-top:24px;
@@ -132,9 +128,7 @@
       font-size:.78rem
     }
 
-    [hidden]{
-      display:none!important
-    }
+    [hidden]{display:none!important}
 
     @media(max-width:480px){
       body{padding:16px}
@@ -163,9 +157,14 @@
 
     <div id="helpText" hidden>
       <p>
-        If installation isn't available, open Chrome's menu and look for
-        <strong>Install app</strong> or <strong>Create shortcut</strong>.
-        The wording may vary by browser.
+        Automatic installation isn't available right now.
+        Open Chrome's menu (⋮) and look for
+        <strong>Install page as app</strong> or
+        <strong>Install Lotus Assistant</strong>.
+      </p>
+      <p>
+        If neither option appears, Chrome may not consider this
+        website installable yet.
       </p>
     </div>
 
@@ -175,140 +174,160 @@
   </main>
 
   <script>
-    const installBtn = document.getElementById("installBtn");
-    const installStatus = document.getElementById("installStatus");
-    const helpText = document.getElementById("helpText");
+    (() => {
+      const installBtn = document.getElementById("installBtn");
+      const installStatus = document.getElementById("installStatus");
+      const helpText = document.getElementById("helpText");
 
-    let deferredPrompt = null;
-    let installConfirmedThisSession = false;
+      let deferredPrompt = null;
+      let confirmedInstalledThisSession = false;
+      let promptInProgress = false;
 
-    function showStatus(message, type = "") {
-      installStatus.textContent = message;
-      installStatus.className = type;
-    }
+      function showStatus(message, type = "") {
+        installStatus.textContent = message;
+        installStatus.className = type;
+      }
 
-    function isRunningAsApp() {
-      return window.matchMedia("(display-mode: standalone)").matches ||
-             window.matchMedia("(display-mode: minimal-ui)").matches ||
-             window.navigator.standalone === true;
-    }
+      function isRunningAsApp() {
+        return window.matchMedia("(display-mode: standalone)").matches ||
+               window.matchMedia("(display-mode: minimal-ui)").matches ||
+               window.navigator.standalone === true;
+      }
 
-    function showInstalled(message) {
-      installConfirmedThisSession = true;
-      installBtn.textContent = "✓ Installed";
-      installBtn.disabled = true;
-      helpText.hidden = true;
-      showStatus(message, "success");
-    }
-
-    function showInstallReady() {
-      installBtn.textContent = "Install Lotus Assistant";
-      installBtn.disabled = !deferredPrompt;
-      showStatus(
-        deferredPrompt
-          ? "Ready to install Lotus Assistant."
-          : "Waiting for Chrome to make installation available."
-      );
-    }
-
-    // A reliable positive signal: this page is running as an installed app.
-    if (isRunningAsApp()) {
-      showInstalled("✓ Lotus Assistant is running as an installed app.");
-    } else {
-      showStatus("Checking whether installation is available…");
-      installBtn.disabled = true;
-    }
-
-    // Chrome may provide its native install prompt when the PWA qualifies.
-    window.addEventListener("beforeinstallprompt", (event) => {
-      event.preventDefault();
-      deferredPrompt = event;
-
-      if (!isRunningAsApp()) {
-        installBtn.disabled = false;
-        installBtn.textContent = "Install Lotus Assistant";
-        showStatus("Ready to install Lotus Assistant.");
+      function showInstalled(message) {
+        confirmedInstalledThisSession = true;
+        installBtn.textContent = "✓ Installed";
+        installBtn.disabled = true;
         helpText.hidden = true;
-      }
-    });
-
-    installBtn.addEventListener("click", async () => {
-      if (isRunningAsApp() || installConfirmedThisSession) {
-        return;
+        showStatus(message, "success");
       }
 
-      if (!deferredPrompt) {
-        showStatus(
-          "Chrome hasn't provided an installation prompt. This doesn't necessarily mean the app is installed.",
-          "info"
-        );
-        helpText.hidden = false;
-        return;
-      }
+      function showInstallOption() {
+        confirmedInstalledThisSession = false;
+        installBtn.textContent = "Install Lotus Assistant";
 
-      const promptEvent = deferredPrompt;
-      deferredPrompt = null;
+        // Never disable the install option merely because Chrome
+        // has not supplied beforeinstallprompt.
+        installBtn.disabled = promptInProgress;
 
-      installBtn.disabled = true;
-      installBtn.textContent = "Waiting for Chrome…";
-      showStatus("Opening Chrome's installation prompt…");
-
-      try {
-        await promptEvent.prompt();
-        const choice = await promptEvent.userChoice;
-
-        if (choice.outcome === "accepted") {
-          installBtn.textContent = "Installing…";
-          showStatus(
-            "Installation accepted. Waiting for the browser to confirm…",
-            "info"
-          );
+        if (deferredPrompt) {
+          showStatus("Ready to install Lotus Assistant.");
+          helpText.hidden = true;
         } else {
-          installBtn.textContent = "Install Lotus Assistant";
-          installBtn.disabled = true;
-
           showStatus(
-            "Installation was cancelled. You can try again when Chrome offers installation."
+            "You can try installing Lotus Assistant. If the automatic prompt is unavailable, use Chrome's menu.",
+            "info"
           );
           helpText.hidden = false;
         }
-      } catch (error) {
-        installBtn.textContent = "Install Lotus Assistant";
-        installBtn.disabled = !deferredPrompt;
-
-        showStatus(
-          "Chrome couldn't open the installation prompt. Try the browser menu instead.",
-          "error"
-        );
-        helpText.hidden = false;
       }
-    });
 
-    // Positive confirmation that the browser completed installation.
-    window.addEventListener("appinstalled", () => {
-      deferredPrompt = null;
-      showInstalled("✓ Installation successful! Lotus Assistant is installed.");
-    });
-
-    // Recheck when returning to the page.
-    window.addEventListener("pageshow", () => {
+      // Only claim installed if running in app display mode or
+      // Chrome confirms an installation during this page session.
       if (isRunningAsApp()) {
         showInstalled("✓ Lotus Assistant is running as an installed app.");
+      } else {
+        showInstallOption();
       }
-    });
 
-    // If Chrome doesn't provide the prompt, explain the alternative.
-    window.addEventListener("load", () => {
-      if (!isRunningAsApp() && !deferredPrompt) {
+      // Chrome provides this event only when its install criteria
+      // are met and it decides to offer the native installation prompt.
+      window.addEventListener("beforeinstallprompt", (event) => {
+        event.preventDefault();
+        deferredPrompt = event;
+
+        if (!isRunningAsApp()) {
+          showInstallOption();
+        }
+      });
+
+      installBtn.addEventListener("click", async () => {
+        if (isRunningAsApp() || confirmedInstalledThisSession) {
+          showInstalled("✓ Lotus Assistant is running as an installed app.");
+          return;
+        }
+
+        if (promptInProgress) return;
+
+        // The browser does not expose a universal API to force its
+        // installation dialog. Keep the button usable and explain
+        // the manual route when no prompt event exists.
+        if (!deferredPrompt) {
+          showStatus(
+            "Chrome hasn't supplied the automatic install prompt. Use Chrome's menu to look for Install page as app.",
+            "info"
+          );
+          helpText.hidden = false;
+          return;
+        }
+
+        const promptEvent = deferredPrompt;
+        deferredPrompt = null;
+        promptInProgress = true;
         installBtn.disabled = true;
+        installBtn.textContent = "Waiting for Chrome…";
+        helpText.hidden = true;
+        showStatus("Opening Chrome's installation prompt…");
 
-        showStatus(
-          "Automatic installation isn't available yet. Check Chrome's menu for an install option.",
-          "info"
-        );
-        helpText.hidden = false;
-      }
-    });
+        try {
+          await promptEvent.prompt();
+          const choice = await promptEvent.userChoice;
+
+          if (choice.outcome === "accepted") {
+            installBtn.textContent = "Installing…";
+            showStatus(
+              "Installation accepted. Waiting for Chrome to confirm…",
+              "info"
+            );
+          } else {
+            showStatus(
+              "Installation was cancelled. You can try again or use Chrome's menu.",
+              "info"
+            );
+            helpText.hidden = false;
+          }
+        } catch (error) {
+          showStatus(
+            "Chrome couldn't open the installation prompt. Try Chrome's menu instead.",
+            "error"
+          );
+          helpText.hidden = false;
+        } finally {
+          promptInProgress = false;
+
+          if (!confirmedInstalledThisSession && !isRunningAsApp()) {
+            installBtn.disabled = false;
+            installBtn.textContent = "Install Lotus Assistant";
+          }
+        }
+      });
+
+      // Chrome confirms that the app was installed.
+      window.addEventListener("appinstalled", () => {
+        deferredPrompt = null;
+        showInstalled("✓ Installation successful! Lotus Assistant is installed.");
+      });
+
+      // Refresh the display-mode check when returning to this page.
+      window.addEventListener("pageshow", () => {
+        if (isRunningAsApp()) {
+          showInstalled("✓ Lotus Assistant is running as an installed app.");
+        } else if (!confirmedInstalledThisSession) {
+          showInstallOption();
+        }
+      });
+
+      // Reflect display-mode changes while the page remains open.
+      const standaloneQuery = window.matchMedia("(display-mode: standalone)");
+
+      standaloneQuery.addEventListener?.("change", () => {
+        if (isRunningAsApp()) {
+          showInstalled("✓ Lotus Assistant is running as an installed app.");
+        } else {
+          showInstallOption();
+        }
+      });
+    })();
   </script>
 </body>
 </html>
